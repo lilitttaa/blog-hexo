@@ -5,7 +5,7 @@ title: C++ Primer 2.变量和基本类型
 ## 基本类型
 
 类型的最小尺寸：
-![Alt text](image.png)
+![image.png](/images/Pub_Note_CppPrimerChapter2/image.png)
 
 - 类型决定了数据所占的比特数以及该如何解释这些内容
 - short <= int <= long <= long long
@@ -58,7 +58,7 @@ cout<<"Hello,"
 ```
 
 C++ 中的转义序列：
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_CppPrimerChapter2/image-1.png)
 以及用十六进制或八进制表示的泛化转义序列：
 
 ```cpp
@@ -74,7 +74,7 @@ C++ 中的转义序列：
 ```
 
 添加前缀和后缀可以改变字面值的类型：
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_CppPrimerChapter2/image-2.png)
 
 ```cpp
 u"hi!" // char16_t

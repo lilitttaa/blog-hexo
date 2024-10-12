@@ -6,7 +6,7 @@ title: Games105 2.Math Background
 
 ## Vector
 
-![alt text](image.png)
+![image.png](/images/Pub_Note_MathBackground/image.png)
 
 vector : $\vec{a} = \begin{bmatrix} a_x & a_y & a_z \end{bmatrix}^T = \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix}$
 
@@ -26,7 +26,7 @@ $\vec{a} - \vec{b} = \begin{bmatrix} a_x - b_x & a_y - b_y & a_z - b_z \end{bmat
 
 $\vec{a} + 2\vec{b} = \begin{bmatrix} a_x + 2b_x & a_y + 2b_y & a_z + 2b_z \end{bmatrix}^T$
 
-![alt text](image-1.png)
+![image-1.png](/images/Pub_Note_MathBackground/image-1.png)
 
 ### Dot Product
 
@@ -39,12 +39,12 @@ $\vec{a} \cdot \vec{a}  = a_x^2 + a_y^2 + a_z^2 = ||\vec{a}||^2$
 $\vec{a} \cdot \vec{b} = ||\vec{a}|| \cdot ||\vec{b}|| \cdot \cos\theta$
 
 $\theta = \arccos\frac{\vec{a} \cdot \vec{b}}{||\vec{a}|| \cdot ||\vec{b}||}$
-![alt text](image-2.png)
+![image-2.png](/images/Pub_Note_MathBackground/image-2.png)
 
 ### Projection
 
 $\ a_b = ||\vec{a}|| \cdot \cos\theta = \vec{a} \frac{\vec{b}}{||\vec{b}||}$
-![alt text](image-3.png)
+![image-3.png](/images/Pub_Note_MathBackground/image-3.png)
 
 ### Cross Product
 
@@ -63,12 +63,12 @@ $\vec{c} = \vec{a} \times \vec{b} = ||a|| \cdot ||b|| \cdot \sin\theta \cdot \ha
 $\vec{n} \neq \frac{\vec{a}}{||\vec{a}||} \times \frac{\vec{b}}{||\vec{b}||}$
 
 $\vec{n} = \frac{\vec{a} \times \vec{b}}{||\vec{a} \times \vec{b}||} \vec{a} \neq \vec{0}, \vec{b} \neq \vec{0}, \vec{a} \nparallel \vec{b}$
-![alt text](image-4.png)
+![image-4.png](/images/Pub_Note_MathBackground/image-4.png)
 
 ### How to find the rotation between vectors?
 
 平分面上的任意向量都可以是轴：
-![alt text](image-5.png)
+![image-5.png](/images/Pub_Note_MathBackground/image-5.png)
 The minium rotation:
 $\vec{u} = \frac{\vec{a} \times \vec{b}}{||\vec{a} \times \vec{b}||}$
 
@@ -76,7 +76,7 @@ $\theta = \arccos\frac{\vec{a} \cdot \vec{b}}{||\vec{a}|| \cdot ||\vec{b}||}$
 
 ### How to rotate a vector?
 
-![alt text](image-8.png)
+![image-8.png](/images/Pub_Note_MathBackground/image-8.png)
 $sin\alpha||\vec{a}|| = sin\alpha||\vec{a}||||\vec{u}|| = ||\vec{u}\times\vec{a}||$
 
 $||\vec{v}|| = ||\vec{u}\times\vec{a}||sin\theta$
@@ -98,17 +98,17 @@ $\vec{b} = \vec{a} + \sin\theta(\vec{u} \times \vec{a}) + (1 - \cos\theta)\vec{u
 
 ### Orthogonal Basis and Orthogonal Coordinates（正交基和正交坐标）
 
-![alt text](image-7.png)
+![image-7.png](/images/Pub_Note_MathBackground/image-7.png)
 $\vec{a} = \begin{bmatrix} a_x & a_y & a_z \end{bmatrix}^T \in \mathbb{R}^3$
 
 $\vec{a}$ 在正交坐标下表示为：
 $\vec{a} = a_x\vec{e_x} + a_y\vec{e_y} + a_z\vec{e_z}$
 
 $a\cdot b$ 根据分配律展开，并消除正交项：
-![alt text](image-9.png)
+![image-9.png](/images/Pub_Note_MathBackground/image-9.png)
 $\vec{a} \times \vec{b}$ 根据分配律展开，消除相同向量叉乘项，合并相反的叉乘项：
-![alt text](image-10.png)
-![alt text](image-11.png)
+![image-10.png](/images/Pub_Note_MathBackground/image-10.png)
+![image-11.png](/images/Pub_Note_MathBackground/image-11.png)
 
 ## Matrix
 
@@ -129,7 +129,7 @@ $A^T = \begin{bmatrix} a_{11} & a_{21} & a_{31} \\ a_{12} & a_{22} & a_{32} \\ a
 
 ### transpose of special matrices
 
-![alt text](image-12.png)
+![image-12.png](/images/Pub_Note_MathBackground/image-12.png)
 
 ### Matrix Operations
 
@@ -141,7 +141,7 @@ $A + B = \begin{bmatrix} a_{11} + b_{11} & a_{12} + b_{12} & a_{13} + b_{13} \\ 
 
 #### Matrix multiplication
 
-![alt text](image-13.png)
+![image-13.png](/images/Pub_Note_MathBackground/image-13.png)
 $AB \neq BA$
 
 $A(BC) = (AB)C$
@@ -172,8 +172,8 @@ $(\vec{a}\times\vec{b})\times\vec{c}  = [\vec{a}\times\vec{b}]_\times\vec{c}$
 
 ### How to rotate a vector?
 
-![alt text](image-14.png)
-![alt text](image-15.png)
+![image-14.png](/images/Pub_Note_MathBackground/image-14.png)
+![image-15.png](/images/Pub_Note_MathBackground/image-15.png)
 
 ### Orthogonal Matrix
 
@@ -189,7 +189,7 @@ $A^T = A^{-1}$
 
 $ A = \begin{bmatrix} a*{11} & a*{12} & a*{13} \\ a*{21} & a*{22} & a*{23} \\ a*{31} & a*{32} & a*{33} \end{bmatrix} \in \mathbb{R}^{3 \times 3}$
 $det(A) = \begin{vmatrix} a*{11} & a*{12} & a*{13} \\ a*{21} & a*{22} & a*{23} \\ a*{31} & a*{32} & a*{33} \end{vmatrix} = a*{11} \begin{vmatrix} a*{22} & a*{23} \\ a*{32} & a*{33} \end{vmatrix} - a*{12} \begin{vmatrix} a*{21} & a*{23} \\ a*{31} & a*{33} \end{vmatrix} + a*{13} \begin{vmatrix} a*{21} & a*{22} \\ a*{31} & a*{32} \end{vmatrix} = a*{11}a*{22}a*{33} + a*{12}a*{23}a*{31} + a*{13}a*{21}a*{32} - a*{13}a*{22}a*{31} - a*{11}a*{23}a*{32} - a*{12}a*{21}a\_{33}$
-![alt text](image-16.png)
+![image-16.png](/images/Pub_Note_MathBackground/image-16.png)
 
 $detI = 1$
 $detAB = detA * detB$
@@ -215,26 +215,26 @@ $\lambda = detU = \pm 1$
 
 ## Rigid Transformation
 
-![alt text](image-17.png)
+![image-17.png](/images/Pub_Note_MathBackground/image-17.png)
 
 ### Scale
 
-![alt text](image-18.png)
+![image-18.png](/images/Pub_Note_MathBackground/image-18.png)
 $\vec{a} = \begin{bmatrix} a_x & a_y & a_z \end{bmatrix}^T$
 $\vec{a^{'}} = \begin{bmatrix} s_xa_x & s_ya_y & s_za_z \end{bmatrix}^T = \begin{bmatrix} s_x & 0 & 0 \\ 0 & s_y & 0 \\ 0 & 0 & s_z \end{bmatrix} \begin{bmatrix} a_x \\ a_y \\ a_z \end{bmatrix} = S\vec{a}$
 
 ### Translation
 
-![alt text](image-19.png)
+![image-19.png](/images/Pub_Note_MathBackground/image-19.png)
 $\vec{a^{'}} = \vec{a} + \vec{t}$
 
 Combination of Translations:
-![alt text](image-20.png)
+![image-20.png](/images/Pub_Note_MathBackground/image-20.png)
 $\vec{t} = \vec{t^{'}} + \vec{t^{''}}$
 
 ### Rotation
 
-![alt text](image-21.png)
+![image-21.png](/images/Pub_Note_MathBackground/image-21.png)
 $\vec{a^{'}} = R\vec{a}$
 
 - Rotation matrix is orthogonal: $R^{-1} = R^T$, $R^TR = RR^T = I$
@@ -242,17 +242,17 @@ $\vec{a^{'}} = R\vec{a}$
 - Rotation maintains length of vectors: $||R\vec{a}|| = ||\vec{a}||$
 
 Combination of Rotations:
-![alt text](image-22.png)
+![image-22.png](/images/Pub_Note_MathBackground/image-22.png)
 $R_2(R_1\vec{a}) = R_2R_1\vec{a} = R\vec{a}$
 
 Rotation around coordinate axes:
-![alt text](image-23.png)
+![image-23.png](/images/Pub_Note_MathBackground/image-23.png)
 $R_x(\alpha) = \begin{bmatrix} 1 & 0 & 0 \\ 0 & \cos\alpha & -\sin\alpha \\ 0 & \sin\alpha & \cos\alpha \end{bmatrix}$
 $R_y(\beta) = \begin{bmatrix} \cos\beta & 0 & \sin\beta \\ 0 & 1 & 0 \\ -\sin\beta & 0 & \cos\beta \end{bmatrix}$
 $R_z(\gamma) = \begin{bmatrix} \cos\gamma & -\sin\gamma & 0 \\ \sin\gamma & \cos\gamma & 0 \\ 0 & 0 & 1 \end{bmatrix}$
 
 绕 xyz 旋转等价于绕某一轴旋转：
-![alt text](image-24.png)
+![image-24.png](/images/Pub_Note_MathBackground/image-24.png)
 
 Rotation Axis and Angle
 已知旋转矩阵 R 特征值为+1：

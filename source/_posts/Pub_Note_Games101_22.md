@@ -4,12 +4,12 @@ title: Games101 22.Animation (cont.)
 
 ## Single Particle Simulation
 
-![Alt text](image.png)
+![image.png](/images/Pub_Note_Games101_22/image.png)
 
 - 模拟一个粒子在速度场中的运动（实际上速度场是很难做到的，在某个位置的受力是可以定义的，但速度不知道，不过我们可以假设有一个理想的速度场）
 - 给定位置就能知道速度，沿着切线方向运动，然后更新位置。
 
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_Games101_22/image-1.png)
 
 - 这种写法实际上是一个一阶常微分方程，常微分方程的一般形式可以表示为：
   \[ F(x, y, y', y'', \ldots, y^{(n)}) = 0 \]
@@ -19,53 +19,53 @@ title: Games101 22.Animation (cont.)
   其中 \( x_1, x_2, \ldots, x_n \) 是自变量，\( u \) 是因变量，\( u*{x*1}, u*{x_2}, \ldots \) 是 \( u \) 关于各个自变量的偏导数。
 
 我们要如何求解呢？
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_Games101_22/image-2.png)
 
 - 给定任意时刻，求出粒子的位置，也就相当于把粒子的轨迹解出来
 
-![Alt text](image-3.png)
+![image-3.png](/images/Pub_Note_Games101_22/image-3.png)
 
 - 最简单的方法，就是把时间分成很多小块（步长），每一小块计算下一个时间点的位置。
 - 总是用上一个时刻的量去估计下一个时刻的量，这就是欧拉方法（Euler Method）。
 
 第一个问题是它的模拟会不准确
-![Alt text](image-4.png)
+![image-4.png](/images/Pub_Note_Games101_22/image-4.png)
 
 - 当然，我们可以通过把步长减小来解决。步长分得越细，模拟越准确。
 
 另外一个问题是它的不稳定性：
-![Alt text](image-5.png)
+![image-5.png](/images/Pub_Note_Games101_22/image-5.png)
 
 - 随着不断地迭代，错误会越累积越大
 - 这个跟前面的不准确性是不一样的，无法通过减少步长来解决，到最后还是会和实际结果无限远
 
-![Alt text](image-6.png)
+![image-6.png](/images/Pub_Note_Games101_22/image-6.png)
 
 - 一切用数值方法去解，都会面临这两个问题
 - 第一个问题，在图形学上其实问题不大，通常我们关心的是模拟效果，而不是物理上的真实。而且通过减小步长，可以降低误差。
 - 但不稳定性是一个很大的问题，它是一个基础问题，大家都在试图解决这个问题。
 
 不稳定性的一个例子，汽车飞上天：
-![Alt text](image-7.png)
+![image-7.png](/images/Pub_Note_Games101_22/image-7.png)
 
 ## Combating Instability
 
 下面介绍其他的改进方法来解决这个不稳定性问题：
-![Alt text](image-8.png)
+![image-8.png](/images/Pub_Note_Games101_22/image-8.png)
 
 - 这些方法都不是基于物理的方法
 
 ### Midpoint Method
 
 首先我们来看一下中点法：
-![Alt text](image-9.png)
+![image-9.png](/images/Pub_Note_Games101_22/image-9.png)
 
 - 我们从一个点出发，用欧拉方法模拟得到 a 点。
 - 但我们不直接用 a 点，而是初始点和 a 点的中点 b 点，用 b 点的速度来重新算一次欧拉方法，得到 c 点。
 - 也就是每次做两次欧拉方法，第一次得到中点的速度，第二次用中点的速度来重新算一次欧拉方法。
 - 这样实际上就是用中点的速度去代表这一整段的速度，当然比初始的速度会更有代表性。结果也比单次欧拉方法准确。
 
-![Alt text](image-10.png)
+![image-10.png](/images/Pub_Note_Games101_22/image-10.png)
 
 - 看不懂？？？为什么这个跟 Midpoint Method 是一样的？
 - 看着像是泰勒展开，但是一阶导数用的是中点速度而不是起始点速度。
@@ -73,14 +73,14 @@ title: Games101 22.Animation (cont.)
 
 ### Adaptive Step Size
 
-![Alt text](image-11.png)
+![image-11.png](/images/Pub_Note_Games101_22/image-11.png)
 
 - 先用欧拉方法算一遍得到$x_t$，然后减少步长算两遍欧拉法，判断一下两个点的差距，如果差距很大，说明步长太大，需要继续减小步长。
 - 通过这种方法可以模拟的非常好。
 
 ### Implicit Euler Method
 
-![Alt text](image-12.png)
+![image-12.png](/images/Pub_Note_Games101_22/image-12.png)
 
 - 隐式欧拉方法也被叫做反向欧拉方法
 - 它的核心思想是用下一个时间的导数，而不是用上一个时间的位置和速度。
@@ -89,7 +89,7 @@ title: Games101 22.Animation (cont.)
 - 隐式的欧拉方法可以提供很好的稳定性。
 
 既然提到稳定性，我们要定义这个方法是不是稳定的，以及它有多么稳定。
-![Alt text](image-13.png)
+![image-13.png](/images/Pub_Note_Games101_22/image-13.png)
 
 - 我们关心两个数，一个叫局部的截断误差，就是局部的每一步的误差，和整体最后算出来的误差，用这两个概念来衡量稳定性。
 - 不过我们也不关心这两个数具体是多少，因为随着 Step 减少，这两个数肯定会减少，我们关心的是它们和 Step 的关系，也就是它们的导数。
@@ -99,7 +99,7 @@ title: Games101 22.Animation (cont.)
 ### Runge-Kutta Families
 
 下面介绍一个数值计算领域非常有名的方法，叫龙格库塔方法：
-![Alt text](image-14.png)
+![image-14.png](/images/Pub_Note_Games101_22/image-14.png)
 
 - 这并不是一个方法，而是一类方法，特别擅长解 ODE，特别是对于非线性的情况。
 - 有一个最常用的龙格库塔方法，叫 RK4，它是四阶的，误差非常小。
@@ -109,7 +109,7 @@ title: Games101 22.Animation (cont.)
 
 ### Position-Based/Verlet Integration
 
-![Alt text](image-15.png)
+![image-15.png](/images/Pub_Note_Games101_22/image-15.png)
 
 - 只通过调整它的各种不同位置，使得它最后能够满足某一定的限制。
 - 这不是基于物理的方法，实现起来会很快，通常也足够好用，不过无法满足一些物理性质，比如能量守恒。
@@ -117,7 +117,7 @@ title: Games101 22.Animation (cont.)
 
 ## Rigid Body Simulation
 
-![Alt text](image-16.png)
+![image-16.png](/images/Pub_Note_Games101_22/image-16.png)
 
 - 刚体不会发生形变，内部所有的点都按照同一种方式运动，也就是说基本可以看作一个粒子的运动。不过我们还需要额外考虑它的角度和角速度。
 - 然后我们可以同样的按照欧拉法或者龙格库塔法来模拟它的运动。
@@ -125,7 +125,7 @@ title: Games101 22.Animation (cont.)
 ## Fluid Simulation
 
 下面以流体模拟的例子来介绍 position base 的方法：
-![Alt text](image-17.png)
+![image-17.png](/images/Pub_Note_Games101_22/image-17.png)
 
 - 整个一个水体是由很多的不可压缩的钢铁小球组成
 - 给定任意时刻这些小球的分布，我们可以知道任意一个位置的密度，为了让任意一个位置的密度都相同，我们需要调整这些小球的位置。
@@ -134,17 +134,17 @@ title: Games101 22.Animation (cont.)
 
 ## Eulerian vs. Lagrangian
 
-![Alt text](image-18.png)
+![image-18.png](/images/Pub_Note_Games101_22/image-18.png)
 
 - 在物理模拟中模拟这种大规模的物质，用到的两个基本不同思路：
   - 例如模拟水，认为水是由各种圆形的小水滴组成，然后挨个模拟，这种方法叫拉格朗日方法，俗称质点法。就是说对每一个质点进行模拟，计算对就可以了。
   - 另外一种方法叫欧拉方法（跟前面的解常微分方程的那个不同）把整个空间分成各种不同的网格，然后考虑每一个网格随着时间的变化。比如说对流体进行模拟就是看每一个网格里面的密度如何变化。
 
 把这两种方法结合在一起的方法，Material Point Method（MPM），这是目前仿真领域非常火热的一个话题：
-![Alt text](image-19.png)
+![image-19.png](/images/Pub_Note_Games101_22/image-19.png)
 
 - 不同的例子都具有某些材质属性，比如密度、粘性、质量等，然后把这些信息记录在格子上，再写回到不同的例子上。
 
-![Alt text](image-20.png)
+![image-20.png](/images/Pub_Note_Games101_22/image-20.png)
 
 - 鼓励各位同学呢以各种各样不同的身份参与到这些不同的这些学术会议

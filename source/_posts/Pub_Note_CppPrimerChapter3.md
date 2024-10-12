@@ -79,7 +79,7 @@ cout<< "Hello" + "World" << endl; // 错误，两个字面值无法相加
 ```
 
 cctype 中字符处理函数：
-![Alt text](image.png)
+![image.png](/images/Pub_Note_CppPrimerChapter3/image.png)
 
 ```cpp
 string s("Hello World!!!");

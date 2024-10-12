@@ -57,7 +57,7 @@ cover: game.png
 
 ### 有哪些常用的软件测试方法?
 
-![Alt text](image-3.png)
+![image-3.png](/images/Pub_Frame_AutomationTest/image-3.png)
 测试方法有很多,关注不同的方面会得到不同的测试方法
 
 #### 以测试的关注点划分
@@ -106,7 +106,7 @@ Beta 测试:玩家在真实用户场景下测试,一般是公测
 
 #### 测试流程是怎样的?
 
-![Alt text](image-11.png)
+![image-11.png](/images/Pub_Frame_AutomationTest/image-11.png)
 
 - 每次提交必须编写自动化测试用例
 - 每次提交前需要先进行本地自动化测试保证通过才能提交,如果涉及到一些画面和音频最好手动测试
@@ -119,7 +119,7 @@ Beta 测试:玩家在真实用户场景下测试,一般是公测
 - QA 手动测试时基本上能保证没有阻塞性 bug
 
 面对偶现 bug:
-![Alt text](image-28.png)
+![image-28.png](/images/Pub_Frame_AutomationTest/image-28.png)
 
 #### 有哪些测试类型?
 
@@ -135,31 +135,31 @@ Beta 测试:玩家在真实用户场景下测试,一般是公测
   用来做渲染上的对比
 - Perform test
   性能测试
-  ![Alt text](image-9.png)
+  ![image-9.png](/images/Pub_Frame_AutomationTest/image-9.png)
   按照每条测试单独计算,他们总共进行了超过 10 万次自动化测试!
-  ![Alt text](image-29.png)
+  ![image-29.png](/images/Pub_Frame_AutomationTest/image-29.png)
   这是他们采用自动化测试前后两个项目之间的对比,前一个项目最多的时候每月超过 3000 个 bug,然后他们花了 6 个月来集中把 bug 数降到比较低的水平,而采用自动化测试后 bug 数一直保持在很低的水平.
-  ![Alt text](image-5.png)
+  ![image-5.png](/images/Pub_Frame_AutomationTest/image-5.png)
 
 #### 如何编写自动化测试?
 
 按照 设置环境->执行操作->验证结果 的方式编写测试
 
 - UnitTest
-  ![Alt text](image-30.png)
+  ![image-30.png](/images/Pub_Frame_AutomationTest/image-30.png)
   UnitTest 平均 0.2s
 - MapTest(IntegrationTest)
-  ![Alt text](image-31.png)
+  ![image-31.png](/images/Pub_Frame_AutomationTest/image-31.png)
   IntegrationTest 能发现 UnitTest 本身的问题.
   使用关卡蓝图来编写 Map Test
   这是一个玩家与轮船操作转盘交互的测试代码
-  ![Alt text](image-33.png)
-  ![Alt text](image-34.png)
+  ![image-33.png](/images/Pub_Frame_AutomationTest/image-33.png)
+  ![image-34.png](/images/Pub_Frame_AutomationTest/image-34.png)
   异步测试(直到动画播完才进行结果检查)
-  ![Alt text](image-35.png)
+  ![image-35.png](/images/Pub_Frame_AutomationTest/image-35.png)
   MapTest 平均 20s
 - Networked Integration Test
-  ![Alt text](image-36.png)
+  ![image-36.png](/images/Pub_Frame_AutomationTest/image-36.png)
 - ActorTest
   见下文
 
@@ -169,13 +169,13 @@ MapTest 20s 太慢了,花费了大量的时间用于加载,所以引入了一种
 
 - ActorTest
   看上去就像 UnitTest 一样
-  ![Alt text](image-38.png)
+  ![image-38.png](/images/Pub_Frame_AutomationTest/image-38.png)
   怎么选择使用 ActorTest 还是 MapTest?
-  ![Alt text](image-37.png)
+  ![image-37.png](/images/Pub_Frame_AutomationTest/image-37.png)
 - 将多个 IntegrationTest 整合一起测(避免每次测试都要加载)
-  ![Alt text](image-39.png)
+  ![image-39.png](/images/Pub_Frame_AutomationTest/image-39.png)
 - 将 Player 保持为持久化数据
-  ![Alt text](image-40.png)
+  ![image-40.png](/images/Pub_Frame_AutomationTest/image-40.png)
 
 #### 自动化测试有什么好处?
 
@@ -187,11 +187,11 @@ MapTest 20s 太慢了,花费了大量的时间用于加载,所以引入了一种
 - 将项目压力平均到日常,而不是每次提交前.
 - 助于编写更好的 OOP 代码.
 - **减少加班**
-  ![Alt text](image-8.png)
+  ![image-8.png](/images/Pub_Frame_AutomationTest/image-8.png)
 
 #### 哪些功能难以由自动化测试代替?
 
-![Alt text](image-7.png)
+![image-7.png](/images/Pub_Frame_AutomationTest/image-7.png)
 
 - 画面和音频
 - 探索性测试(强化学习可以在一定程度上承担)
@@ -210,14 +210,14 @@ MapTest 20s 太慢了,花费了大量的时间用于加载,所以引入了一种
 #### 使命召唤团队的 CI/CD 流程有哪些启发?
 
 700 个 VM 或者物理电脑(每台 4-20 个 core)(壕气)
-![Alt text](image-20.png)
-![Alt text](image-22.png)
+![image-20.png](/images/Pub_Frame_AutomationTest/image-20.png)
+![image-22.png](/images/Pub_Frame_AutomationTest/image-22.png)
 自动化测试中获取的监测信息(ex.shader assets 数量):
-![Alt text](image-23.png)
+![image-23.png](/images/Pub_Frame_AutomationTest/image-23.png)
 
 - 自动化测试不仅用于排除流程上的 bug,更重要是的创建了一套对于项目的长期监测机制.可以看到包括测试通过率,测试中性能指标,测试中抓帧对比等信息.
 - 可以通过 Web UI 看到任何一次提交对于游戏的影响.例如,美术某次提交的模型三角形面过多,导致下一次自动化测试时这个地图内存开销显著增加,美术能自己通过看提交后的测试分析发现问题.QA 也能通过这些记录将问题直接定位到某次提交.(如果添加某些系统的信息到自动化测试报告中,比如风场,刷怪点等,策划也能自行定位问题)
-  ![Alt text](image-24.png)
+  ![image-24.png](/images/Pub_Frame_AutomationTest/image-24.png)
 - 图形程序能获取到自动化测试中的抓帧,第一时间发现渲染上的问题.
 - 出现 bug 时,程序能直接从 web 上获取 bug 的 log,crash 的符号信息.
 
@@ -228,10 +228,10 @@ MapTest 20s 太慢了,花费了大量的时间用于加载,所以引入了一种
 他们测试团队很小,人数很少(开始只有 3 个人),其中测试的方式 80-90%是手动探索性测试,剩下的 10-20%是自动化测试.
 
 - 测试团队使用的 Debug 工具很清晰,通过 Debug 工具可以看到很多内部状态,比如 AI 视锥,导航路径等.
-  ![Alt text](image-26.png)
+  ![image-26.png](/images/Pub_Frame_AutomationTest/image-26.png)
 - 另外在跑测过程中遇到 bug,会提交一份说明,说明中有详细的描述,log,截图,视频,复现步骤等.他们是开放世界游戏,所有的 bug 都标记在地图上.
-  ![Alt text](image-25.png)
-  ![Alt text](image-27.png)
+  ![image-25.png](/images/Pub_Frame_AutomationTest/image-25.png)
+  ![image-27.png](/images/Pub_Frame_AutomationTest/image-27.png)
 - 用 20 个全天运行的 AI(感觉是强化学习?)来进行简单的测试,比如寻路到某个位置,触发某个事件,进行简单攻击等.
 
 ### 易水寒
@@ -239,26 +239,26 @@ MapTest 20s 太慢了,花费了大量的时间用于加载,所以引入了一种
 #### 易水寒团队的自动化测试流程有哪些启发?
 
 - 他们前期用 lua 编写测试脚本来进行自动化测试,需要为各个任务编写专门的测试脚本.需要编写大量的测试脚本,而且测试脚本的维护成本很高.
-  ![Alt text](image-14.png)
-  ![Alt text](image-13.png)
+  ![image-14.png](/images/Pub_Frame_AutomationTest/image-14.png)
+  ![image-13.png](/images/Pub_Frame_AutomationTest/image-13.png)
 - 后面改用了强化学习: MCTS(Monte Carlo Tree Search) + UCB(Upper Confidence Bound)算法进行自动化测试.
   测试报告:
-  ![Alt text](image-17.png)
+  ![image-17.png](/images/Pub_Frame_AutomationTest/image-17.png)
 
 #### 强化学习带来的好处
 
 - 减少了写测试脚本的成本
-  ![Alt text](image-18.png)
+  ![image-18.png](/images/Pub_Frame_AutomationTest/image-18.png)
 - 能够找出流程中难以被发现的阻塞 1.比如一个地图下去后发现没法上来了. 2.某个对话分支没有后续了. 3.测试数值设计上的不平衡.
-  ![Alt text](image-19.png)
+  ![image-19.png](/images/Pub_Frame_AutomationTest/image-19.png)
 
 #### 如何加快自动化测试效率?
 
 - 通过一些状态的剔除来缩小强化学习的动作空间,比如 uiopen 为 false,就不进行跟 ui 相关的动作.
-  ![Alt text](image-15.png)
+  ![image-15.png](/images/Pub_Frame_AutomationTest/image-15.png)
 - NLP 从任务剧情获取相关信息生成动作
   这是使用 NLP 对测试加速后的结果,快了 3 倍
-  ![Alt text](image-16.png)
+  ![image-16.png](/images/Pub_Frame_AutomationTest/image-16.png)
 
 ### 龙缘自走棋中自动化测试有什么启发?
 

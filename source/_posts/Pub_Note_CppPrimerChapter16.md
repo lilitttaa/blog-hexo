@@ -466,7 +466,7 @@ auto i = fcn(vi.begin(), vi.end()); // 返回int
 - 用法与 remove_reference 都类似，通过 type 成员获取结果类型
 - 如果不可能（或者不必要）转换模板参数，则 type 成员还是原类型（T）
 
-![Alt text](image.png)
+![image.png](/images/Pub_Note_CppPrimerChapter16/image.png)
 
 ### 函数指针与实参推断
 

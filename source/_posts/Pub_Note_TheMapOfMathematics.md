@@ -5,7 +5,7 @@ cover: math.png
 
 
 <https://www.youtube.com/watch?v=OmJ-4B-mS-Y>
-![alt text](image.png)
+![image.png](/images/Pub_Note_TheMapOfMathematics/image.png)
 
 ## Pure Mathematics（纯数学）
 

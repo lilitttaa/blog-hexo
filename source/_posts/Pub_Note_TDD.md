@@ -134,7 +134,7 @@ private:
 5. 在这个过程中，往往又会产生更多的重复。
 
 由此构成了整个循环。
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_TDD/image-1.png)
 
 我们可以看到，在 TDD 中，好的设计是通过这样的反馈循环不断的改善而逐渐显露出来的，这一点被称之为**持续重构**。
 
@@ -453,9 +453,9 @@ Mikado Method需要创建一个依赖图：
 
 现代 IDE 通常都有很多便捷的重构工具，以 Rider 为例：
 你可以使用 Extract Method，从代码中提取出一个方法
-![alt text](image-6.png)
+![image-6.png](/images/Pub_Note_TDD/image-6.png)
 使用 Change Signature，修改方法的签名
-![alt text](image-7.png)
+![image-7.png](/images/Pub_Note_TDD/image-7.png)
 更多的重构工具可以参考：<https://www.jetbrains.com/help/rider/Main_Set_of_Refactorings.html>
 
 ## 如何编写测试
@@ -682,7 +682,7 @@ Test_Given_Order_When_Save_Then_OrderIsSaved()
 3. 最后针对其中类与类之间有潜在风险的交互点编写集成测试。
 
 **测试分布**：按照 Google 的数据，单元测试占了测试的 80%，集成测试占了 15%，用户场景测试（端到端）占了 5%。
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_TDD/image-2.png)
 
 ### 测试的规模与松散性
 
@@ -733,9 +733,9 @@ Test_Given_Order_When_Save_Then_OrderIsSaved()
 ### 异步测试
 
 异步测试最简单的实现方式是直接调用Delay或者setTimeout这样的函数等待几秒。但如果在测试中被广泛使用的话，测试时间会变得显著的缓慢。
-![Alt text](image-14.png)
+![image-14.png](/images/Pub_Note_TDD/image-14.png)
 更好的解决方案是以接近微秒的频率主动轮询状态转换。同时你可以把它和一个超时值结合起来，以防测试无法达到稳定状态。
-![Alt text](image-15.png)
+![image-15.png](/images/Pub_Note_TDD/image-15.png)
 
 ### 从 0 开始的 TDD
 
@@ -751,7 +751,7 @@ Test_Given_Order_When_Save_Then_OrderIsSaved()
 
 ### 自动化测试的难点
 
-![Alt text](image-5.png)
+![image-5.png](/images/Pub_Note_TDD/image-5.png)
 
 1. 视觉和音频元素
 2. 探索性测试
@@ -779,15 +779,15 @@ Test_Given_Order_When_Save_Then_OrderIsSaved()
 
 关于合成输入，我想说的更具体一些。例如，你可以创建一个缓冲区（甚至合成 GBuffer），在 CPU 上填充它，除了中间某个像素是 1，其他都是 0。然后你判断经过高斯，或者其他滤波器后，这个像素以及它周围的像素的数值是否是满足算法的预期的。
 
-![Alt text](image-11.png)
-![Alt text](image-12.png)
+![image-11.png](/images/Pub_Note_TDD/image-11.png)
+![image-12.png](/images/Pub_Note_TDD/image-12.png)
 
 在GPU 上测试，如果你因为驱动程序/测试设备更改而遭受大量噪音，可以考虑使用适用于 DirectX 的 [WARP](https://learn.microsoft.com/en-us/windows/win32/direct3darticles/directx-warp) 设备，或适用于 OpenGL 的 [SwiftShader](https://github.com/google/swiftshader)。
 
 以及，golden test 也并非一无是处，其所固有的敏感性可以用来捕获一些意想不到的例如编译器、工具链、驱动程序更改的问题。建议可以使用少量的（不超过 15 个）golden test 作为冒烟测试。
 
 另外圣莫尼卡的分享中还提到了使用 Nvidia Flip 作为 golden visual test 的工具。
-![Alt text](image-10.png)
+![image-10.png](/images/Pub_Note_TDD/image-10.png)
 
 ### 测试外部 API
 
@@ -798,7 +798,7 @@ Test_Given_Order_When_Save_Then_OrderIsSaved()
 这意味着在单元测试调用第三方代码的对象时,为第三方代码提供模拟实现的用处不大。我们发现模拟外部库的测试通常比较复杂,才能够使要检查的功能处于就绪状态。
 
 我们可以编写一层适配对象，使用第三方的 API 来实现这些接口，我们让这一层尽可能薄，以减少可能的脆弱性和难以测试的代码。通过专门的集成测试来测试这些适配对象,确保我们理解了第三方 API 工作的方式。
-![Alt text](image-1-1.png)
+![image-1-1.png](/images/Pub_Note_TDD/image-1-1.png)
 
 ## 测试的 Bad Smell
 
@@ -935,7 +935,7 @@ Stubbing与Interaction Testing编写起来比Faking要容易得多。它们使�
 ### 左移法则
 
 在开发人员工作流程的早期发现问题通常可以降低成本，这是一个普遍的真理。考虑一下开发人员工作流程的时间轴，该时间轴从左到右依次为：从构思和设计开始，经过开发、测试、提交、集成和最终的生产部署。在此时间轴上将问题检测提前到 "左侧"，解决问题的成本显著的降低。
-![Alt text](image-8.png)
+![image-8.png](/images/Pub_Note_TDD/image-8.png)
 
 安全问题不能推迟到开发过程的最后阶段，必须要求“在安全上向左转移”。如果你能够在最初的开发之前发现安全问题，将缺陷提交到版本控制就被发现，修复的成本更低。根据安全约束规范进行开发，要比提交代码后再让其他人分类标识并修复它更简单。
 
@@ -964,7 +964,7 @@ Ward Cunningham 提出了“技术债务”一词，用来表达如果开发者�
 ### 结对编程（Pair Programming）
 
 去年 OpenAI 的宫斗大戏落幕之时，王者归来的 Greg Brockman 在 Twitter 云淡风轻地写下了这段话。
-![alt text](img_v3_0288_538b418a-7442-4c73-9f8c-4a56f69a12bg.jpg)
+![img_v3_0288_538b418a-7442-4c73-9f8c-4a56f69a12bg.jpg](/images/Pub_Note_TDD/img_v3_0288_538b418a-7442-4c73-9f8c-4a56f69a12bg.jpg)
 
 结对编程简单来说就是两个人一起在一台电脑上工作，其中一人扮演“驾驶员”角色，负责代码编写，另一人扮演“领航员”角色，负责思考和指导，进行实时的 Code Review。并且，驾驶员和领航员应该尽可能频繁地交换角色——多于五分钟但是不能多过三十分钟。
 
@@ -991,7 +991,7 @@ Ward Cunningham 提出了“技术债务”一词，用来表达如果开发者�
 Sanitizers 是一组用于检测内存错误的工具，包括 AddressSanitizer、MemorySanitizer、ThreadSanitizer、LeakSanitizer、UndefinedBehaviorSanitizer。这些工具可以帮助开发者在编译时检测到内存错误、数据竞争、内存泄漏等问题。
 
 圣莫妮卡工作室在测试中使用了 Sanitizers 捕获潜在的 crashes
-![Alt text](image-13.png)
+![image-13.png](/images/Pub_Note_TDD/image-13.png)
 
 ## 总结，最重要的几件事
 

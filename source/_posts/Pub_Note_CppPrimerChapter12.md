@@ -305,7 +305,7 @@ void f() {
 - 当 unique_ptr 被销毁时，它所指向的对象也被销毁。
 
 unique_ptr 同样支持 shared_ptr 中的部分操作：
-![Alt text](image.png)
+![image.png](/images/Pub_Note_CppPrimerChapter12/image.png)
 
 ```cpp
 unique_ptr<double> p1;

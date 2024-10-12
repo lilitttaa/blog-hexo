@@ -70,7 +70,7 @@ bitset<32> bitvec5("1100", 4); // 从const char*初始化，从4开始，长度�
 ```
 
 更多细节参考：
-![Alt text](image.png)
+![image.png](/images/Pub_Note_CppPrimerChapter17/image.png)
 
 bitset 的操作：
 
@@ -130,7 +130,7 @@ cout << bitvec << endl; // 输出
 
 - 定义在头文件 regex 中
 
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_CppPrimerChapter17/image-1.png)
 
 regex_match 和 regex_search
 
@@ -210,7 +210,7 @@ catch(regex_error e)
 ```
 
 正则表达式错误类型：
-![Alt text](image-4.png)
+![image-4.png](/images/Pub_Note_CppPrimerChapter17/image-4.png)
 
 正则表达式编译是很慢的，不要在循环中构造。
 
@@ -227,7 +227,7 @@ catch(regex_error e)
 使用迭代器访问所有匹配的子串，注意：
 
 - regex 的迭代器跟一般的迭代器机制有点区别
-  ![Alt text](image-5.png)
+  ![image-5.png](/images/Pub_Note_CppPrimerChapter17/image-5.png)
 - 递增迭代器时，跳到下一个匹配
 
 ```cpp
@@ -238,7 +238,7 @@ for (sregex_iterator it(file.begin(), file.end(), r), end_it; it != end_it; ++it
 ```
 
 smatch 支持的操作：
-![Alt text](image-6.png)
+![image-6.png](/images/Pub_Note_CppPrimerChapter17/image-6.png)
 
 ### 使用子表达式
 
@@ -261,12 +261,12 @@ if (regex_search(filename, results, r))
 ```
 
 子匹配操作：
-![Alt text](image-7.png)
+![image-7.png](/images/Pub_Note_CppPrimerChapter17/image-7.png)
 
 ### 使用 regex_replace
 
 - regex_replace 比起 search 额外新增了一个描述输出 format 的参数 -标准库还定义了用来在替换过程中控制匹配或格式的标志。
-  ![Alt text](image-8.png)
+  ![image-8.png](/images/Pub_Note_CppPrimerChapter17/image-8.png)
 
 ```cpp
 regex phone("\\()?\\d{3}(\\))?([-. ])?\\d{3}([-. ])?\\d{4}");
@@ -456,8 +456,8 @@ cout << noshowpoint << 10.0 << endl; // 10
 ```
 
 还有其他的操纵符，参考如下：
-![Alt text](image-2.png)
-![Alt text](image-3.png)
+![image-2.png](/images/Pub_Note_CppPrimerChapter17/image-2.png)
+![image-3.png](/images/Pub_Note_CppPrimerChapter17/image-3.png)
 
 ### 未格式化的输入输出操作
 

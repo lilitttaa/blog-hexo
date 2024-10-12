@@ -12,11 +12,11 @@ Chromatic Passing Tones 可以为主音演奏添加一些色彩，或是在不�
 
 1. Root 和 b5th 演奏时可以创造出 Blues 的感觉。
    例如，下面为 E Dorian 和 E Aeolian Scale 添加了额外的 b5th Note：
-   ![Alt text](image.png)
+   ![image.png](/images/Pub_Note_ChromaticPassingTones/image.png)
 2. 连接 Arpeggio（分解和弦）
    例如，下面时 CMajor7 的 Arpeggio，用 Chromatic Passing Tones 连接了 5th 和 7th：
-   ![Alt text](image-1.png)
+   ![image-1.png](/images/Pub_Note_ChromaticPassingTones/image-1.png)
 3. 连接 Minor Scale 7th 和 Minor Scale 的 Root
-   ![Alt text](image-2.png)
+   ![image-2.png](/images/Pub_Note_ChromaticPassingTones/image-2.png)
 4. 用半音经过音来演奏和弦音
-   ![Alt text](image-3.png)
+   ![image-3.png](/images/Pub_Note_ChromaticPassingTones/image-3.png)

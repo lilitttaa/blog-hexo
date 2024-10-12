@@ -379,7 +379,7 @@ CurrentLightData.DepthMap.ShadowMapSizeY = ShadowMapData.ShadowMapSizeY;
 
 ### LightSpace Depth Map
 
-![alt text](image.png)
+![image.png](/images/Pub_Note_Lightmass/image.png)
 这个 CachedShadowDepthMap 是从哪来的呢
 
 - 在 FSceneRenderer::AllocateCachedSpotlightShadowDepthTargets 将相应的空间分配给了 FSceneRenderer::SortedShadowsForShadowDepthPass

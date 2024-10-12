@@ -76,7 +76,7 @@ cover: run.png
 视频介绍了 10 个 hacks 用来降低 Glucose Spike（葡萄糖峰值）：
 
 1. 遵循这样的顺序：先吃蔬菜，再吃蛋白质和脂肪，最后吃淀粉和糖可以降低 Glucose Spike
-   ![Alt text](image.png)
+   ![image.png](/images/Pub_Note_Productivity/image.png)
 2. 吃 Veggie Starters（一盘在饭前吃的蔬菜）可以减缓血糖上升速度。目标是吃占据整餐 30%的 Veggie Starters。最简单的 Veggie Starters 就是餐厅里的那种沙拉，有一些黄瓜片和小番茄。
 3. 停止计算卡路里，卡路里没法表明食物的真正对你的身体的作用，并非所有卡路里都是等同的，来自果糖的卡路里比来自葡萄糖的更有害。
 4. 吃 Savory Breakfast，包含蛋白质、脂肪、纤维、淀粉，除了水果外没有任何甜的东西。

@@ -21,19 +21,19 @@ title: Write Chord Progression（和弦进行）
    - G Major
    - A minor
    - B diminished
-     ![Alt text](image.png)
+     ![image.png](/images/Pub_Note_WriteChordProgression/image.png)
 3. 为 Measure 选择和弦：
    - 第一个 Measure：选择第 1 个 Chord，也就是 C Major
    - 最后一个 Measure：选择第 4/5 Chord，即 F Major 或 G Major
    - 剩下的两个 Measure：可以选择任意 Chord
-     ![Alt text](image-1.png)
+     ![image-1.png](/images/Pub_Note_WriteChordProgression/image-1.png)
      遵循这个规则，任意组合，通常能得到还不错的旋律。
-     ![Alt text](image-2.png)
-     ![Alt text](image-3.png)
+     ![image-2.png](/images/Pub_Note_WriteChordProgression/image-2.png)
+     ![image-3.png](/images/Pub_Note_WriteChordProgression/image-3.png)
 
 有了这个公式，你已经可以开始试着演奏了，像这样一边演奏分解和弦，一边只弹和弦的 Root
-![Alt text](image-4.png)
+![image-4.png](/images/Pub_Note_WriteChordProgression/image-4.png)
 
 G Major 也是同样的道理：
-![Alt text](image-7.png)
-![Alt text](image-6.png)
+![image-7.png](/images/Pub_Note_WriteChordProgression/image-7.png)
+![image-6.png](/images/Pub_Note_WriteChordProgression/image-6.png)

@@ -8,22 +8,22 @@ title: 上帝视角看GPU（4）：完整的软件栈
 
 ## 图形 API 软件栈
 
-![Alt text](image.png)
+![image.png](/images/Pub_Note_GodViewOfTheGPU_4/image.png)
 
 - 很久以前，程序需要通过操作系统提供的硬件端口读写，直接操作图形硬件。
 
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_GodViewOfTheGPU_4/image-1.png)
 
 - 如果每个程序都需要对每个操作系统的每个硬件写一遍，开发效率非常低。
 
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_GodViewOfTheGPU_4/image-2.png)
 
 - 人们利用抽象的思路，形成了一个公用的接口层，也就是应用程序编程接口，API。
 - 程序只要针对图形 API 写一遍就行，几乎不必考虑操作系统和硬件的区别。
 - 图形 API 由硬件厂商实现，往下翻译成对硬件的操作。
 
 逐渐的，人们又发现，同个 API 的不同实现，也存在大量可以公用的部分：
-![Alt text](image-4.png)
+![image-4.png](/images/Pub_Note_GodViewOfTheGPU_4/image-4.png)
 
 - API 的实现又进行了分 层，增加的一个抽象层称为设备驱动接口，Device Driver Interface（DDI）。
 - DDI 往上属于操作系统，负责数据有效性检查、内存分配等。
@@ -36,18 +36,18 @@ title: 上帝视角看GPU（4）：完整的软件栈
 
 ## D3D
 
-![Alt text](image-3.png)
+![image-3.png](/images/Pub_Note_GodViewOfTheGPU_4/image-3.png)
 
 - 微软的 Direct3D（D3D），这里只讨论 Windows 上的官方实现。
 - 这个 API 不跨平台，但跨厂商。
 
-![Alt text](image-6.png)
+![image-6.png](/images/Pub_Note_GodViewOfTheGPU_4/image-6.png)
 
 - 在 Windows XP 的时代，软件栈就和理想状况下一样。
 - 操作系统提供一个 D3D runtime，往上是 API，往下是 DDI。厂商提供一个内核态驱动。
 - 这个框架称为 XDDM。
 
-![Alt text](image-5.png)
+![image-5.png](/images/Pub_Note_GodViewOfTheGPU_4/image-5.png)
 
 - 随着对稳定性、性能、共享资源的需求不断增加，到了 Vista 时代，runtime 和厂商驱动都进一步分成了用户态和内核态两部分。这两部分里分别有自己的 DDI。
 - 当程序调用 D3D API 的时候：
@@ -57,63 +57,63 @@ title: 上帝视角看GPU（4）：完整的软件栈
   - 经过内核态 DDI 调用厂商提供的内核态驱动 KMD，做一些地址翻译等厂商专用的操作，最后传给 GPU 执行。
 - 这个架构称为 WDDM。
 
-![Alt text](image-7.png)
+![image-7.png](/images/Pub_Note_GodViewOfTheGPU_4/image-7.png)
 
 - 把驱动分为用户态和内核态，并把大部分代码移到用户态，能大大提高稳定性。
 - 又因为 D3D runtime 和 dxg kernel 这两个操作系统组件的存在，厂商开发驱动的过程从作文题直接变成了填空题，工作量大大减小。
 - 这还使得不同厂商之间的区别变小，总体质量有所提升。
 - 结果，Vista 之后因为驱动造成的蓝屏，远少于 XP 的时代。
 
-![Alt text](image-8.png)
+![image-8.png](/images/Pub_Note_GodViewOfTheGPU_4/image-8.png)
 
 - D3D 有多个版本，目前 9、11、12 最常用。
 - 每个版本之间的 API 和用户态 DDI 大不相同，代码没有多少兼容性。每出一版，程序和 UMD 都得大改甚至重写才能用上。
 
 ## OpenGL
 
-![alt text](image-10.png)
+![image-10.png](/images/Pub_Note_GodViewOfTheGPU_4/image-10.png)
 
 - OpenGL 是一个跨平台（操作系统）且跨厂商（GPU）的图形 API，由 Khronos 发布。
 - Khronos 只组织标准协商会议。API 支持的内容，还得看组织里的软硬件厂商。
 
 windows 上：
 
-![alt text](image-9.png)
+![image-9.png](/images/Pub_Note_GodViewOfTheGPU_4/image-9.png)
 
 - OpenGL 和微软自己的 D3D 存在直接竞争关系，以至于微软一直想方设法要在 Windows 上掐死 OpenGL，但多次尝试都因为用户的强烈反对而作罢。
 
-![alt text](image-11.png)
+![image-11.png](/images/Pub_Note_GodViewOfTheGPU_4/image-11.png)
 
 - Windows 并没有为 OpenGL 做多少事情，只是提供了一个框架叫做可安装用户驱动，Installable Client Driver（ICD），让硬件厂商实现 OpenGL runtime 的 UMD。
 - 到了内核态，也要经过 dxg kernel 和同一个 KMD。
 
 Linux 上：
-![alt text](image-13.png)
+![image-13.png](/images/Pub_Note_GodViewOfTheGPU_4/image-13.png)
 
 - OpenGL 有两种实现方式：
   - 一种是完全由厂商实现整个 OpenGL
   - 另一种方式是基于 Mesa 的框架。Mesa 提供了一个开源的 OpenGL runtime，并通过 DDI 调用厂商驱动来操作 GPU，后来进一步扩展出了对 OpenGL ES、Vulkan 等 API 的支持。
 
-![alt text](image-14.png)
+![image-14.png](/images/Pub_Note_GodViewOfTheGPU_4/image-14.png)
 
 - OpenGL 从 90 年代初的 1.0 到最后一版 4.6，都是向下兼容的。当时的代码现在也能用。
 - 不管在哪个平台上，OpenGL 本身都是一样的，只是和窗口打交道的部分略有不同。程序的平台适配并不难。
 - OpenGL ES 甚至把窗口系统都给抽象出来，成为 EGL。进一步简化了跨平台。
-  ![alt text](image-12.png)
+  ![image-12.png](/images/Pub_Note_GodViewOfTheGPU_4/image-12.png)
 
-![alt text](image-15.png)
+![image-15.png](/images/Pub_Note_GodViewOfTheGPU_4/image-15.png)
 
 - 注意，虽然 OpenGL 和 OpenGL ES 非常相似，但只要提到它们，几乎总是只涉及它们不同的部分。因此应该把它们当作两个不同的 API 来看待。
 
 ## CUDA
 
-![alt text](image-16.png)
+![image-16.png](/images/Pub_Note_GodViewOfTheGPU_4/image-16.png)
 
 - CUDA 是跨平台的，但不跨厂商。正式来说只能在 NVIDIA 的 GPU 上跑。
 - 这是一个只有计算的 API，需要的话可以和其他的图形 API 交互，把计算的结果交给图形流水线。
 - 当然，更多时候 CUDA 被用来做纯计算，比如有限元模拟，神经网络训练等。
 
-![alt text](image-17.png)
+![image-17.png](/images/Pub_Note_GodViewOfTheGPU_4/image-17.png)
 
 - CUDA 提供的一些功能并不存在于图形 API 里，并不是更高层的抽象。
 - 比如 CUDA 一开始就提出了 shared memory 这个概念，用好的话可以显著提高 GPGPU 的效率。这在当时的图形 API 里是没有的，只能通过 CUDA。后来的 compute shader 也是受到 CUDA 的影响而设计出来的。
@@ -121,11 +121,11 @@ Linux 上：
 ## API 对比与发展趋势
 
 横向比较一下现在的 API，有这么一个规律：
-![alt text](image-18.png)
+![image-18.png](/images/Pub_Note_GodViewOfTheGPU_4/image-18.png)
 
 - CUDA 和 Metal 这种从软件到硬件都是一个厂商拥有的 API，在硬件有了新功能之后，可以直接通过 API 暴露出来，不需要跟别的厂商讨论，反应很快。
 
-![alt text](image-20.png)
+![image-20.png](/images/Pub_Note_GodViewOfTheGPU_4/image-20.png)
 
 - 而 OpenGL、OpenGL ES、Vulkan 这三个 API 的模式都是 Khronos 拥有接口，硬件厂商拥有实现。
 - 在设计中使用了自底向上的方式。
@@ -133,31 +133,31 @@ Linux 上：
 - 如果其他厂商对这个新功能也有兴趣，就能经过讨论升格成多厂商扩展，之后还能进一步升格成 Khronos 公认的扩展，最终进入新版本的 API。
 - 这个流程，使得新功能可以让一部分人先用起来，在使用中逐步完善。
 
-![alt text](image-19.png)
+![image-19.png](/images/Pub_Note_GodViewOfTheGPU_4/image-19.png)
 
 - 而 D3D 的模式是微软拥有接口和上层实现，硬件厂商拥有底层实现。
 - 在设计中则是自顶向下的方式。
 - 没有正式的扩展机制。流程由微软牵头，跟硬件厂商讨论新版本的 D3D 应该有什么新功能，接口应该怎么样。一旦定下来，就都定死了。即便又有了支持新功能的硬件，也至少得等到下一个版本的 D3D 才行，周期在 6 个月以上，甚至有过 3 年才出新版本的。
 - 所以长期以来 D3D 对 GPU 新功能的支持往往慢一拍。
 
-![alt text](image-21.png)
+![image-21.png](/images/Pub_Note_GodViewOfTheGPU_4/image-21.png)
 
 - 顺着时间纵向来看 API，可以看到它们发展趋势是变薄。把更多的事情交给程序去做，而不是 runtime 和驱动。
 - 因为程序知道自己的意图，不需要让 API 去猜。这个改进的结果就是执行效率更高。
 - 这几年出现的 D3D12 和 Vulkan，都是响应了这个趋势。这样的 API，显得更底层。而用它们来开发，更像是在写驱动，要做大量的细节操作。
 - 不过一般来说 API 往上还有个渲染引擎的抽象层（RHI），可以把不同 API 抽象成同样的接口，这就把新 API 使用麻烦的缺点抹平了，同时获得新 API 带来的效率优势。
 
-![alt text](image-22.png)
+![image-22.png](/images/Pub_Note_GodViewOfTheGPU_4/image-22.png)
 
 - 从前面说的分层架构可以看到，GPU 执行的是驱动发来的操作，并不知道来自于哪个 API。
 - 所谓的 GPU 支持哪个 API，其实指的是 GPU 厂商提供了哪个 API 的驱动。所以说，GPU 支持什么 API 的什么功能，都取决于驱动。
 
-![alt text](image-24.png)
+![image-24.png](/images/Pub_Note_GodViewOfTheGPU_4/image-24.png)
 
 - 以前出现过这种情况：NVIDIA GeForce 6800 硬件并不支持 32 位浮点混合，但它的 OpenGL 驱动说支持。
 - 当程序用到这个功能的时候，驱动切换到软件模式，模拟实现浮点混合。仍然是个有效的实现，只是效率有严重损失。
 
-![alt text](image-23.png)
+![image-23.png](/images/Pub_Note_GodViewOfTheGPU_4/image-23.png)
 
 - 另一方面，驱动和操作系统高度相关。即便是同一个 API，在不同操作系统上，驱动也完全不一样的。换一个操作系统就得重写一次驱动。
 

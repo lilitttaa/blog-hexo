@@ -505,7 +505,7 @@ How To Learn Piano as Fast as Humanly Possible: https://www.youtube.com/@piano-s
 
 ## Notion
 
-![alt text](image.png)
+![image.png](/images/Pub_Frame_Piano/image.png)
 
 ## 分解练习
 
@@ -535,7 +535,7 @@ f-p: forte-piano, 第一遍强，第二遍弱
 
 ## 和弦理论
 
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Frame_Piano/image-1.png)
 
 ## TODO
 

@@ -312,7 +312,7 @@ function：
 - 使用 funciton 对象将这些不同类型的调用对象统一起来。
 - function 类模板定义在头文件 functional 中，它是一个类模板，可以保存任何可调用对象。
 
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_CppPrimerChapter14/image-1.png)
 
 ```cpp
 int add(int i, int j) { return i + j; }

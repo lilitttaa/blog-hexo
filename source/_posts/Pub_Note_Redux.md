@@ -29,12 +29,12 @@ function add(a) {
 Redux是一个状态管理库，它用于管理应用中的状态，使得状态的变化更加可控，更加容易维护。
 - 不同于一般情况下的状态管理，在Redux中你无法直接修改状态，而是必须通过派发一个action来修改。
 - 而且Redux中的状态是单一的，即整个应用只有顶层的一个状态,而不是多个状态，这样避免了在UI树中需要不断提升状态层级的问题.另外Redux使用了React中useContext可以在任何地方访问状态，避免了状态向下层层传递的问题。
-![Alt text](Redux.png)
-![Alt text](Redux2.png)
+![Redux.png](/images/Pub_Note_Redux/Redux.png)
+![Redux2.png](/images/Pub_Note_Redux/Redux2.png)
 
 #### Redux哲学
 为了直观的理解Redux到底是什么，我首先展示一个Redux应用的Debug工具，它能够展示出Redux到底带来了什么：
-![](image-2.png)
+![image-2.png](/images/Pub_Note_Redux/image-2.png)
 左边是用户的每次的操作，右边是操作执行后应用的状态树。
 你可以查看**任何一次**操作前后的**所有状态**。这很棒对吧，这就使得整个应用是完全可控，可预测，可追踪的。
 
@@ -53,7 +53,7 @@ Redux是一个状态管理库，它用于管理应用中的状态，使得状态
 #### Redux流程
 **UI->事件处理函数->dispatch(action)->middleware->store(reducer)->UI**
 UI通过事件处理函数来派发一个action,action会经过middleware做一些中间处理(记录log,异步函数,请求api等),最终到达store,store会调用reducer来修改状态,状态的变化会触发UI的重新渲染.
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_Redux/image-1.png)
 
 #### Redux核心概念
 - Action:action是一个普通的JavaScript对象,它是改变state的唯一途径,它描述了发生了什么,包含两个属性:type和payload,playload传递reducer需要的参数
@@ -506,10 +506,10 @@ const testState = postsAdapter.getInitialState({
 })
 console.log("testState", testState)
 ```
-![Alt text](image-3.png)
+![image-3.png](/images/Pub_Note_Redux/image-3.png)
 
 adapter对象提供了一些预定义的reducer函数
-![Alt text](image-4.png)
+![image-4.png](/images/Pub_Note_Redux/image-4.png)
 
 adapter 对象也有一个 getSelectors 函数。你可以传入一个 selector，它从 Redux 根 state 返回这个特定的 state slice，它会生成类似于 selectAll 和 selectById 的选择器。
 ```js
@@ -520,7 +520,7 @@ export const {
   // Pass in a selector that returns the posts slice of state
 } = postsAdapter.getSelectors(state => state.posts)
 ```
-![Alt text](image-5.png)
+![image-5.png](/images/Pub_Note_Redux/image-5.png)
 
 ### Redux实现Redo/Undo
 通过直接包装reducer函数实现

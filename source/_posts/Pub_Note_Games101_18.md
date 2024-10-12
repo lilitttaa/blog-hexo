@@ -4,13 +4,13 @@ title: Games101 18.Advanced Topics in Rendering
 
 ## Advanced Light Transport
 
-![Alt text](image.png)
+![image.png](/images/Pub_Note_Games101_18/image.png)
 
 - vcm 结合了光子映射和和双向路径追踪
 - 最后这个实时辐射度算法，相当于是把间接光表示成很多很小的光源
 
 有偏和无偏分别是什么意思呢？
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_Games101_18/image-1.png)
 
 - 这就涉及到了我们做光线追踪的很多方法都是用蒙特卡洛估计，有些蒙特估计方法是无偏的，有的是有偏的。
 - 无偏是指蒙特卡洛估计时期望永远都是我们要的那个真实值，所有其他情况都是有偏的。
@@ -18,19 +18,19 @@ title: Games101 18.Advanced Topics in Rendering
 
 ### Birdirectional Path Tracing
 
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_Games101_18/image-2.png)
 
 - 之前我们在路径追踪里边利用光路的可逆性从相机出发，然后打到光源，这样就形成了一条路径。而 BDPT 把这个概念扩展了，从相机和光源分别出发，打出一条半路径，然后把这两个半路径的端点连起来，这样就形成了一条完整的路径。
 - 这个思想很简单，但是实现起来非常困难
 
-![Alt text](image-3.png)
+![image-3.png](/images/Pub_Note_Games101_18/image-3.png)
 
 - 不过 BDPT 在某些情况下的效果非常好，比如看上边的情况，整个场景基本都是被间接光照亮的，我们如果从相机出发要想打到光源那块能量集中的区域是不太容易的，而从光源出发打到相机就容易很多，这种情况下 BDPT 就非常适合。
 - 另外 BDPT 相对来说比较慢
 
 ### Metropolis Light Transport（MLT）
 
-![Alt text](image-4.png)
+![image-4.png](/images/Pub_Note_Games101_18/image-4.png)
 
 - MLT 利用一个统计学上叫做马尔科夫链的工具，这个工具可以帮你采样。
 - 之前我们使用蒙特卡洛每次选的样本和上一个样本毫无关系，每次用任意形状的 pdf 来采样。但什么样的形状最合适呢？跟你要积分的函数形状保持一致的时候最合适。
@@ -39,59 +39,59 @@ title: Games101 18.Advanced Topics in Rendering
 - 上图，这条蓝色的光路就是已经找到的路径，然后对这个路径做一些微小的扰动，就可以形成一条新的路径。通过不断地在周围产生新的路径，最后就可以生成所有的路径。
 
 MLT 的优点：
-![Alt text](image-5.png)
+![image-5.png](/images/Pub_Note_Games101_18/image-5.png)
 
 - MLT 很适合处理非常复杂的光路传播，比如下图中的场景，这个门半开着，光线只能从门的缝隙中进来，这种情况下 BDPT 就不太适合。
 
 缺点：
-![Alt text](image-6.png)
+![image-6.png](/images/Pub_Note_Games101_18/image-6.png)
 
 - MLT 的收敛速度在理论上很难分析，不知道它什么时候才能变得没有噪声。
 - 并且它所有的操作都是局部的，这就意味着每个像素都是独立的，这样有些像素收敛的快，有些收敛的慢，最后得到的结果就是图像看上去很脏。所以它不太可能作为动画渲染的方法。
 
 ### Photon Mapping
 
-![Alt text](image-7.png)
+![image-7.png](/images/Pub_Note_Games101_18/image-7.png)
 
 - 光子映射是一个有偏的估计
 - 特别适合渲染所谓 caustics，就是光线经过聚焦后形成的图案
 
 下面提一种光子映射的实现方法（实现方法很多）：
-![Alt text](image-8.png)
+![image-8.png](/images/Pub_Note_Games101_18/image-8.png)
 
 - 第一步：从光源出发辐射光子，也就是正常的一个光线传播，碰到物体就反射或者折射，直到打到 diffuse 的物体上，然后停下来记录起来。
 - 第二步：从相机出发，发出光线，同样到达 diffuse 的物体上，然后把这两步合起来做计算。
 
-![Alt text](image-9.png)
+![image-9.png](/images/Pub_Note_Games101_18/image-9.png)
 
 - 需要计算局部密度估计，表面哪些位置应该亮，哪些位置不该亮呢？也就是周围的光子越集中的地方越亮，越不集中的地方越不亮。
 - 密度估计的做法就是找到周围最近的 n 个光子，然后计算这些光子占据的面积，然后计算光子的密度，是一个最近邻问题。
 
-![Alt text](image-10.png)
+![image-10.png](/images/Pub_Note_Games101_18/image-10.png)
 
 - 然后涉及到一个 n 取多少的问题，如果 n 取的太少，就会有很多噪声，如果 n 取的太多，就会很模糊。为什么 n 取得太多会模糊呢？因为密度实际上我们应该取一个无限小的面积，但是我们取的是一个有限的面积，除非我们光子打的无限多，否则我们得到的结果都是有偏的。
 
-![Alt text](image-11.png)
+![image-11.png](/images/Pub_Note_Games101_18/image-11.png)
 
 - 所谓有偏和无偏，如果结果有任何一点模糊那么它就是有偏的。
 - 而如果样本足够多它的结果会收敛到一个不模糊的结果，那么它就是一致的。
 
 ### Vertex Connection and Merging (VCM)
 
-![Alt text](image-12.png)
+![image-12.png](/images/Pub_Note_Games101_18/image-12.png)
 
 - 相当于把 BDPT 和光子映射结合起来，在 BDPT 的两条 Pass 中间的端点很接近在同一面上（同一面上也意味着不会弹过去相连），这种情况不要浪费，虽然不认为是一条光路，但是认为是一个光子，然后用光子映射把这部分的光路的贡献也给结合在一块。
 - VCM 的应用比较广泛，很多电影都是用这种方法来做的。
 
 ### Instant Radiosity（IR）
 
-![Alt text](image-19.png)
+![image-19.png](/images/Pub_Note_Games101_18/image-19.png)
 
 - 因为我们不太区分光线是反射来的还是自己发出来的，所以我们可以把已经被照亮的点当作光源，然后用这些光源来照亮别的点。IR 利用的也就是这样的思想。
 - 一开始先从这个光源打出很多的 light subpass，然后它会停在某些地方，然后认为这些地方就是新的光源（VPL），然后用这些新的光源来照亮别的点。
 - 对于多光源的渲染是一个非常活跃的领域。
 
-![Alt text](image-20.png)
+![image-20.png](/images/Pub_Note_Games101_18/image-20.png)
 
 - 好处是实际应用起来非常快
 - 但是存在问题，比如有些地方会莫名其妙的发光，这是跟距离的平方项有关系，之前我们推导 light sampling 时把立体角的采样改为对面积的采样，然后会出现面积除以距离，如果两点之间距离很近，就会出现除以一个接近零的数，得到一个很大的结果，就会出现这种情况。
@@ -109,7 +109,7 @@ Photon Mapping 中的面积怎么定义？
 
 ## Advanced Appearance Modeling
 
-![Alt text](image-13.png)
+![image-13.png](/images/Pub_Note_Games101_18/image-13.png)
 
 - Participating media（散射介质）：例如雾、云、烟等，这些材质不是在一个表面上，而是定义在空间中。
 
@@ -117,10 +117,10 @@ Photon Mapping 中的面积怎么定义？
 
 #### Participating media
 
-![Alt text](image-14.png)
-![Alt text](image-15.png)
+![image-14.png](/images/Pub_Note_Games101_18/image-14.png)
+![image-15.png](/images/Pub_Note_Games101_18/image-15.png)
 
-![Alt text](image-16.png)
+![image-16.png](/images/Pub_Note_Games101_18/image-16.png)
 
 - 光在行进过程中可能会发生：
   - 云中间有光源，它本身会发光，这个先不考虑
@@ -129,23 +129,23 @@ Photon Mapping 中的面积怎么定义？
   - 在传播过程中，有些能量会逐渐被吸收，比如乌云
 - 最重要的就是两样事情，第一被吸收，第二被散射
 
-![Alt text](image-17.png)
+![image-17.png](/images/Pub_Note_Games101_18/image-17.png)
 
 - 类比物体表面，对于散射介质来说也一样，任何一个点都会发生散射，往各个不同的方向散射，由 Phase Function 这个相位函数（很像 BRDF）来定义。
 
-![Alt text](image-18.png)
+![image-18.png](/images/Pub_Note_Games101_18/image-18.png)
 
 - 找到整个路径过后计算它的贡献，不过这里用的就不是 rendering equation 了，因为它考虑的是表面的的作用，这里是体积，但是思想是一样的。
 
 下面是一些应用：
-![Alt text](image-21.png)
-![Alt text](image-22.png)
+![image-21.png](/images/Pub_Note_Games101_18/image-21.png)
+![image-22.png](/images/Pub_Note_Games101_18/image-22.png)
 
 - 很多材质看上去可能以为是个表面的东西，但实际上不是，光线是可能进到物体里的，只是说进的多还是少。
 
 #### Hair / fur / fiber (BCSDF)
 
-![Alt text](image-23.png)
+![image-23.png](/images/Pub_Note_Games101_18/image-23.png)
 
 - 头发也不是定义在表面上的，因为很多头发都是飘出来的，所以要考虑光线和曲线如何作用，不再是和一个面如何作用。
 - 另外头发有高光，一种是无色的高光，一种是有色的高光。
@@ -153,221 +153,221 @@ Photon Mapping 中的面积怎么定义？
 下面我们来分析一下头发的两种高光是怎么产生的
 
 Kajiya-Kay Model：
-![Alt text](image-24.png)
+![image-24.png](/images/Pub_Note_Games101_18/image-24.png)
 
 - 这是一个类似于 Blinn-Phong 一样的简单模型，它把头发近似为一个圆柱，然后光线打到圆柱上会散射出一个圆锥，同时也会有一些光线被散射到四面八方，就好像是 diffuse 和 specular 两个加起来。
 
 然后就能得到这样的效果：
-![Alt text](image-25.png)
+![image-25.png](/images/Pub_Note_Games101_18/image-25.png)
 
 - 看上去自然是不对的。
 
 下面介绍一个广泛应用的模型，Marshine Model：
-![Alt text](image-26.png)
+![image-26.png](/images/Pub_Note_Games101_18/image-26.png)
 
 - 把反射定义为 R，把穿透定义为 T，那么一根光线打到头发上会有三种情况：
   - 一种是直接反射，记作 R
   - 一种是穿进去再穿出来，记作 TT
   - 一种是穿进去，然后在内壁上反射，再穿出来，记作 TRT
 
-![Alt text](image-27.png)
+![image-27.png](/images/Pub_Note_Games101_18/image-27.png)
 
 - 头发内部有色素，如果有光线穿进头发，在传播的过程中会被部分吸收。
 
-![Alt text](image-28.png)
+![image-28.png](/images/Pub_Note_Games101_18/image-28.png)
 
 - 这个模型可以得到很好的效果
 - 这是跟一根头发怎么进行作用，如果是多根头发，光线会不断地进行弹射，最后才能得到结果，所以头发的渲染计算量是非常大的。
 
 头发渲染的一些应用：
-![Alt text](image-29.png)
-![Alt text](image-30.png)
+![image-29.png](/images/Pub_Note_Games101_18/image-29.png)
+![image-30.png](/images/Pub_Note_Games101_18/image-30.png)
 
-![Alt text](image-31.png)
+![image-31.png](/images/Pub_Note_Games101_18/image-31.png)
 
 - 但是这个模型用在动物上会发现表现不太好
 
-![Alt text](image-32.png)
+![image-32.png](/images/Pub_Note_Games101_18/image-32.png)
 
 - 从生物结构上发现，人和动物的毛发结构是一样的，都是三层外面是 Cuticle（表皮），中间是 Cortex（皮质），最里面是 Medulla（髓质）。
 - 最里层的 Medulla 是一个很复杂的结构，光线进去之后会好像进入了散射介质一样，直接被打到四面八方去。
 - 对于动物来说，它们的 Medulla 比较大，光线进去之后更容易发生散射，所以我们不能忽略这个结构。
 
-![Alt text](image-33.png)
-![Alt text](image-34.png)
+![image-33.png](/images/Pub_Note_Games101_18/image-33.png)
+![image-34.png](/images/Pub_Note_Games101_18/image-34.png)
 
 - 可以看到 Medulla 的作用还是很大的，看上去要亮很多。
 
 Double Cylinder Model：
-![Alt text](image-35.png)
+![image-35.png](/images/Pub_Note_Games101_18/image-35.png)
 
 - 用两个圆柱来模拟髓质的作用
 
-![Alt text](image-36.png)
+![image-36.png](/images/Pub_Note_Games101_18/image-36.png)
 
 - 光线可能穿过髓质也可能没有穿过髓质或者穿过了但是没有被散射到四面八方，因此对于 TT 和 TRT 有两种可能，被髓质散射的光线我们记作 TTs 和 TRTs。
 
-![Alt text](image-37.png)
+![image-37.png](/images/Pub_Note_Games101_18/image-37.png)
 
 - 这样我们用五个分量来表示
 
-![Alt text](image-38.png)
+![image-38.png](/images/Pub_Note_Games101_18/image-38.png)
 
 - 这个仓鼠一帧渲染了 40 分钟
 
 这个模型得到了广泛的应用：
-![Alt text](image-39.png)
-![Alt text](image-40.png)
+![image-39.png](/images/Pub_Note_Games101_18/image-39.png)
+![image-40.png](/images/Pub_Note_Games101_18/image-40.png)
 
 图形学看上去是什么都涉及，之前涉及到数学、物理、统计，现在又涉及到生物。
 
 #### Granular Material
 
-![Alt text](image-41.png)
+![image-41.png](/images/Pub_Note_Games101_18/image-41.png)
 
 - 也就是一粒一粒的这种模型，例如：盐、糖等
 
-![Alt text](image-42.png)
+![image-42.png](/images/Pub_Note_Games101_18/image-42.png)
 
 - 这个计算量非常大
 - 可以简化为每个单元上有不同的石子构成，各自成分都是百分之多少，然后渲染
 - 这种材质目前并没有得到一个非常好的解决
 
-![Alt text](image-43.png)
-![Alt text](image-44.png)
+![image-43.png](/images/Pub_Note_Games101_18/image-43.png)
+![image-44.png](/images/Pub_Note_Games101_18/image-44.png)
 
 ### Surface Models
 
 #### Subsurface Scattering
 
-![Alt text](image-45.png)
-![Alt text](image-46.png)
+![image-45.png](/images/Pub_Note_Games101_18/image-45.png)
+![image-46.png](/images/Pub_Note_Games101_18/image-46.png)
 
 - 玉石、水母这样的 Translucent 材质，光线可以从一个地方进入，然后散射到其他方向上去。
 
-![Alt text](image-47.png)
+![image-47.png](/images/Pub_Note_Games101_18/image-47.png)
 
 - 这样的现象叫做 Subsurface Scattering（次表面散射），这个现象在很多物体上都会出现，比如牛奶、人的耳朵等。
 
 Scattering Functions：
-![Alt text](image-48.png)
+![image-48.png](/images/Pub_Note_Games101_18/image-48.png)
 
 - 看作是对 BRDF 的延申，在 BRDF 中我们认为光线进来后往不同方向去都发生在一个点上，但 BSSRDF 中光线可以以不同方向和不同位置出去。
 - 原本某个点的出射光线只需要考虑这个点的入射，现在还要考虑其他点的入射。
 - 因此渲染方程也要改一改，原本是对各个各个方向进行积分，现在不仅要对各个方向进行积分，还要对面积进行积分。
 
 Dipole Approximation [Jensen et al. 2001]：
-![Alt text](image-49.png)
+![image-49.png](/images/Pub_Note_Games101_18/image-49.png)
 
 - 比如把手机闪光灯摁在手上，周围好像产生了一片往外的光源，好像手底下有个光源在发光。
 - 利用这种思想，一束光打在物体上，我们认为这个物体底下有一个光源，然后这个会从底下照亮着色点周围的一片。
 - 当然，一个光源不够，还得对应上方也得有一个光源。
 
 得出的效果还是不错的：
-![Alt text](image-50.png)
-![Alt text](image-51.png)
-![Alt text](image-52.png)
+![image-50.png](/images/Pub_Note_Games101_18/image-50.png)
+![image-51.png](/images/Pub_Note_Games101_18/image-51.png)
+![image-52.png](/images/Pub_Note_Games101_18/image-52.png)
 
 在科研上，徐坤老师的作品：
-![Alt text](image-53.png)
+![image-53.png](/images/Pub_Note_Games101_18/image-53.png)
 
 - 次表面散射材质的编辑，可以动态改变材质的属性，比如改成石头、玉石、蜡烛等。
 
-![Alt text](image-54.png)
+![image-54.png](/images/Pub_Note_Games101_18/image-54.png)
 
 - 这个效果看上去非常真实了
 
 #### Cloth
 
-![Alt text](image-55.png)
+![image-55.png](/images/Pub_Note_Games101_18/image-55.png)
 
 - 布料是由一系列缠绕的纤维构成的，纤维经过第一次缠绕可以缠绕成不同的股，再经过不同的股再经过不同的缠绕会形成线，线本身也是涉及到各种不同的缠绕。
 
-![Alt text](image-56.png)
+![image-56.png](/images/Pub_Note_Games101_18/image-56.png)
 
 - 要算布料的表面模型有一个非常头疼的点，就是和织法有关
 
 把布料作为一种表面模型处理当然本身是有一定问题的：
-![Alt text](image-57.png)
+![image-57.png](/images/Pub_Note_Games101_18/image-57.png)
 
 - 比如天鹅绒这种材质，它的纤维是朝向外的，这样用 BRDF 来描述其实是不合理的，因为它不是一个平面，而是一个体积。
 
-![Alt text](image-58.png)
+![image-58.png](/images/Pub_Note_Games101_18/image-58.png)
 
 - 我们可以把它当成散射介质来处理，把它当成一个体积，然后把这个体积分成很多小格子，每个格子里面的纤维朝向都是已知的，然后把这些性质转换成光线的吸收和散射，这样就好像是在渲染云一样。
 - 但是计算量是很夸张的，一帧画面可能要花很多小时。
 
-![Alt text](image-59.png)
+![image-59.png](/images/Pub_Note_Games101_18/image-59.png)
 
 - 还可以当成毛发来处理，把每一根纤维当成一根毛发，然后把每一根纤维都渲染出来，这样就可以得到非常真实的结果。
 - 同样的，这个计算量也是非常非常惊人的。
 
 直到今天这三种方法都有人用
-![Alt text](image-60.png)
+![image-60.png](/images/Pub_Note_Games101_18/image-60.png)
 
 - 这个是用表面方法做的，效果也不错
 
 #### Detailed Appearance
 
-![Alt text](image-61.png)
+![image-61.png](/images/Pub_Note_Games101_18/image-61.png)
 
 - 为什么这个车看上去不真实呢？因为它太完美了，现实生活中车上会有各种划痕、灰尘等。
 
-![Alt text](image-62.png)
-![Alt text](image-63.png)
-![Alt text](image-64.png)
+![image-62.png](/images/Pub_Note_Games101_18/image-62.png)
+![image-63.png](/images/Pub_Note_Games101_18/image-63.png)
+![image-64.png](/images/Pub_Note_Games101_18/image-64.png)
 
 - 闫老师的博士贡献之一：细节渲染，其他的还有 Real-time Ray Tracing 以及前面的 Double Cylinder Model。
 
-![Alt text](image-65.png)
+![image-65.png](/images/Pub_Note_Games101_18/image-65.png)
 
 - 之前在微表面模型说过微表面的法向分布，我们使用一些简单的模型，比如高斯分布，但是这些模型并不能很好地描述真实世界中的细节。
 
-![Alt text](image-66.png)
+![image-66.png](/images/Pub_Note_Games101_18/image-66.png)
 
 - 我们要让这个法线分布符合统计规律，但又有自己带的细节，这样才能得到更好的结果。
 
-![Alt text](image-67.png)
+![image-67.png](/images/Pub_Note_Games101_18/image-67.png)
 
 - 这个蜗牛用了一张超级大的法线贴图，每个面都有高光，所有的高光形成在一块就会变成这么一个大的高光。
 
-![Alt text](image-68.png)
+![image-68.png](/images/Pub_Note_Games101_18/image-68.png)
 
 - 要渲染这个非常困难，用 path tracing 可能要一个月才能得到结果
 
-![Alt text](image-69.png)
+![image-69.png](/images/Pub_Note_Games101_18/image-69.png)
 
 - 因为每一个微表面作为一个镜面，从相机对每个微表面打一根光线，然后知道它的法线，知道它的镜面反射方向，但是很难通过反射的方式让这根光线反射的光线打到光源上去。
 
-![Alt text](image-70.png)
+![image-70.png](/images/Pub_Note_Games101_18/image-70.png)
 
 - 为了解决这个问题，我们可以考虑一个像素。这个像素会覆盖很多微表面，如果我们能把这些微表面的分布算出来，就可以替代原本的光滑分布，用在微表面模型里。
 
-![Alt text](image-71.png)
-![Alt text](image-72.png)
+![image-71.png](/images/Pub_Note_Games101_18/image-71.png)
+![image-72.png](/images/Pub_Note_Games101_18/image-72.png)
 
 - 如果一个像素覆盖的面积大，它的分布可能会接近高斯分布，如果覆盖的面积小，它的分布可能会有很多特点。
 
 这个方法在游戏中也得到了一些应用：
-![Alt text](image-73.png)
+![image-73.png](/images/Pub_Note_Games101_18/image-73.png)
 
 - 古墓丽影雪地上的一些发光点
 
-![Alt text](image-74.png)
+![image-74.png](/images/Pub_Note_Games101_18/image-74.png)
 
 - 当引入这些细节的时候，如果还用几何光学来解释就不对了。
 - 物理上说，当物体啊非常小，小到和光线的这个波长相当的时候，就不能再假设光线的传播是沿着直线传播了。这时候就得必须假设光是一个波，因为会发生各种各样的现象，比如衍射、干涉等。
 
-![Alt text](image-75.png)
+![image-75.png](/images/Pub_Note_Games101_18/image-75.png)
 
 - 比如用手机上的光照射到一个金属片上，会发现金属片上的颜色是各种各样的。
 
-![Alt text](image-76.png)
+![image-76.png](/images/Pub_Note_Games101_18/image-76.png)
 
 - 波动光学的公式非常复杂，比如在复数域上做各种的积分，这里就不多说了。
 - 波动光学得出的 BRDF 和几何光学得出的 BRDF 挺像的哈，但是又有自己的特点，比如不连续。因为光干涉会引起有一些地方加强，有些地方减弱，就会形成这么一条一条这种不连续的效果。
 
-![Alt text](image-77.png)
+![image-77.png](/images/Pub_Note_Games101_18/image-77.png)
 
 - 能看到这样的划痕里边的彩色
 
@@ -377,23 +377,23 @@ Dipole Approximation [Jensen et al. 2001]：
 
 - 就是说我用一定的方式来指导它的生成，但不需要真正的去生成，可以动态的去查询它。
 
-![Alt text](image-78.png)
+![image-78.png](/images/Pub_Note_Games101_18/image-78.png)
 
 - 比如这个花瓶打碎了，我们可以看到它的内部是什么样的。
 - 当然可以用一张三维的纹理来表示，但是这个存储量太大了。
 
-![Alt text](image-79.png)
+![image-79.png](/images/Pub_Note_Games101_18/image-79.png)
 
 - 我们可以什么时候需要用，什么时候去查。
 
-![Alt text](image-80.png)
+![image-80.png](/images/Pub_Note_Games101_18/image-80.png)
 
 - 就好像有一个空间中的函数，给定 xyz，它会返回一个值。
 - 这种函数叫做 noise 函数
 
 可以用来生成各种各样的东西，比如地形、水面、木头等：
-![Alt text](image-81.png)
-![Alt text](image-82.png)
-![Alt text](image-83.png)
+![image-81.png](/images/Pub_Note_Games101_18/image-81.png)
+![image-82.png](/images/Pub_Note_Games101_18/image-82.png)
+![image-83.png](/images/Pub_Note_Games101_18/image-83.png)
 
 程序化生成一直都是一个很火的话题，houdini 就是一个专门做程序化材质的软件，它在工业界得到了很大的应用。

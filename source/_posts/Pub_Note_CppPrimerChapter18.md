@@ -244,7 +244,7 @@ public:
 
 ### 异常类层次
 
-![Alt text](image.png)
+![image.png](/images/Pub_Note_CppPrimerChapter18/image.png)
 
 - 类型 exception 仅仅定义了拷贝构造函数、拷贝赋值运算符、一个虚析构函数和一个名为 what 的虚成员。
 - 其中 what 函数返回 c 风格字符串，并且确保不会抛出任何异常。
@@ -622,7 +622,7 @@ int main(){
 - 多重继承的派生列表也只能包含已经被定义过的类，而且这些类不能是 final 的。
 - 多重继承的派生类从每个基类中继承状态
 
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_CppPrimerChapter18/image-1.png)
 
 派生类构造函数初始化所有基类：
 
@@ -724,7 +724,7 @@ double Panda::max_weight() const {
 - 虚派生只影响从指定了虚基类的派生类中进一步派生出的类,它不会影响派生类本身。
 - 在实际的编程过程中，位于中间层次的基类将其继承声明为虚继承一般不会带来什么问题。通常情况下，使用虚继承的类层次是由一个人或一个项目组一次性设计完成的。
 
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_CppPrimerChapter18/image-2.png)
 
 ```cpp
 class Raccon : public virtual ZooAnimal {};

@@ -5,7 +5,7 @@ title: Games101 21.Animation
 ## History
 
 什么是动画呢？
-![Alt text](image.png)
+![image.png](/images/Pub_Note_Games101_21/image.png)
 
 - 因为人眼有视觉暂留的效应，所以我们只需要在一定的时间内播放一些图，就可以让人觉得是一个很连贯的动画了。
 - 一般电影是 24fps，游戏是 60fps，VR 对帧率要求更高，要求两眼都达到 90fps。
@@ -13,61 +13,61 @@ title: Games101 21.Animation
 ### Historical Points in Animation
 
 最早的动画：
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_Games101_21/image-1.png)
 
 - 洞穴里的壁画
 
-![Alt text](image-3.png)
-![Alt text](image-4.png)
+![image-3.png](/images/Pub_Note_Games101_21/image-3.png)
+![image-4.png](/images/Pub_Note_Games101_21/image-4.png)
 
 - 最早的电影
 
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_Games101_21/image-2.png)
 
 - 第一个 feature-length（电影长度）的动画
 - 手绘
 
-![Alt text](image-5.png)
+![image-5.png](/images/Pub_Note_Games101_21/image-5.png)
 
 - 第一个数字动画
 
-![Alt text](image-6.png)
-![Alt text](image-7.png)
+![image-6.png](/images/Pub_Note_Games101_21/image-6.png)
+![image-7.png](/images/Pub_Note_Games101_21/image-7.png)
 
-![Alt text](image-8.png)
+![image-8.png](/images/Pub_Note_Games101_21/image-8.png)
 
 - 第一个计算机生成的 feature-length 动画
 - 光栅化的方法，那时候还没有光线追踪
 
 ## Frame Animation
 
-![Alt text](image-9.png)
+![image-9.png](/images/Pub_Note_Games101_21/image-9.png)
 
 - 关键帧代表动画的走向
 - 早期由艺术家手动画出关键帧，然后由助手画出中间的帧
 
-![Alt text](image-10.png)
+![image-10.png](/images/Pub_Note_Games101_21/image-10.png)
 
 - 给定一系列关键帧，每一帧里边有若干重要的点，然后通过插值的方法算出中间的帧
 
-![Alt text](image-11.png)
+![image-11.png](/images/Pub_Note_Games101_21/image-11.png)
 
 - 插值也有很多种方法，比如线性插值，曲线插值等等
 
 ## Physical Simulation
 
-![Alt text](image-12.png)
+![image-12.png](/images/Pub_Note_Games101_21/image-12.png)
 
 - 物理模拟最简单的运作方式就是牛顿的运动定律，在物体上应用一个力，然后就会获得一个加速度，然后就可以算出速度和位置。
 - 所谓模拟或者仿真，实际上就是在实现各种不同的物理公式，然后计算出物体的形状和位置的变化。
 
-![Alt text](image-13.png)
+![image-13.png](/images/Pub_Note_Games101_21/image-13.png)
 
 - 比如扔个小球会形成抛物线
 - 对于衣服呢，它是由各种网格形成的，然后对于网格上的每一个点，我们都可以认为它有一定的质量，然后肯定会受到重力，也会受到来自其他点的各种作用力，然后我们把所有的力都考虑在一起，就可以算出加速度，然后就可以更新速度和位置。
 
 下面的例子就不是跟物体表面相关的，这是流体模拟，流体是一个在仿真领域研究的非常多的一个话题：
-![Alt text](image-14.png)
+![image-14.png](/images/Pub_Note_Games101_21/image-14.png)
 
 - 通常分为两步：
   - 模拟流体的运动，比如先模拟这些水是怎么运动的
@@ -79,43 +79,43 @@ title: Games101 21.Animation
 ### Mass Spring System
 
 下面介绍一种最简单也最实用的一套系统，叫质点弹簧系统：
-![Alt text](image-15.png)
+![image-15.png](/images/Pub_Note_Games101_21/image-15.png)
 
 - 绳子模拟器：模拟成很多小的弹簧连接在一块，然后可以在重力的作用下来回摆，还可以拖动
 
-![Alt text](image-16.png)
+![image-16.png](/images/Pub_Note_Games101_21/image-16.png)
 
 - 在不同的力的作用下，头发怎么运动，例如风吹动头发的效果
 - 这个是 Nvidia 做的一个效果，可以实时模拟头发的效果
 
-![Alt text](image-17.png)
+![image-17.png](/images/Pub_Note_Games101_21/image-17.png)
 
 - 这套系统还可以模拟布料
 
-![Alt text](image-18.png)
+![image-18.png](/images/Pub_Note_Games101_21/image-18.png)
 
 - 最基础的单元是一个弹簧连接两个质点
 - 我们先假设一个理想化的弹簧，没有长度，被拉开了多长就会产生相应的多大的力，所以直接用$b-a$乘上一个系数就可以了
 - $f_{a->b}$表示作用在 a 上的力，方向是从 a 指向 b
 - $k_s$是弹簧的劲度系数（胡克定律）
 
-![Alt text](image-19.png)
+![image-19.png](/images/Pub_Note_Games101_21/image-19.png)
 
 - 当然正常情况下弹簧是有长度的，这个长度叫做 rest length（自然长度）
 - 我们分析的时候只考虑拉伸，不考虑压缩
 - 但这个最简单的弹簧有个问题，它会永远震动下去，因为能量守恒，动能和势能一直在转换。所以我们要加一个摩擦力，让它停下来。
 
-![Alt text](image-20.png)
+![image-20.png](/images/Pub_Note_Games101_21/image-20.png)
 
 - 在模拟仿真中我们通常用点来表示一阶导数和二阶导数
 
-![Alt text](image-21.png)
+![image-21.png](/images/Pub_Note_Games101_21/image-21.png)
 
 - 跟速度方向相反的摩檫力
 - 这里 b 打一个点表示速度
 - 如果拿一个弹簧连接 a 和 b，一松手它往下掉，两个质点同步运动，但是弹簧之间并没有相对运动，所以摩擦力只能描述外部的力，描述不了弹簧内部的力。
 
-![Alt text](image-22.png)
+![image-22.png](/images/Pub_Note_Games101_21/image-22.png)
 
 - 弹簧内部的摩擦力应该跟 a 和 b 的相对运动有关系
 - 红框内表示 ab 之间的相对速度在 ab 方向上的投影长度
@@ -123,48 +123,48 @@ title: Games101 21.Animation
 - 内部的摩擦力跟长度没有关系，只跟相对运动的速度有关系
 - 对于质点的运动，把这里的摩檫力和前面的弹簧力都考虑进去，然后再模拟就可以了
 
-![Alt text](image-23.png)
+![image-23.png](/images/Pub_Note_Games101_21/image-23.png)
 
 - 把这些弹簧进行各种不同的组合可以表示不同的形状。
 - 比如最上边这个可以表示一张纸
 - 很像所谓的分子模型，所以物理模拟其实都是对真实物理中存在的现象的一种抽象或者简化
 
 用这样的结构来模拟一块布：
-![Alt text](image-24.png)
+![image-24.png](/images/Pub_Note_Games101_21/image-24.png)
 
 - 有两个问题：
   - 这个结构不会抵抗切变，沿着对角线拉伸，整个形状会变成一个长条。但日常生活中的布料是不会这样的（至少不会这么明显）。
   - 另外，如果有个力让这个形状变得不是一个平面，它不应该像纸一样对折成一个严格的三角形，它应该有个对抗这种折法的力。
 
 我们可以像这样加一根斜线来对抗切变：
-![Alt text](image-25.png)
+![image-25.png](/images/Pub_Note_Games101_21/image-25.png)
 
 - 但是这样就不对称了，也就是各项异性
 
 再加一根斜线：
-![Alt text](image-26.png)
+![image-26.png](/images/Pub_Note_Games101_21/image-26.png)
 
 - 可以抵抗斜着的非平面的力，但是无法抵抗横竖的非平面的力
 
 跳着加线：
-![Alt text](image-27.png)
+![image-27.png](/images/Pub_Note_Games101_21/image-27.png)
 
 - 这个红线的力是非常弱的，它只是辅助作用，蓝线的力才是主要的
 
 下面就是这个布料的模拟效果：
-![Alt text](image-28.png)
+![image-28.png](/images/Pub_Note_Games101_21/image-28.png)
 
 - 当然这里边还涉及到各种各样的摩檫力，这里就不管了
 
 除了质点弹簧系统以外，还有其他的系统，比如有限元方法：
-![Alt text](image-29.png)
+![image-29.png](/images/Pub_Note_Games101_21/image-29.png)
 
 - 比如汽车碰撞，车撞向墙，力会传导到车的尾部，所以车尾部也会被撞坏，它会有一个力的传导，这个过程叫做扩散过程，很适合用有限元方法来做。
 - 有限元方法做起来很复杂。
 
 ## Particle System
 
-![Alt text](image-30.png)
+![image-30.png](/images/Pub_Note_Games101_21/image-30.png)
 
 - 建模成一堆小的粒子，这些粒子之间可能有内部之间的力，比如碰撞，也可能有外部的力，比如重力，风力等等
 - 然后粒子会根据这些力的作用来更新位置和速度，然后有一定的存活时间，有些粒子会死亡，有些新的粒子会补进去
@@ -174,28 +174,28 @@ title: Games101 21.Animation
 - 但是要找到粒子之间的作用力，自然得能找它周围得粒子，这就涉及到需要一些加速结构，而且粒子经常会移动，所以还得更新它。
 
 实际上的做法主要分为这么几步：
-![Alt text](image-31.png)
+![image-31.png](/images/Pub_Note_Games101_21/image-31.png)
 
 - 困难的地方在于怎么去把不同的粒子之间的作用力描述出来，比如水滴和水滴之间的作用力，灰尘和灰尘之间的作用力，这个决定了最后的效果是水还是灰尘。
 - 另外一个困难是怎么去计算粒子的位置和速度，也就是怎么去解这个问题。
 - 学术界更关注怎么解。
 
-![Alt text](image-32.png)
+![image-32.png](/images/Pub_Note_Games101_21/image-32.png)
 
 - 粒子系统涉及到各种吸引力、排斥力、阻力以及碰撞。
 
 比如说以万有引力为例：
-![Alt text](image-33.png)
+![image-33.png](/images/Pub_Note_Games101_21/image-33.png)
 
-![Alt text](image-34.png)
+![image-34.png](/images/Pub_Note_Games101_21/image-34.png)
 
 - 这是 nasa 提供的一个星系的模拟渲染图。
 
 然后是基于粒子的流体模拟：
-![Alt text](image-35.png)
+![image-35.png](/images/Pub_Note_Games101_21/image-35.png)
 
 粒子系统模拟鸟群：
-![Alt text](image-36.png)
+![image-36.png](/images/Pub_Note_Games101_21/image-36.png)
 
 - 定义它们之间的相互作用：
   - 任何一只鸟都不愿意落单，所以会找到周围的鸟，试图融入到中间去
@@ -205,17 +205,17 @@ title: Games101 21.Animation
 粒子系统本质上就是在定义个体与群体之间的关系
 
 定义分子运动：
-![Alt text](image-37.png)
+![image-37.png](/images/Pub_Note_Games101_21/image-37.png)
 
 定义人群：
-![Alt text](image-38.png)
+![image-38.png](/images/Pub_Note_Games101_21/image-38.png)
 
 ## Forward Kinematics（正向运动学）
 
 图形学中通常会把运动学分为正向和逆向，应用所谓的正向运动学和逆向运动学。
 
 从正向运动学开始：
-![Alt text](image-39.png)
+![image-39.png](/images/Pub_Note_Games101_21/image-39.png)
 
 - 先定义一个骨骼系统，表示人类骨骼连接的拓扑结构，定义各种关节
 - 上边的机器人有三种关节类型：
@@ -224,46 +224,46 @@ title: Games101 21.Animation
   - Prismatic：可以拉长，可以在里面移动（大腿连着小腿，中间可以拉长一点）
 - 本身整个结构又形成一个树形加速结构。
 
-![Alt text](image-40.png)
+![image-40.png](/images/Pub_Note_Games101_21/image-40.png)
 
 - 这是 Pin 关节的例子，给定两个角度，就可以算出 l2 最后的尖端的位置
 
-![Alt text](image-41.png)
+![image-41.png](/images/Pub_Note_Games101_21/image-41.png)
 
 - 角色动画就是正向运动学的一个体现
 
-![Alt text](image-42.png)
+![image-42.png](/images/Pub_Note_Games101_21/image-42.png)
 
 - 不过正向运动学需要各种角度来描述，这对艺术家来说不太友好，他们更喜欢直接拖动物体到某个位置，这就引入了逆运动学。
 
 ## Inverse Kinematics（逆向运动学）
 
-![Alt text](image-43.png)
+![image-43.png](/images/Pub_Note_Games101_21/image-43.png)
 
-![Alt text](image-45.png)
+![image-45.png](/images/Pub_Note_Games101_21/image-45.png)
 
 - 给定 P 点，算出$\theta_1$和$\theta_2$
 
-![Alt text](image-44.png)
+![image-44.png](/images/Pub_Note_Games101_21/image-44.png)
 
 - 逆向运动学有时候解不唯一，比如尖端停在某个位置，有两种排列方式，都会让尖端停在这，那我取哪一个呢？
 
-![Alt text](image-46.png)
+![image-46.png](/images/Pub_Note_Games101_21/image-46.png)
 
 - 甚至有时候根本解不出来
 
-![Alt text](image-47.png)
+![image-47.png](/images/Pub_Note_Games101_21/image-47.png)
 
 - 通常人们会采用一些优化方法来解决这个问题，用梯度下降法来调整角度，让尖端尽量接近目标位置。
 
 ## Rigging
 
-![Alt text](image-48.png)
+![image-48.png](/images/Pub_Note_Games101_21/image-48.png)
 
 - 就像是用线来控制木偶，让它做出各种姿势，其实就是逆向运动学的一个应用
 - 艺术家们通过建模软件给模型绑骨蒙皮来控制模型。
 
-![Alt text](image-49.png)
+![image-49.png](/images/Pub_Note_Games101_21/image-49.png)
 
 - 通过各种方式来控制角色运动
 - 控制点可以不在物体上，比如脚踝背后有一个控制点
@@ -271,41 +271,41 @@ title: Games101 21.Animation
 
 ## Blend Shape
 
-![Alt text](image-50.png)
+![image-50.png](/images/Pub_Note_Games101_21/image-50.png)
 
 - 对这些控制点做插值
 
 ## Motion Capture
 
-![Alt text](image-51.png)
+![image-51.png](/images/Pub_Note_Games101_21/image-51.png)
 
 - 既然可以通过控制点来做 Rigging 来生成动画，那么为什么不可以直接给真人加上控制点，让这些控制点的位置直接反映到虚拟的造型上呢？这就是 Motion Capture。
 
-![Alt text](image-52.png)
+![image-52.png](/images/Pub_Note_Games101_21/image-52.png)
 
 - 动作捕捉有很多好处，比如更贴近真实，更快速，不需要艺术家调整。
 - 当然也有很多问题，比如控制点的位置不一定能捕捉到，真人和虚拟人物的表现形式不一样，捕捉条件有限制等等。
 
-![Alt text](image-53.png)
+![image-53.png](/images/Pub_Note_Games101_21/image-53.png)
 
 - 绿色的衣服上白球会非常显眼，可以用计算机视觉的方法来识别控制点。
 - 还有电磁场以及机械的方法。
 
-![Alt text](image-54.png)
-![Alt text](image-55.png)
+![image-54.png](/images/Pub_Note_Games101_21/image-54.png)
+![image-55.png](/images/Pub_Note_Games101_21/image-55.png)
 
 - 应用最多的还是光学的方法，但是这种方法需要很多摄像头，而且很容易被遮挡。
 
-![Alt text](image-56.png)
+![image-56.png](/images/Pub_Note_Games101_21/image-56.png)
 
 - 捕捉出来会得到这样一系列的曲线
 
-![Alt text](image-57.png)
+![image-57.png](/images/Pub_Note_Games101_21/image-57.png)
 
 - 动画目前的挑战是恐怖谷效应
 
 整个动画或者电影的生成过程：
-![Alt text](image-58.png)
+![image-58.png](/images/Pub_Note_Games101_21/image-58.png)
 
 - 需要消耗非常大的人力物力
 - 渲染本身需要很大的计算能力的开销，像迪斯尼他们需要 render farm，很多计算机形成的集群，然后拿过去做渲染，非常贵。

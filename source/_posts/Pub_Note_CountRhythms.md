@@ -11,36 +11,36 @@ cover: music_staff.png
 
 在练习数节奏的时候，我们可以尝试拆分为四个音节，就像这样，'1e&a'，读作'One E and A'。
 例如，数 Quarter Note（四分音符）的时候，我们可以数作'1e&a'、'2e&a'、'3e&a'、'4e&a'。
-![Alt text](image.png)
+![image.png](/images/Pub_Note_CountRhythms/image.png)
 
 数 Eighth Note/ Quaver（八分音符）的时候，数作'1e'、'&a'、'2e'、'&a'。
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_CountRhythms/image-1.png)
 
 进一步 Sixteenth Note（十六分音符）时，数作'1'、'e'、'&'、'a'、'2'、'e'、'&'、'a'。
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_CountRhythms/image-2.png)
 
 让我们来一个简单的练习：
-![Alt text](image-4.png)
+![image-4.png](/images/Pub_Note_CountRhythms/image-4.png)
 请为其标记上合适的音节。
 ……
 最后，你应该会得到一个这样的结果：
-![Alt text](image-3.png)
+![image-3.png](/images/Pub_Note_CountRhythms/image-3.png)
 
 当速度提高时，Quarter Note（四分音符）可以数作'1+'，Eighth Note/ Quaver（八分音符）可以数作'1'、'+'。 
-![Alt text](image-5.png)
+![image-5.png](/images/Pub_Note_CountRhythms/image-5.png)
 
 来个附点的例子：
-![Alt text](image-6.png)
+![image-6.png](/images/Pub_Note_CountRhythms/image-6.png)
 
 ## 三连音的记数方法
 Eighth Triplets（八分音符三连音）的记数方法是'1'、'tri'、'plet'、'2'、'tri'、'plet'。
-![Alt text](image-7.png)
+![image-7.png](/images/Pub_Note_CountRhythms/image-7.png)
 
 混合起来：
-![Alt text](image-8.png)
+![image-8.png](/images/Pub_Note_CountRhythms/image-8.png)
 
 Quarter Triplets（四分音符三连音）的记数方法是'1 tri'、'plet 2'、'tri plet'。
-![Alt text](image-9.png)
+![image-9.png](/images/Pub_Note_CountRhythms/image-9.png)
 
 
 ## 练习网站

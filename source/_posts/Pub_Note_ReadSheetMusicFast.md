@@ -10,17 +10,17 @@ title: Read Sheet Music Fast（快速读谱）
 这里介绍一种方法，通过记住几个 Landmark（地标）来快速读谱。
 
 首先，给出第一组 Landmarks，Treble G、Middle C、Bass F：
-![Alt text](image.png)
+![image.png](/images/Pub_Note_ReadSheetMusicFast/image.png)
 在 Treble Clef 的圈上是 G，Bass Clef 两点间是 F，因此 Treble Clef 也被叫做 G Clef，Bass Clef 也被叫做 F Clef。
 
 第二组，Treble C、Bass C：
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_ReadSheetMusicFast/image-1.png)
 
 第三组，High G、Low F：
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_ReadSheetMusicFast/image-2.png)
 
 最后一组，High C、Low C：
-![Alt text](image-3.png)
+![image-3.png](/images/Pub_Note_ReadSheetMusicFast/image-3.png)
 
 ## 练习
 - <https://www.notationtraining.com/treble-clef-practice>

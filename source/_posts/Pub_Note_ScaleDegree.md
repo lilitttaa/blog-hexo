@@ -6,7 +6,7 @@ title: Scale Degree（音阶）
 
 - https://www.youtube.com/watch?v=fOHIIDlRR3o
 
-![Alt text](image.png)
+![image.png](/images/Pub_Note_ScaleDegree/image.png)
 上面是 GMajor 的 Scale Degree（音阶）。从左到右，分别是：
 Scale Degree 1: G
 Scale Degree 2: A
@@ -14,7 +14,7 @@ Scale Degree 3: B
 ……
 对于不同的 Key，Scale Degree 1 代表的音符是不同的。比如，对于 C Major，Scale Degree 1 代表的是 C，对于 D Major，Scale Degree 1 代表的是 D。
 
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_ScaleDegree/image-1.png)
 对于每个 Scale Degree，都有一个名字：
 
 - Scale Degree 1: Tonic（主音）

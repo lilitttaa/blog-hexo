@@ -6,21 +6,21 @@ https://www.youtube.com/watch?v=rdLrnZ9E9H0
 
 
 ## How to build diatonic 7th chords
-![Alt text](image.png)
+![image.png](/images/Pub_Note_BuildDiatonic7thChords/image.png)
 
 
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_BuildDiatonic7thChords/image-1.png)
 
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_BuildDiatonic7thChords/image-2.png)
 
 ## Chord Qualities
 
 以C Major Scale 为例
 
-![Alt text](image-3.png)
-![Alt text](image-4.png)
-![Alt text](image-5.png)
-![Alt text](image-6.png)
+![image-3.png](/images/Pub_Note_BuildDiatonic7thChords/image-3.png)
+![image-4.png](/images/Pub_Note_BuildDiatonic7thChords/image-4.png)
+![image-5.png](/images/Pub_Note_BuildDiatonic7thChords/image-5.png)
+![image-6.png](/images/Pub_Note_BuildDiatonic7thChords/image-6.png)
 
 | Degree | Chord | Quality |
 |--------|-------|---------|

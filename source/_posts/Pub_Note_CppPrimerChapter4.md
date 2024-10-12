@@ -250,7 +250,7 @@ a ^ b; // 按位异或 同0反1
 
 意味运算左移会往后加 0，而右移分为逻辑右移和算术右移。其中逻辑右移会往前加 0，而算术右移会往前加符号位。具体使用哪种类型取决于是无符号数还是有符号数。
 
-![alt text](image-2.png)
+![image-2.png](/images/Pub_Note_CppPrimerChapter4/image-2.png)
 
 ## sizeof 运算符
 
@@ -430,5 +430,5 @@ const int& r = i; // 非常量引用转为常量引用
 
 ## 运算符优先级表
 
-![Alt text](image.png)
-![Alt text](image-1.png)
+![image.png](/images/Pub_Note_CppPrimerChapter4/image.png)
+![image-1.png](/images/Pub_Note_CppPrimerChapter4/image-1.png)

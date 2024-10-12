@@ -29,15 +29,15 @@ cover: music_staff.png
 ## 什么是大调音阶？
 
 让我们来看下最简单的 C Major scale（C大调音阶）：
-![alt text](image-5.png)
+![image-5.png](/images/Pub_Note_MajorScales/image-5.png)
 
 它从C开始又从C结束，一共8个音。
 
 再来看看 D Major scale（D大调音阶）：
-![alt text](image-6.png)
+![image-6.png](/images/Pub_Note_MajorScales/image-6.png)
 
 然后是 Eb Major scale（Eb大调音阶）：
-![alt text](image-7.png)
+![image-7.png](/images/Pub_Note_MajorScales/image-7.png)
 为什么有的有**升降符号**，有的没有？
 
 这主要是由 Intervallic relationships（音程关系）决定的，大调音阶遵循 **Tone Tone Semitone Tone Tone Tone Semitone** 的模式。（注：Tone 代表全音，Semitone 代表半音。）
@@ -46,13 +46,13 @@ Semitone 是钢琴中最小的 Intervals（音程）单位。两个相邻的琴�
 两个 Semitone 组成一个 Tone ，例如：C-D、E-F#、B-C# 等。
 
 让我们对着 C Major scale 参考一下：
-![alt text](image-1.png)
+![image-1.png](/images/Pub_Note_MajorScales/image-1.png)
 再对照一下 D Major scale：
-![alt text](image-3.png)
+![image-3.png](/images/Pub_Note_MajorScales/image-3.png)
 
 ## 15个大调音阶
 
-![alt text](image.png)
+![image.png](/images/Pub_Note_MajorScales/image.png)
 
 请检查一下 C# Major scale，如果你想知道为什么我们写做 E-sharp 而不是 F，那么你需要了解一下 Enharmonic Equivalents（同音异名）。
 
@@ -64,7 +64,7 @@ Semitone 是钢琴中最小的 Intervals（音程）单位。两个相邻的琴�
 - The Whole Tone Scale（全音音阶）全部由 Tones 组成
 - Minor scales（小调音阶）
 - ……
-![alt text](image-2.png)
+![image-2.png](/images/Pub_Note_MajorScales/image-2.png)
 
 ## C-sharp major 和 D-flat major 有什么区别？
 
@@ -73,7 +73,7 @@ Semitone 是钢琴中最小的 Intervals（音程）单位。两个相邻的琴�
 ## 为什么存在 A-flat major 但是不存在 G-sharp major？
 
 在 Major scales 中是不允许出现 double sharps 和 double flats 的。G-sharp major 的音符是 G# A# B# C# D# E# F##，而 F## 是不允许的。
-![alt text](image-4.png)
+![image-4.png](/images/Pub_Note_MajorScales/image-4.png)
 同理其他几个 D# E# Fb A# B# 也是不存在的。
 
 ## 大调音阶的规则

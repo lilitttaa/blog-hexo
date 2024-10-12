@@ -118,8 +118,8 @@ replace_copy(vec.begin(), vec.end(), vec2.begin(), 3, 0); // {1, 2, 0, 4, 5} 将
 - stable_sort：对容器中的元素排序，**保持相等元素的相对位置**
 - unique：“删除”相邻的重复元素，返回指向不重复序列的尾后迭代器。unique 并不真的删除任何元素，它只是覆盖相邻的重复元素，使得不重复元素出现在序列开始部分。
 
-  ![Alt text](image.png)
-  ![Alt text](image-1.png)
+  ![image.png](/images/Pub_Note_CppPrimerChapter10/image.png)
+  ![image-1.png](/images/Pub_Note_CppPrimerChapter10/image-1.png)
 
 ```cpp
 // sort
@@ -173,7 +173,7 @@ void biggist(vector<string> &words, vector<string>::size_type sz)
 ```
 
 lambda 表达式的一般形式如下：
-![Alt text](image-4.png)
+![image-4.png](/images/Pub_Note_CppPrimerChapter10/image-4.png)
 
 - 参数列表和返回类型是可选的
 - lambda 必须使用尾置返回类型
@@ -340,7 +340,7 @@ istream_iterator：
 - 默认构造函数表示流的尾后迭代器
 - 读取时，会自动调用流的>>运算符
 
-![Alt text](image-5.png)
+![image-5.png](/images/Pub_Note_CppPrimerChapter10/image-5.png)
 
 ```cpp
 istream_iterator<int> in_iter(cin), eof; // 默认构造函数表示流的尾后迭代器
@@ -359,7 +359,7 @@ ostream_iterator:
 
 - 对迭代器赋值时，会自动调用流的<<运算符
 
-![Alt text](image-6.png)
+![image-6.png](/images/Pub_Note_CppPrimerChapter10/image-6.png)
 
 ```cpp
 ostream_iterator<int> out_iter(cout, " "); // 输出到cout，每个元素之间用空格分隔
@@ -381,7 +381,7 @@ for (const auto &e : vec)
 - 除 forward_list 外，其他容器都有反向迭代器
 - 反向迭代器需要迭代器支持--操作，所以 ostream_iterator 不支持反向迭代器
 
-![Alt text](image-7.png)
+![image-7.png](/images/Pub_Note_CppPrimerChapter10/image-7.png)
 
 ```cpp
 string s = "FIRST,MIDDLE,LAST";
@@ -390,12 +390,12 @@ cout << string(s.crbegin(), comma) << endl; // "TSAL" 反了
 cout << string(comma.base(), s.cend()) << endl; // "LAST"
 ```
 
-![Alt text](image-8.png)
+![image-8.png](/images/Pub_Note_CppPrimerChapter10/image-8.png)
 
 ## 泛型算法结构
 
 五种迭代器类型如下（层次从低到高）：
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_CppPrimerChapter10/image-2.png)
 除了输出迭代器器之外，一个高层类别的迭代器支持低层类别迭代器的所有操作。
 
 每个算法都会指明它需要的迭代器类型，例如：

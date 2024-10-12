@@ -18,15 +18,15 @@ Pentatonic Scale 有两种类型：Hemitonic 和 Anhemitonic。
 ## Major Pentatonic Scale
 
 Major Pentatonic Scale 可以考虑为 Major Scale 的子集，即 Major Scale 去掉了第四和第七个音：C-D-E-G-A。
-![Alt text](image.png)
+![image.png](/images/Pub_Note_PentatonicScale/image.png)
 可以看到 C Major Pentatonic Scale 是 Anhemitonic Scale。
 
 这是 F Major Pentatonic Scale：
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_PentatonicScale/image-1.png)
 同样是 Anhemitonic Scale。
 
 G-flat Major Pentatonic Scale 全是黑键：
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_PentatonicScale/image-2.png)
 
 Major Scale 和 Minor Scale 在西方音乐中使用比较多，而 Pentatonic Scale 在中国音乐中使用较多，听起来很中国风。
 

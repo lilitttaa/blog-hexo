@@ -106,7 +106,7 @@ const int& c = b;
 ## 移动构造函数
 
 复制构造函数会创建一段新的内存空间，将原对象的内容复制到新的内存空间中，然后返回一个指向新对象的指针。而移动构造函数则是地址直接指向原来的内存空间，然后将原对象的指针置为空。
-![alt text](image.png)
+![image.png](/images/Pub_Note_MoveSemantics/image.png)
 来简单看一下，引入移动构造函数后的调用情况。
 
 ```cpp

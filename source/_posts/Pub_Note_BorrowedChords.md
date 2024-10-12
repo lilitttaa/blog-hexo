@@ -16,10 +16,10 @@ https://www.youtube.com/watch?v=7IdttvJSedg
 Borrowed Chords 简单来说就是从 Parallel Scale 借来的 Chords。
 
 例如，我们有这样一个 C Major 的 Chord Progression：
-![alt text](image.png)
+![image.png](/images/Pub_Note_BorrowedChords/image.png)
 可以从 C Minor 中借 Chord：
-![alt text](image-1.png)
+![image-1.png](/images/Pub_Note_BorrowedChords/image-1.png)
 或者，可以写成这样，并用 Power Chord 代替，听上去就像 Punk Music：
-![alt text](image-2.png)
+![image-2.png](/images/Pub_Note_BorrowedChords/image-2.png)
 
-![alt text](image-3.png)
+![image-3.png](/images/Pub_Note_BorrowedChords/image-3.png)

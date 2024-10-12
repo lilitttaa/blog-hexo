@@ -8,63 +8,63 @@ title: Games101 20.Color and Perception
 
 历史遗留问题，Light Field 和 Lumigraph 两个名词指的是同一个东西。
 
-![Alt text](image.png)
+![image.png](/images/Pub_Note_Games101_20/image.png)
 
 - 只要能有一张幕布能够严格模拟人眼看到的光线，那么你就无法区分这个幕布和真实世界的差别，这就是虚拟现实的原理。
 
 那么人眼到底能看到什么东西呢，我们可以用一个所谓全光函数（The Plenoptic Function）来表示。
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_Games101_20/image-1.png)
 
 最简单的我们可以考虑为往四面八方看，这样就是一个跟$\theta$和$\phi$有关的函数：
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_Games101_20/image-2.png)
 
 更复杂一点，我们可以引入波长，也就是说我们可以看到不同颜色的光：
-![Alt text](image-3.png)
+![image-3.png](/images/Pub_Note_Games101_20/image-3.png)
 
 扩展时间 t：
-![Alt text](image-4.png)
+![image-4.png](/images/Pub_Note_Games101_20/image-4.png)
 
 最后再扩展到三维空间中任意位置：
-![Alt text](image-5.png)
-![Alt text](image-6.png)
+![image-5.png](/images/Pub_Note_Games101_20/image-5.png)
+![image-6.png](/images/Pub_Note_Games101_20/image-6.png)
 
 - 得到这样一个全息电影的概念，也就是说我们可以看到整个世界，不止可以看到，还可以改变自己的位置，从另外一个角度来看这个世界。
 - 或者说我们得到了整个视觉世界。这个世界由一个七维的函数来表示，这个函数就是全光函数。
 
-![Alt text](image-7.png)
+![image-7.png](/images/Pub_Note_Games101_20/image-7.png)
 
 - 这个函数本身从定义来看不一定是离散的
 - 光场实际上就是全光函数的一个小部分
 
 在定义光场之前，我们先定义一下光线：
-![Alt text](image-8.png)
+![image-8.png](/images/Pub_Note_Games101_20/image-8.png)
 
 - 用点和方向的方式定义
 
-![Alt text](image-9.png)
+![image-9.png](/images/Pub_Note_Games101_20/image-9.png)
 
 - 还可以使用两个点来定义一条光线
 
-![Alt text](image-10.png)
+![image-10.png](/images/Pub_Note_Games101_20/image-10.png)
 
 - 一个物体能被看到的所有可能的情况，也就是任何一个位置往任何一个方向过去的光线，由于光路的可逆性也可以看作是物体表面往任何一个方向发光的情况，这就是光场。
 - 事实上我们只需要一个二维的位置和一个二维的方向就可以定义一条光线
 - 怎么理解二维的位置呢？三维物体的表面是在一个二维的空间中的，可以理解成纹理映射，用两个数就可以表示 uv。
 
-![Alt text](image-11.png)
+![image-11.png](/images/Pub_Note_Games101_20/image-11.png)
 
 - 有了光场之后，我们就得到了这个物体在任何一个位置往任何一个方向看的情况，可以直接查询到。
 - 这是个四维的函数
 - 另外，我们把物体放在盒子里，我们不需要知道物体是什么，只需要知道盒子上的任何一个点往任何一个方向会把它记录下来，就可以记录它的光场。
 - 当然，如果在盒子里面，我们则没有记录信息。
 
-![Alt text](image-12.png)
-![Alt text](image-14.png)
+![image-12.png](/images/Pub_Note_Games101_20/image-12.png)
+![image-14.png](/images/Pub_Note_Games101_20/image-14.png)
 
 - 进一步，我们可以用两个点来定义光线，也就是理解成两个平面来定义光场，一个平面上取一个点，另一个平面上取一个点，然后连接这两个点，就得到了一条光线。
 - 光场里我们通常会用 uv 和 st 来表示
 
-![Alt text](image-13.png)
+![image-13.png](/images/Pub_Note_Games101_20/image-13.png)
 
 - 右边是物体
 - 可以有两种不同的理解方式：
@@ -74,36 +74,36 @@ title: Games101 20.Color and Perception
 这就相当于是有很多摄像机从某一个角度看向整个世界，然后拍一张图出来，把这些图组织在一起，就得到了光场。
 
 Standford Camera Array：
-![Alt text](image-15.png)
+![image-15.png](/images/Pub_Note_Games101_20/image-15.png)
 
 - 12x8 的矩阵
 - 相当于前面的第一种理解，从不同的位置拍一张图
 
-![Alt text](image-16.png)
+![image-16.png](/images/Pub_Note_Games101_20/image-16.png)
 
 - 苍蝇的复眼的成像原理其实就是在成像一个光场。
 - 正常的照片每个像素记录的都是 Irradiance，也就是不区分各个方向上的光，把它们平均在一起。透镜会把各个方向上的红绿蓝光都分别记录在一个地方。
 - 但如果能把这些不同方向上的光都分开，分别记录在不同的位置。
 
 The Lytro Light Field Camera（光场摄像机）：
-![Alt text](image-17.png)
+![image-17.png](/images/Pub_Note_Games101_20/image-17.png)
 
 - 把原本的一个像素替换成一个透镜，然后让这个透镜可以呃把这些来自于不同方向的光分开，再把它记录下来。
 - 它的功能是支持后期的重新聚焦，也就是先随便拍照，什么光圈大小、焦距等等都可以后期调整。
 
-![Alt text](image-18.png)
-![Alt text](image-19.png)
+![image-18.png](/images/Pub_Note_Games101_20/image-18.png)
+![image-19.png](/images/Pub_Note_Games101_20/image-19.png)
 
-![Alt text](image-20.png)
+![image-20.png](/images/Pub_Note_Games101_20/image-20.png)
 
 - 光场相机的原理就是把这些原本的这些像素换成了一些微透镜，把感光元件往后放一点点。
 
-![Alt text](image-21.png)
+![image-21.png](/images/Pub_Note_Games101_20/image-21.png)
 
 - 要怎么从光场相机的数据中得到一张普通的照片呢？比如我们从每个透镜的光线中都选择同样的一条，比如都选最底下这条。也就是光都从这个方向进来。然后把得到的结果记录在对应的像素上，就得到了一张原始的照片。
 - 重新聚焦的原理也是一样的，只是要计算出应该查询哪些方向的光线。
 
-![Alt text](image-22.png)
+![image-22.png](/images/Pub_Note_Games101_20/image-22.png)
 
 - 光场相机也有一些问题，比如分辨率不足，因为要记录不同方向上的光，所以要求胶片的分辨率要求非常高，这就造成了高成本。
 - 另外，微透镜原理简单，但是实现起来非常困难，因为要求非常精密，这也是造成高成本的原因。
@@ -112,136 +112,136 @@ The Lytro Light Field Camera（光场摄像机）：
 
 ### Physical Basis of Color
 
-![Alt text](image-23.png)
+![image-23.png](/images/Pub_Note_Games101_20/image-23.png)
 
 - 早期牛顿做过一个实验，一束白光穿过一个棱镜，它会被分解成各个不同的这个颜色，也就是不同的颜色可以合成各种各样的其他颜色。
 - 这些分解的颜色合起来又会形成白色，颜色是通过很多不同的这种基本颜色混合出来的。
 
 The Visible Spectrum of Light（可见光谱）：
-![Alt text](image-24.png)
+![image-24.png](/images/Pub_Note_Games101_20/image-24.png)
 
 - 为什么光线会被折射成不同的颜色？是因为不同的波长对应有不同的折射率。
 - 所谓光谱就是光线的能量在不同的波长上的分布
 - 图形学中我们关心的是可见光的光谱，波长在 400nm 到 700nm 之间
 
 Spectral Power Distribution（光谱功率分布）：
-![Alt text](image-25.png)
+![image-25.png](/images/Pub_Note_Games101_20/image-25.png)
 
 - SPD 描述光在任何波长的分布是多少
 
-![Alt text](image-26.png)
+![image-26.png](/images/Pub_Note_Games101_20/image-26.png)
 
 - 蓝天部分的能量主要集中在高频部分，也就是短波长
 
 不同的光呢对应有各种各样不同的 SPD：
-![Alt text](image-27.png)
+![image-27.png](/images/Pub_Note_Games101_20/image-27.png)
 
-![Alt text](image-28.png)
+![image-28.png](/images/Pub_Note_Games101_20/image-28.png)
 
 - SPD 有个简单的性质：线性，也就是说两种光线合在一起，它们的 SPD 就是两个 SPD 的和
 
 颜色是什么？
-![Alt text](image-29.png)
+![image-29.png](/images/Pub_Note_Games101_20/image-29.png)
 
 - 本质上不是一种物理上的光的分布，而是人的感知
 
 ### Biological Basis of Color
 
 人眼的解剖：
-![Alt text](image-30.png)
+![image-30.png](/images/Pub_Note_Games101_20/image-30.png)
 
 - 人眼其实就是一个摄像机，有瞳孔类似于光圈，晶状体类似于透镜，晶状体可以调节焦距，通过肌肉牵扯出不同的形状。
 
-![Alt text](image-31.png)
+![image-31.png](/images/Pub_Note_Games101_20/image-31.png)
 
 - 视网膜类比胶片，视网膜上有感光细胞，感光细胞分为两种，棒状细胞和锥形细胞：
   - 棒状细胞感知光的强度，但不感知颜色，可以得到灰度图
   - 锥形细胞感知颜色
 
-![Alt text](image-32.png)
+![image-32.png](/images/Pub_Note_Games101_20/image-32.png)
 
 - 锥形细胞又分为三种，分别感知不同的颜色：
   - S 型细胞感知短波长的光
   - M 型细胞感知中波长的光
   - L 型细胞感知长波长的光
 
-![Alt text](image-33.png)
+![image-33.png](/images/Pub_Note_Games101_20/image-33.png)
 
 - 不同的人眼睛里面这三种细胞的分布非常不一样，每个人之间差异非常大
 - 比如左下角的人有很多绿色的锥形细胞，它对绿色的光比较敏感
 
 ### Tristimulus Theory of Color（颜色的三刺激理论）
 
-![Alt text](image-34.png)
+![image-34.png](/images/Pub_Note_Games101_20/image-34.png)
 
 - 这些细胞对于不同波长的响应，我们可以用曲线来表示
 - 感知的结果就是这两个函数相乘起来，然后积分，得到三个数，这三个数就是人眼看到的颜色
 
-![Alt text](image-35.png)
+![image-35.png](/images/Pub_Note_Games101_20/image-35.png)
 
 - 也就是说每个人看到的颜色都是不一样的，因为每个人的这三种细胞的分布都不一样
 
 ### Metamerism（同色异谱）
 
-![Alt text](image-36.png)
+![image-36.png](/images/Pub_Note_Games101_20/image-36.png)
 
 - 有两种光线，它们的光谱不一样，但是人眼看到的结果是一样的（经过积分之后得到的三个数是一样的）
 - 同色异谱现象是非常重要的，我们可以进行 Color Matching，也就是说我们可以通过不同的光谱，然后得到相同的颜色。
 
-![Alt text](image-37.png)
-![Alt text](image-38.png)
+![image-37.png](/images/Pub_Note_Games101_20/image-37.png)
+![image-38.png](/images/Pub_Note_Games101_20/image-38.png)
 
 - 在显示器上显示太阳，但是光谱完全不同
 
 ### Color Reproduction / Matching
 
-![Alt text](image-39.png)
+![image-39.png](/images/Pub_Note_Games101_20/image-39.png)
 
 - 在计算机成像系统中，我们认为是加色系统，也就是说我们可以通过 RGB 三个原色混合得到任何颜色。
 - 它们不同的颜色乘上不同的强度，然后混合起来，就可以得到一种颜色。而所谓的 RGB 就是这种颜色的系数。
 - 所谓加色系统就是指，把 RGB 都设置为 255，就可以得到白色。在现实世界中，不同的光混合在一起也是白色。而在画画中，混合不同颜料会变黑，这是减色系统。
 
-![Alt text](image-40.png)
+![image-40.png](/images/Pub_Note_Games101_20/image-40.png)
 
 - 那要怎么做呢？我们可以通过实验，给定一个颜色，然后用三种不同的颜色混合得到相同的颜色。
 
-![Alt text](image-41.png)
-![Alt text](image-42.png)
-![Alt text](image-43.png)
+![image-41.png](/images/Pub_Note_Games101_20/image-41.png)
+![image-42.png](/images/Pub_Note_Games101_20/image-42.png)
+![image-43.png](/images/Pub_Note_Games101_20/image-43.png)
 
 - 不断调节系数，直到得到相同的颜色
 
-![Alt text](image-44.png)
+![image-44.png](/images/Pub_Note_Games101_20/image-44.png)
 
 - 有时候会遇到，无论怎么混合都混不出来，这时候可以通过减去这个颜色，就可以得到相同的颜色。
 - 也就是说系数可以是负数
 
 CIE RGB Color Matching Experiment：
-![Alt text](image-45.png)
+![image-45.png](/images/Pub_Note_Games101_20/image-45.png)
 
 - 用三种所谓的 delta 函数（频谱上非常集中，几乎就是在一个波长上的光）来匹配任何一个颜色
 - 通过实验，对于任意一个波长的光，我们可以得到需要多少红绿蓝光来混合得到这个颜色
 
-![Alt text](image-46.png)
+![image-46.png](/images/Pub_Note_Games101_20/image-46.png)
 
 - 选定一个 x 坐标（波长），然后得到需要多少红绿蓝光来混合得到这个颜色
 - 可以看到，红色的曲线有负数。
 - 注：通过这个实验得到这三个数已经把人眼的响应考虑进去了。
 
-![Alt text](image-47.png)
+![image-47.png](/images/Pub_Note_Games101_20/image-47.png)
 
 - 对于任意一个实际的光的光谱（可以把这个光谱理解为概率密度函数），对于每个波长得到一个值，然后整个做一个积分就好了。
 
 ### Color Space
 
 Standard Color Spaces：
-![Alt text](image-48.png)
+![image-48.png](/images/Pub_Note_Games101_20/image-48.png)
 
 - 前面说到的这个 RGB 是一个广泛使用的标准的系统，叫做 sRGB
 - 广泛的应用于各种各样的成像设备，比如电脑的显示器
 
 A Universal Color Space: CIE XYZ
-![Alt text](image-49.png)
+![image-49.png](/images/Pub_Note_Games101_20/image-49.png)
 
 - 这个系统在现实中虽然不常用，但是在科学上用的更多
 - 它也定义了一个所谓颜色匹配函数，不过它不是实验测出来的，而是人造的一套颜色匹配系统
@@ -249,65 +249,65 @@ A Universal Color Space: CIE XYZ
 - 覆盖整个可见光谱，400nm 到 700nm
 - 多于某个波长的光，分别需要多少红绿蓝光来混合得到 XYZ
 
-![Alt text](image-50.png)
+![image-50.png](/images/Pub_Note_Games101_20/image-50.png)
 
 - 如果要把 XYZ 系统表示的所有颜色显示出来，但是三维要怎么在二维显示呢？先做一个归一化，z 的值由 xy 确定，然后只显示 xy。
 - Y 表示亮度，可以固定 Y，更改 X 和 Z，这样 x 与 y 都是 X 和 Z 的函数。
 - 这个扇面形的东西叫做色域，表示所有颜色空间可以显示的颜色
 
-![Alt text](image-51.png)
+![image-51.png](/images/Pub_Note_Games101_20/image-51.png)
 
 - 中心部分的白色由各种颜色混合而成，所以是最不纯的颜色
 - 边界上的颜色是最纯的颜色
 
 Gamut（色域）：
-![Alt text](image-52.png)
+![image-52.png](/images/Pub_Note_Games101_20/image-52.png)
 
 - 不同的颜色空间表示的范围是不一样的
 
-![Alt text](image-53.png)
+![image-53.png](/images/Pub_Note_Games101_20/image-53.png)
 
 - SRGB 只能表示这么一个小的三角形
 
 ### HSV Color Space (Hue-Saturation-Value)
 
-![Alt text](image-54.png)
+![image-54.png](/images/Pub_Note_Games101_20/image-54.png)
 
 - Hue（色调）：不同类型的颜色，比如红色、蓝色等
 - Saturation（饱和度）：是更接近白色还是更接近颜色本身
 - Value（亮度）：从黑色到某种颜色
 
 下面是更正式的定义：
-![Alt text](image-55.png)
+![image-55.png](/images/Pub_Note_Games101_20/image-55.png)
 
 - 也有人叫 HSL，也就是 Hue-Saturation-Lightness，但是实际上是一样的
 
 ### CIELAB Space (AKA L*a*b\*)
 
-![Alt text](image-56.png)
+![image-56.png](/images/Pub_Note_Games101_20/image-56.png)
 
 - 也跟感知有关，它有三个轴，a 轴和 b 轴分别表示红绿和蓝黄，L 表示亮度 0 是黑色，100 是白色
 - 任何一个轴上的颜色的极限两端都是互补色
 - 互补也是实验得到的
 
 Opponent Color Theory（互补色理论）：
-![Alt text](image-57.png)
+![image-57.png](/images/Pub_Note_Games101_20/image-57.png)
 
 - 大脑很难想象一种偏红的绿色，因为红绿是互补色
 
 可以通过人眼的视觉暂留来验证互补色，看一幅图看久了，然后突然切换到另一幅图，就会看到互补色。
-![Alt text](image-58.png)
+![image-58.png](/images/Pub_Note_Games101_20/image-58.png)
 
 ### Everything is Relative
 
-![Alt text](image-59.png)
-![Alt text](image-60.png)
+![image-59.png](/images/Pub_Note_Games101_20/image-59.png)
+![image-60.png](/images/Pub_Note_Games101_20/image-60.png)
 
 - 颜色是相对的，A 和 B 的颜色是一样的
 
 ### CMYK: A Subtractive Color Space
 
-![Alt text](image-61.png)
+![image-61.png](/images/Pub_Note_Games101_20/image-61.png)
 
 - 减色系统在生活中应用得更加广泛，各种各样的印刷、打印等都是减色系统
 - 各种颜色混合在一起会变黑

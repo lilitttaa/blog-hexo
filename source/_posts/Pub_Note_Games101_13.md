@@ -7,40 +7,40 @@ title: Games101 13.Ray Tracing 1(Whitted-Style Ray Tracing)
 ### Overview
 
 为什么要引入光线追踪：
-![Alt text](image.png)
+![image.png](/images/Pub_Note_Games101_13/image.png)
 
 - 对于全局效果不好解决，比如阴影、glossy 反射（金属反射）
 - 当然不是说不能做，但是比较麻烦，而且不能保证物理上的正确性
 
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_Games101_13/image-1.png)
 
 - 光栅化本质上来说是一种快速的近似
 
-![Alt text](image-2.png)
+![image-2.png](/images/Pub_Note_Games101_13/image-2.png)
 
 - 光线追踪是一种准确的方法，但是它的问题就是非常慢
 - 过去光线追踪常常是用来做离线的应用，比如电影
 - 比如说这里的迪斯尼的电影，一帧需要 10k 个 cpu 小时
 
 在开始光线追踪之前我们需要先来对光线做一些定义：
-![Alt text](image-3.png)
+![image-3.png](/images/Pub_Note_Games101_13/image-3.png)
 
 - 光线沿着直线传播
 - 光线不会发生碰撞
 - 光路是可逆的，也就是说我们可以认为光线从光源发出，然后经过四面八方反弹进入人的眼睛。也可以认为人的眼睛发出光线，然后经过四面八方反弹进入光源。
 
-![Alt text](image-4.png)
+![image-4.png](/images/Pub_Note_Games101_13/image-4.png)
 
 - 过去很多人都认为是光从眼睛发出，照射到物体上，然后被物体挡住，所以我们看到了东西。当然这个观点是错误的。
 
-![Alt text](image-5.png)
+![image-5.png](/images/Pub_Note_Games101_13/image-5.png)
 
 - 我们假设相机前有一块虚拟的屏幕，屏幕上有各个像素。
 - 所谓光线追踪就是指，我们从相机出发，对于每一个像素，我们都打出一条光线。光线会到达场景中的某个位置，或者和场景中的某个物体相交。
 - 然后我们把相交的点和光源做一条连线，判断这个点是否被光源可见，也就是判断这个点是否在阴影里。
 - 如果可见，那就形成了一条有效的光路，从光源到这个点，再到眼睛，然后我们就可以计算这条光路上带的能量，从而计算出这个点的颜色。
 
-![Alt text](image-6.png)
+![image-6.png](/images/Pub_Note_Games101_13/image-6.png)
 
 - 我们假设眼睛是一个点，光源也是一个点光源
 - 对于场景中的物体，我们认为光线打到他们过后会发生完美的折射或者反射。
@@ -48,82 +48,82 @@ title: Games101 13.Ray Tracing 1(Whitted-Style Ray Tracing)
 
 ### Recursive (Whitted-Style) Ray Tracing
 
-![Alt text](image-7.png)
+![image-7.png](/images/Pub_Note_Games101_13/image-7.png)
 
 - 刚才我们说的光线追踪只考虑了光线弹射一次的情况，实际上光线可以弹射很多次。
 - 这里我们介绍一种叫做 Whitted-Style 的光线追踪方法，它是一个递归的算法。
 - 左边的球在做折射，右边的球在做反射。
 
 这个递归算法具体的工作流程如下：
-![Alt text](image-8.png)
-![Alt text](image-9.png)
-![Alt text](image-10.png)
+![image-8.png](/images/Pub_Note_Games101_13/image-8.png)
+![image-9.png](/images/Pub_Note_Games101_13/image-9.png)
+![image-10.png](/images/Pub_Note_Games101_13/image-10.png)
 
 - 光线打到玻璃球上，一部分能量被反射，一部分能量被折射。
 - 在 Whitted-Style 里边理论上光线可以一直弹射下去
-  ![Alt text](image-11.png)
-  ![Alt text](image-12.png)
+  ![image-11.png](/images/Pub_Note_Games101_13/image-11.png)
+  ![image-12.png](/images/Pub_Note_Games101_13/image-12.png)
 - 在 Whitted-Style 中，着色发生了一些变化。每个交点都去和光源做一条连线，看这个点是否能被照亮，然后计算它的着色。
 - 如果这个点能被照亮，那么这个点的着色就会被加到这个像素上。因为可能会产生多条光路。
 - 当然这里边存在能量损失，否则累加的结果就过曝了。比如我们可能认为折射前面占了 60%，后面占了 40%。
 - 我们把第一段光线叫做 primary ray，折射或者反射后的光线都叫做 secondary ray。然后这些用来判断可见性的光线叫 shadow ray。
 
 最后得到一个这样的结果：
-![Alt text](image-13.png)
+![image-13.png](/images/Pub_Note_Games101_13/image-13.png)
 
 下面我们来解决第一个问题，求交点：
 
 ### Ray-Surface Intersection
 
 先把光线数学上给定义出来：
-![Alt text](image-14.png)
+![image-14.png](/images/Pub_Note_Games101_13/image-14.png)
 
 - 数学上就是一条射线，有一个起点和一个方向
 - t 用来表示沿着这个方向走了多远，它是一个正数
 
 考虑与球求交：
-![Alt text](image-15.png)
+![image-15.png](/images/Pub_Note_Games101_13/image-15.png)
 
 - 把这两个式子结合起来即可
 
-![Alt text](image-16.png)
+![image-16.png](/images/Pub_Note_Games101_13/image-16.png)
 
 - 就是求解这么一个二次方程
 - $b^2-4ac$的值表示射线跟球的相交关系。
 - 另外 t 要求还要大于 0
 
 如果推广到一般的隐式表面的求交：
-![Alt text](image-17.png)
+![image-17.png](/images/Pub_Note_Games101_13/image-17.png)
 
 - 记住我们要求的是实数解，不能是虚数
 - t 必须得是正的
 
 下面是跟三角形求交：
 
-![Alt text](image-18.png)
+![image-18.png](/images/Pub_Note_Games101_13/image-18.png)
 
 - 不管是 2d 还是 3d。从一个点发出一条射线，跟封闭物体的交点有奇数个，说明点在内部，否则在外部。
 - 简单来说就是遍历每个三角形找到最近的交点，也就是 t 最小的交点。
 - 光线和三角形完美的平行的情况我们直接忽略。
 
-![Alt text](image-19.png)
+![image-19.png](/images/Pub_Note_Games101_13/image-19.png)
 
 - 光线与三角形求交分为两个步骤：
   - 光线与平面求交
   - 判断交点是否在三角形内
 - 与平面求交还是和之前的思路一样，把平面的方程列出来，然后把射线公式带进去。
 
-![Alt text](image-20.png)
+![image-20.png](/images/Pub_Note_Games101_13/image-20.png)
 
 - 其中 p'是平面上的一个点，n 是平面的法线
 
-![Alt text](image-21.png)
+![image-21.png](/images/Pub_Note_Games101_13/image-21.png)
 
 - 把公式带到 p 就得到了一个关于 t 的式子
 
 有没有办法能在解出交点之后立刻判断这个交点是否在三角形内呢？
 
-![Alt text](image-22.png)
+![image-22.png](/images/Pub_Note_Games101_13/image-22.png)
 
 - 如果这个交点在三角形内，那么我们可以用重心坐标来表示这个交点
 - 另外重心坐标也隐含了这个点在平面上这一信息
@@ -132,27 +132,27 @@ title: Games101 13.Ray Tracing 1(Whitted-Style Ray Tracing)
 
 ### Accelerating Ray-Surface Intersection
 
-![Alt text](image-23.png)
+![image-23.png](/images/Pub_Note_Games101_13/image-23.png)
 
 - 对于每个像素发出的光线我们都要遍历所有三角形。而且还要考虑光线弹射的问题，这样的话计算量就太大了。
 
-![Alt text](image-24.png)
-![Alt text](image-25.png)
+![image-24.png](/images/Pub_Note_Games101_13/image-24.png)
+![image-25.png](/images/Pub_Note_Games101_13/image-25.png)
 
 - 一个场景中存在的三角形数量可能是很大的
 
-![Alt text](image-26.png)
+![image-26.png](/images/Pub_Note_Games101_13/image-26.png)
 
 - 为了加速我们可以引入一种叫做包围盒的概念，也就是说我们可以先判断光线和包围盒是否相交，如果不相交那么这个包围盒里边的三角形也不会和光线相交。
 
-![Alt text](image-27.png)
+![image-27.png](/images/Pub_Note_Games101_13/image-27.png)
 
 - 这样一个长方体就是三个对面的交集
 - 而且这个长方体的三个对面都是沿着坐标轴的，也就是说它不是任意旋转的，通常我们把这种长方体叫做 axis-aligned bounding box，简称 AABB。
 
 那我们如何判断光线和 AABB 是否相交呢？
 
-![Alt text](image-28.png)
+![image-28.png](/images/Pub_Note_Games101_13/image-28.png)
 
 - 先来考虑二维的情况
 - 分别对两组对面进行判断，比如左边是对两个 x 轴的对面，中间是对两个 y 轴的对面。判断它们什么时候进入什么时候推出，可以得到两组线段。
@@ -160,18 +160,18 @@ title: Games101 13.Ray Tracing 1(Whitted-Style Ray Tracing)
 - 最终光线是什么时候进入什么时候离开的呢，实际上就是前面两个线段的交集。
 
 扩展到三维：
-![Alt text](image-29.png)
+![image-29.png](/images/Pub_Note_Games101_13/image-29.png)
 
 - 只要进入的时间小于离开的时间，那么就说明光线在这个盒子里面待了一段时间，也就是有焦点。
 
 前面我们没有说负的情况怎么考虑，这里我们来说一下：
 
-![Alt text](image-30.png)
+![image-30.png](/images/Pub_Note_Games101_13/image-30.png)
 
 - 如果离开的时间为负，那么说明这个盒子在光线的背后，也就是不可能有交点。
 - 如果进入的时间为负，但是离开的时间为正，那么说明光线的起点在盒子里面，那么一定会有交点。
 
 为什么要用 AABB？
-![Alt text](image-31.png)
+![image-31.png](/images/Pub_Note_Games101_13/image-31.png)
 
 - 主要是光线和平面相交要求时间，如果是轴对齐的话，这个计算就会简单很多。

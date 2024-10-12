@@ -12,7 +12,7 @@ title: C++ Primer 9. 顺序容器
 ## 顺序容器概述
 
 顺序容器类型如下:
-![Alt text](image.png)
+![image.png](/images/Pub_Note_CppPrimerChapter9/image.png)
 
 如何选择容器类型:
 
@@ -263,7 +263,7 @@ auto newBegin = fList.insert(fList.begin(), fVec.begin(), fVec.end());
 - resize 改变 vector 中元素的数量。
 - shrink_to_fit 具体实现可能会忽略这个请求。
 
-![Alt text](image-1.png)
+![image-1.png](/images/Pub_Note_CppPrimerChapter9/image-1.png)
 
 ```cpp
 vector<int> ivec;
@@ -397,8 +397,8 @@ s.erase(s.size() - 5, 5); // "hello world" 删除最后 5 个字符
 ```
 
 append 和 replace：
-![Alt text](image-2.png)
-![Alt text](image-3.png)
+![image-2.png](/images/Pub_Note_CppPrimerChapter9/image-2.png)
+![image-3.png](/images/Pub_Note_CppPrimerChapter9/image-3.png)
 
 ```cpp
 string s("C++ Primer")
@@ -408,8 +408,8 @@ s.replace(11, 3, "5th"); // "C++ Primer 5th Ed."
 
 ### string 搜索操作
 
-![Alt text](image-4.png)
-![Alt text](image-5.png)
+![image-4.png](/images/Pub_Note_CppPrimerChapter9/image-4.png)
+![image-5.png](/images/Pub_Note_CppPrimerChapter9/image-5.png)
 
 ```cpp
 string numbers("0123456789"), name("r2d2");
