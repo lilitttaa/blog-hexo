@@ -564,8 +564,6 @@
   },
   "Pub_Note_TDD": {
     "title": "TDD 一种改变编程范式的开发方法",
-    "cover": "program.png",
-    "desc": "...",
     "created_at": "2024-06-21T12:48:43.962Z"
   },
   "Pub_Note_PythonRegex": {
