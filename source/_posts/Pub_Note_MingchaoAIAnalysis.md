@@ -1,5 +1,5 @@
 ---
-title: "MingchaoAI" Analysis
+title: 鸣潮跑图AI分析
 ---
 
 - [视频演示](https://www.bilibili.com/video/BV1tH4y1c79f/?spm_id_from=333.788&vd_source=cd7009b0abbbb6871d07c0746573ce80)
