@@ -1,3 +1,0 @@
----
-title: Mobile Render Pipeline
----
