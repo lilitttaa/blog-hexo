@@ -1,5 +1,7 @@
 ---
 title: Blues Theory
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=_LDgu8dGiME

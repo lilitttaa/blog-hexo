@@ -1,5 +1,7 @@
 ---
 title: Song Structure
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=CbmWdKOmEBc

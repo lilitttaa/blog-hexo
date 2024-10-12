@@ -1,5 +1,7 @@
 ---
 title: C++ Primer 2.变量和基本类型
+category:
+  - Cpp
 ---
 
 ## 基本类型

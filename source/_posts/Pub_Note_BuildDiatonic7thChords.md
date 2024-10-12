@@ -23,7 +23,9 @@ https://www.youtube.com/watch?v=rdLrnZ9E9H0
 ![image-6.png](/images/Pub_Note_BuildDiatonic7thChords/image-6.png)
 
 | Degree | Chord | Quality |
-|--------|-------|---------|
+|--------|-------|------category:
+  - Music
+---|
 | I      | Cmaj7 | Major-major |
 | II     | Dm7   | Minor-minor |
 | III    | Em7   | Minor-minor |

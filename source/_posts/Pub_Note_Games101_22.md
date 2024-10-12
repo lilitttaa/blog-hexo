@@ -1,5 +1,7 @@
 ---
 title: Games101 22.Animation (cont.)
+category:
+  - Game
 ---
 
 ## Single Particle Simulation

@@ -291,7 +291,9 @@ for (auto pos = authors.equal_range("Barth, John"); pos.first != pos.second; ++p
 
 无序容器管理桶的接口：
 | 操作 | 作用 |
-| ---- | ---- |
+| ---- | -category:
+  - Cpp
+--- |
 | c.bucket_count() | 返回 c 当前有多少个桶 |
 | c.max_bucket_count() | 返回 c 可以有多少个桶 |
 | c.bucket_size(n) | 返回第 n 个桶中有多少个元素 |

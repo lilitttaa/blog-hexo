@@ -21,6 +21,8 @@ Interval 用来表示两个 Note 之间的距离，在一个 Octave（八度）�
 | The Major Sixth（大六度）               | 欢快、振奋人心                 | ---                                                                           | C-A  |
 | The Minor Seventh（小七度）             | 不稳定、紧张、                 | 想要解决八度问题 ---                                                          | C-B♭ |
 | The Major Seventh（大七度）             | 不和谐音程、张力               | 有种强烈的想要解绝八度问题的感觉---                                           | C-B  |
-| The Perfect Octave（纯八度）            | 最和谐的音程                   | ---                                                                           | C-C  |
+| The Perfect Octave（纯八度）            | 最和谐的音程                   | category:
+  - Music
+---                                                                           | C-C  |
 
 ## 怎么确定两个 Note 之间的 Interval 关系?

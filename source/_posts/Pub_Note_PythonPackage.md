@@ -1,5 +1,7 @@
 ---
 title: Pyinstaller打包
+category:
+  - Program
 ---
 
 最好是在一个虚拟环境中进行打包，这样可以避免一些依赖问题。

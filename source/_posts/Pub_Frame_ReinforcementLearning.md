@@ -1,5 +1,7 @@
 ---
 title: The Roadmap of Reinforcement Learning
+category:
+  - Program
 ---
 
 ## Academic Conference

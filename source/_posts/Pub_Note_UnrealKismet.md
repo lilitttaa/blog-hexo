@@ -1,5 +1,7 @@
 ---
 title: Unreal Kismet
+category:
+  - Game
 ---
 
 ## 获取选中节点 Copy 的内容

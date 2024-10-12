@@ -1,6 +1,8 @@
 ---
 title: 什么是Traits？
 cover: program.png
+category:
+  - Cpp
 ---
 
 ## Step1：写一个模板函数实现获得指针指向的值

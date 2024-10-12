@@ -1,5 +1,7 @@
 ---
 title: Piano vs Guitar
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=pyqT2YE-oeU

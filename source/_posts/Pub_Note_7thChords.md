@@ -1,5 +1,7 @@
 ---
 title: 7th Chords
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=ipCTIabddmo

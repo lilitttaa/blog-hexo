@@ -1,5 +1,7 @@
 ---
 title: Modes（调式）
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=1FRmmnKSBdg

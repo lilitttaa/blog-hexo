@@ -1,5 +1,7 @@
 ---
 title: C++ Primer 6.函数
+category:
+  - Cpp
 ---
 
 ## 函数基础

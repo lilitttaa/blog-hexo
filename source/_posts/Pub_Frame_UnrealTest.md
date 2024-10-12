@@ -1,6 +1,8 @@
 ---
 title: Unreal 自动化测试源码分析
 cover: game.png
+category:
+  - Game
 ---
 [TOC]
 

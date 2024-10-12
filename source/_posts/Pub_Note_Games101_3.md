@@ -1,5 +1,7 @@
 ---
 title: Games101 3.Transformation
+category:
+  - Game
 ---
 
 ## Why study transformation?

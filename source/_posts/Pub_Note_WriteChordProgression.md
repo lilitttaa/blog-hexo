@@ -1,5 +1,7 @@
 ---
 title: Write Chord Progression（和弦进行）
+category:
+  - Music
 ---
 
 - https://www.youtube.com/watch?v=M8eItITv8QA

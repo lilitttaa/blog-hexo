@@ -1,5 +1,7 @@
 ---
 title: Polymeter
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=MqyrPzvN3Zc

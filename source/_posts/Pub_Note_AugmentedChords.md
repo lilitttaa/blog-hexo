@@ -1,5 +1,7 @@
 ---
 title: Augmented Chords（增和弦）
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=fDIHxTWaKos

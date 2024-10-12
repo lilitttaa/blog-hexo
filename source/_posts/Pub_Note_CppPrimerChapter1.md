@@ -1,5 +1,7 @@
 ---
 title: C++ Primer 1.开始
+category:
+  - Cpp
 ---
 
 ## 编写一个简单的 C++程序

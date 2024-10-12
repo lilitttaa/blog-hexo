@@ -1,5 +1,7 @@
 ---
 title: Triads（三和弦）
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=-KzJFzb-HQg

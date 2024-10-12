@@ -1,5 +1,7 @@
 ---
 title: Memorize Pentatonic Scale
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=Vj-BOmKgdE4

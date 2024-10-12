@@ -1,5 +1,7 @@
 ---
 title: Minor Scale（小调音阶）
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=qXLr-O2ZNDU

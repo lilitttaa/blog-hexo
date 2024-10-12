@@ -1,5 +1,7 @@
 ---
 title: Games101 9.Shading 3 (Texture Mapping cont.)
+category:
+  - Game
 ---
 
 ## Barycentric Coordinates

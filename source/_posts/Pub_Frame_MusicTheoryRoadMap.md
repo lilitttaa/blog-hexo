@@ -1,6 +1,8 @@
 ---
 title: Music Theory Road Map
 cover: music_staff.png
+category:
+  - Music
 ---
 
 ## 43 Music Theory Concepts For Composers

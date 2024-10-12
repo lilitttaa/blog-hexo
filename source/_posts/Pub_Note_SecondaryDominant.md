@@ -1,5 +1,7 @@
 ---
 title: Secondary Dominant（副属和弦）
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=py4HaueW50Q

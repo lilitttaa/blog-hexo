@@ -1,6 +1,8 @@
 ---
 title: React 学习笔记
 cover: web_design.png
+category:
+  - Web Frontend
 ---
 
 [TOC]

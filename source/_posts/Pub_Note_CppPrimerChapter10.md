@@ -1,5 +1,7 @@
 ---
 title: C++ Primer 10.泛型算法
+category:
+  - Cpp
 ---
 
 ## 概述

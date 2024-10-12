@@ -1,5 +1,7 @@
 ---
 title: Write Melody Over Chords
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=jA7gdz56LtY

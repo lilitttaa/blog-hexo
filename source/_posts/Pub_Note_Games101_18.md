@@ -1,5 +1,7 @@
 ---
 title: Games101 18.Advanced Topics in Rendering
+category:
+  - Game
 ---
 
 ## Advanced Light Transport

@@ -1,5 +1,7 @@
 ---
 title: Games101 17.Materials and Appearances
+category:
+  - Game
 ---
 
 ## Materials and Appearances

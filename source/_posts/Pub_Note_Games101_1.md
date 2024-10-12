@@ -1,5 +1,7 @@
 ---
 title: Games101 1.Overview of Computer Graphics
+category:
+  - Game
 ---
 
 ## What is Computer Graphics?

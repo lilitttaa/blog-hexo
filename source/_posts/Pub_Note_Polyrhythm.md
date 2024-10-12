@@ -1,5 +1,7 @@
 ---
 title: Polyrhythm
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=c1pejTgLuhA

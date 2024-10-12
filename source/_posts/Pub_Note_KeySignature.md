@@ -1,5 +1,7 @@
 ---
 title: Key Signatures（调号）
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=M6588OmxV6Q

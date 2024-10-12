@@ -1,5 +1,7 @@
 ---
 title: Games105 1.Introduction To Character Animation
+category:
+  - Game
 ---
 
 ## 3D Computer Animation

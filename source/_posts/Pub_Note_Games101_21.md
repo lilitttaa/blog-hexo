@@ -1,5 +1,7 @@
 ---
 title: Games101 21.Animation
+category:
+  - Game
 ---
 
 ## History

@@ -1,6 +1,8 @@
 ---
 title: C++ 移动语义
 cover: program.png
+category:
+  - Cpp
 ---
 
 ## 左值引用与右值引用

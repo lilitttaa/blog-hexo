@@ -1,5 +1,7 @@
 ---
 title: Scale Degree（音阶）
+category:
+  - Music
 ---
 
 - https://www.youtube.com/watch?v=GlJ6TxVKcDU

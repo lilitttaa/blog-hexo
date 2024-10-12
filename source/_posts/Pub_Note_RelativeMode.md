@@ -26,7 +26,9 @@ C Major Scale 和 A Minor Scale 的 Notes 是完全一样的。
 ![image-4.png](/images/Pub_Note_RelativeMode/image-4.png)
 
 | tonal center | mode                              | feeling                                            |
-| ------------ | --------------------------------- | -------------------------------------------------- |
+| ------------ | --------------------------------- | -----------------------------------------------category:
+  - Music
+--- |
 | C            | Major Mode                        | Bright, Happy                                      |
 | D            | Dorian Mode（多利亚调）           | Like minor mode, but brighter                      |
 | E            | Phrygian Mode（弗里吉亚调）       | Dark, Exotic                                       |

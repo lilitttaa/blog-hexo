@@ -1,5 +1,7 @@
 ---
 title: How to Do Research
+category:
+  - Daily Life
 ---
 
 ## 童欣：研究之味

@@ -1,6 +1,8 @@
 ---
 title: A Top-Down Look at Our Bottom-Up Approach in 'Baldur's Gate 3'
 cover: game.png
+category:
+  - Game
 ---
 
 - 使用template

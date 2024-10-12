@@ -1,6 +1,8 @@
 ---
 title: 钢琴学习指南
 cover: piano.png
+category:
+  - Music
 ---
 
 [TOC]

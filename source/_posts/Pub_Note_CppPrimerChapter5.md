@@ -1,5 +1,7 @@
 ---
 title: C++ Primer 5.语句
+category:
+  - Cpp
 ---
 
 ## 简单语句

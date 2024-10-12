@@ -1,5 +1,7 @@
 ---
 title: Games101 12.Geometry 3
+category:
+  - Game
 ---
 
 ## Mesh Operations: Geometry Processing

@@ -1,5 +1,7 @@
 ---
 title: Pentatonic Scale（五声音阶）
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=MPHWcy5I-Uc

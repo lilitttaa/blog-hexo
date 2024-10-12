@@ -1,6 +1,8 @@
 ---
 title: Redux 简单教程
 cover: web_design.png
+category:
+  - Web Frontend
 ---
 [TOC]
 

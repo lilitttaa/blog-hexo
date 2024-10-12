@@ -1,5 +1,7 @@
 ---
 title: C++ Primer 8. IO库
+category:
+  - Cpp
 ---
 
 ## IO 类

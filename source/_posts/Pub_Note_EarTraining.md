@@ -1,5 +1,7 @@
 ---
 title: Ear Training
+category:
+  - Music
 ---
 
 https://www.youtube.com/watch?v=Wzqa44N-sIU

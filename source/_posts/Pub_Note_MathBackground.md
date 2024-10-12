@@ -1,5 +1,7 @@
 ---
 title: Games105 2.Math Background
+category:
+  - Game
 ---
 
 - [Lecture Notes](https://games-105.github.io/ppt/02%20-%20Math%20Background.pdf)
