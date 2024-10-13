@@ -1,7 +1,8 @@
 ---
 title: Power Chords（强力和弦）
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=dbhF2wnnT7M

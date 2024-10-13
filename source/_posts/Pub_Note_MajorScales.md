@@ -2,7 +2,8 @@
 title: Major Scales（大调音阶）
 cover: music_staff.png
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 <https://www.youtube.com/watch?v=v44NY4fyxHA>

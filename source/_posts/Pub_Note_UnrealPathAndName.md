@@ -63,7 +63,8 @@ UE_LOG(LogAssetTool, Display, TEXT("PackageFullName: %s"),*PackageFullName);
 
 | Type            | Example                                                                                             |
 | --------------- | ------------------------------------------------------------------------------------------------category:
-  - Game
+ - Game
+sortValue: undefined0
 --- |
 | ObjectPathName  | /Game/Asset/Effect/Curve/PostCurve/FX_PostCurve_Fresnel_01.FX_PostCurve_Fresnel_01                  |
 | ObjectFullName  | CurveLinearColor /Game/Asset/Effect/Curve/PostCurve/FX_PostCurve_Fresnel_01.FX_PostCurve_Fresnel_01 |

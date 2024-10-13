@@ -1,7 +1,8 @@
 ---
 title: Write Chords in Minor Scale
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=j-j4g0ktPGw

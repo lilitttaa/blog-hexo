@@ -2,7 +2,8 @@
 title: The Map of Mathematics（数学地图）
 cover: math.png
 category:
-  - Mathematics
+ - Mathematics
+sortValue: undefined7
 ---
 
 

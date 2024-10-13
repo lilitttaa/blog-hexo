@@ -1,7 +1,8 @@
 ---
 title: Games101 17.Materials and Appearances
 category:
-  - Game
+ - Game
+sortValue: undefined0
 ---
 
 ## Materials and Appearances

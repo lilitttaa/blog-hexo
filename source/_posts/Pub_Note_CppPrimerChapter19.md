@@ -1,7 +1,8 @@
 ---
 title: C++ Primer 19.特殊工具与技术
 category:
-  - Cpp
+ - Cpp
+sortValue: undefined1
 ---
 
 ## 控制内存分配

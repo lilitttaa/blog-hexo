@@ -2,7 +2,8 @@
 title: 游戏自动化测试研究
 cover: game.png
 category:
-  - Game
+ - Game
+sortValue: undefined0
 ---
 
 [TOC]

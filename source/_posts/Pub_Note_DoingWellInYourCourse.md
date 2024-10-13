@@ -1,7 +1,8 @@
 ---
 title: Doing Well In Your Course
 category:
-  - Daily Life
+ - Daily Life
+sortValue: undefined5
 ---
 
 https://cs.stanford.edu/people/karpathy/advice.html

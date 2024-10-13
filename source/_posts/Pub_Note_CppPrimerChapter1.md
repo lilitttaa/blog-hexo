@@ -1,7 +1,8 @@
 ---
 title: C++ Primer 1.开始
 category:
-  - Cpp
+ - Cpp
+sortValue: undefined1
 ---
 
 ## 编写一个简单的 C++程序

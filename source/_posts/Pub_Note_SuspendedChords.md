@@ -1,7 +1,8 @@
 ---
 title: Suspended Chords（挂留和弦）
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=qu49nYaBfdM

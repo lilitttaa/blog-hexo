@@ -1,7 +1,8 @@
 ---
 title: The Difference Between Polyrhythm And Polymeter
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=htbRx2jgF-E

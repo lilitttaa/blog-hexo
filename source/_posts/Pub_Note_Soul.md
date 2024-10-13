@@ -1,7 +1,8 @@
 ---
 title: Soul（心灵奇旅）
 category:
-  - Daily Life
+ - Daily Life
+sortValue: undefined5
 ---
 
 - "It's just ..." Joe struggles to find the words. "I've been waiting on this day my entire life. I thought I'd feel different."

@@ -2,7 +2,8 @@
 title: 钢琴学习指南
 cover: piano.png
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 [TOC]

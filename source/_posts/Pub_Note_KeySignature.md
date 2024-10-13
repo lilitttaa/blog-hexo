@@ -1,7 +1,8 @@
 ---
 title: Key Signatures（调号）
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=M6588OmxV6Q

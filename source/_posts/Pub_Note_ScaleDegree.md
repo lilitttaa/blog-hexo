@@ -1,7 +1,8 @@
 ---
 title: Scale Degree（音阶）
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 - https://www.youtube.com/watch?v=GlJ6TxVKcDU

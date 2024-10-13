@@ -1,7 +1,8 @@
 ---
 title: Blues Theory
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=_LDgu8dGiME

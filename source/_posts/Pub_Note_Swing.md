@@ -2,7 +2,8 @@
 title: Swing（摇摆）
 cover: music_staff.png
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=_OXgWmPCC1U

@@ -2,7 +2,8 @@
 title: React 学习笔记
 cover: web_design.png
 category:
-  - Web Frontend
+ - Web Frontend
+sortValue: undefined3
 ---
 
 ### 基础概念:

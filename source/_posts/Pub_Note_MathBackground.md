@@ -6,7 +6,8 @@ tag:
 - animation
 mathjax: true
 category:
-  - Game
+ - Game
+sortValue: undefined0
 ---
 
 - [Lecture Notes](https://games-105.github.io/ppt/02%20-%20Math%20Background.pdf)

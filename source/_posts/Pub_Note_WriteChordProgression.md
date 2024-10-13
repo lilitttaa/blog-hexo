@@ -1,7 +1,8 @@
 ---
 title: Write Chord Progression（和弦进行）
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 - https://www.youtube.com/watch?v=M8eItITv8QA

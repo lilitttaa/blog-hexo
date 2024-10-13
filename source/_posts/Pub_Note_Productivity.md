@@ -2,7 +2,8 @@
 title: 如何提高效率?
 cover: run.png
 category:
-  - Daily Life
+ - Daily Life
+sortValue: undefined5
 ---
 
 ## 博主推荐

@@ -1,7 +1,8 @@
 ---
 title: The Minor Pentatonic Scale（小调五声音阶）
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=l6ayje1ug_0

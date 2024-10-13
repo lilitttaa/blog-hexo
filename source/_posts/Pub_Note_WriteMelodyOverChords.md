@@ -1,7 +1,8 @@
 ---
 title: Write Melody Over Chords
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=jA7gdz56LtY

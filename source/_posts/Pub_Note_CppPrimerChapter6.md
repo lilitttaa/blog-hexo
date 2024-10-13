@@ -1,7 +1,8 @@
 ---
 title: C++ Primer 6.函数
 category:
-  - Cpp
+ - Cpp
+sortValue: undefined1
 ---
 
 ## 函数基础

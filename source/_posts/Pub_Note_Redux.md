@@ -2,7 +2,8 @@
 title: Redux 简单教程
 cover: web_design.png
 category:
-  - Web Frontend
+ - Web Frontend
+sortValue: undefined3
 ---
 
 注:文档中涉及到大量的高阶函数，在观看此文档前有必要先熟悉一下JS的连续箭头函数语法。

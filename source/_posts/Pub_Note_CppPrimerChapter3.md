@@ -1,7 +1,8 @@
 ---
 title: C++ Primer 3.字符串、向量和数组
 category:
-  - Cpp
+ - Cpp
+sortValue: undefined1
 ---
 
 ## 命名空间的 using 声明

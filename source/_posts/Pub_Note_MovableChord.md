@@ -1,7 +1,8 @@
 ---
 title: Movable Chord（移调和弦）
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=1EvDj2IS6Pg

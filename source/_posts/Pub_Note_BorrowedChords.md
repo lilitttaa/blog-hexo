@@ -1,7 +1,8 @@
 ---
 title: Borrowed Chords（借调和弦）
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=7IdttvJSedg

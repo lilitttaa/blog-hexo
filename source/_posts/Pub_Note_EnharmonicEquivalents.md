@@ -2,7 +2,8 @@
 title: Enharmoic Equivalents（同音异名）
 cover: music_staff.png
 category:
-  - Music
+ - Music
+sortValue: undefined6
 ---
 
 https://www.youtube.com/watch?v=5aDP7u78EIU&list=PL0Aonm3ZdM4S4VBR1wjtfCL9nPXVFbbWh&index=2

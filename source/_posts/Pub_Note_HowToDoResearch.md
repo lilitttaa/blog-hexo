@@ -1,7 +1,8 @@
 ---
 title: How to Do Research
 category:
-  - Daily Life
+ - Daily Life
+sortValue: undefined5
 ---
 
 ## 童欣：研究之味

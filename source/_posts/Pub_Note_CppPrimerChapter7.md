@@ -1,7 +1,8 @@
 ---
 title: C++ Primer 7.类
 category:
-  - Cpp
+ - Cpp
+sortValue: undefined1
 ---
 
 ## 定义抽象数据类型
