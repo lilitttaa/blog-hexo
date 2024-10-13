@@ -2,7 +2,7 @@
 title: Games101 16.Ray Tracing 4(Monte Carlo Path Tracing)
 category:
  - Game
-sortValue: 00
+sortValue: 340000
 ---
 
 ## Monte Carlo Integration

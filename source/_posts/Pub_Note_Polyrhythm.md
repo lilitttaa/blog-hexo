@@ -2,7 +2,7 @@
 title: Polyrhythm
 category:
  - Music
-sortValue: 60006
+sortValue: 130006
 ---
 
 https://www.youtube.com/watch?v=c1pejTgLuhA

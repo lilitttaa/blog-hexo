@@ -2,7 +2,7 @@
 title: C++ Primer 10.泛型算法
 category:
  - Cpp
-sortValue: 10001
+sortValue: 90001
 ---
 
 ## 概述

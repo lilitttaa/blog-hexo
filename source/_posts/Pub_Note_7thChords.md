@@ -2,7 +2,7 @@
 title: 7th Chords
 category:
  - Music
-sortValue: 60006
+sortValue: 360006
 ---
 
 https://www.youtube.com/watch?v=ipCTIabddmo

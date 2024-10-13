@@ -2,7 +2,7 @@
 title: C++ Primer 4.表达式
 category:
  - Cpp
-sortValue: 10001
+sortValue: 30001
 ---
 
 ## 基础

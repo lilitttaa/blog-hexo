@@ -2,7 +2,7 @@
 title: Triads（三和弦）
 category:
  - Music
-sortValue: 60006
+sortValue: 220006
 ---
 
 https://www.youtube.com/watch?v=-KzJFzb-HQg

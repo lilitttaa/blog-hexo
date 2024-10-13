@@ -2,7 +2,7 @@
 title: Piano vs Guitar
 category:
  - Music
-sortValue: 60006
+sortValue: 110006
 ---
 
 https://www.youtube.com/watch?v=pyqT2YE-oeU

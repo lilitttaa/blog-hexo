@@ -2,7 +2,7 @@
 title: Borrowed Chords（借调和弦）
 category:
  - Music
-sortValue: 60006
+sortValue: 470006
 ---
 
 https://www.youtube.com/watch?v=7IdttvJSedg

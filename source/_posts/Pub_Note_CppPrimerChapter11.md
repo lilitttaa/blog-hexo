@@ -293,7 +293,7 @@ for (auto pos = authors.equal_range("Barth, John"); pos.first != pos.second; ++p
 | 操作 | 作用 |
 | ---- | -category:
  - Cpp
-sortValue: 10001
+sortValue: 100001
 --- |
 | c.bucket_count() | 返回 c 当前有多少个桶 |
 | c.max_bucket_count() | 返回 c 可以有多少个桶 |

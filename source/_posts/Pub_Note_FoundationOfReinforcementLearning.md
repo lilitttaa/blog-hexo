@@ -2,5 +2,5 @@
 title: Easy RL 1.Foundation of Reinforcement Learning
 category:
  - Program
-sortValue: 20002
+sortValue: 30002
 ---

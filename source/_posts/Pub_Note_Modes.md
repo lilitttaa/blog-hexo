@@ -2,7 +2,7 @@
 title: Modes（调式）
 category:
  - Music
-sortValue: 60006
+sortValue: 440006
 ---
 
 https://www.youtube.com/watch?v=1FRmmnKSBdg
