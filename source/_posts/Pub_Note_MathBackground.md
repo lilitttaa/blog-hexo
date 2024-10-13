@@ -1,5 +1,10 @@
 ---
 title: Games105 2.Math Background
+tag:
+- game
+- math
+- animation
+mathjax: true
 category:
   - Game
 ---
