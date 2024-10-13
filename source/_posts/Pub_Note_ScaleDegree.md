@@ -2,7 +2,7 @@
 title: Scale Degree（音阶）
 category:
  - Music
-sortValue: 200006
+sortValue: 600020
 ---
 
 - https://www.youtube.com/watch?v=GlJ6TxVKcDU

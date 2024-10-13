@@ -2,7 +2,7 @@
 title: Usage Of Diminished Chord（减和弦）
 category:
  - Music
-sortValue: 400006
+sortValue: 600040
 ---
 
 https://www.youtube.com/watch?v=koulaYcijEE

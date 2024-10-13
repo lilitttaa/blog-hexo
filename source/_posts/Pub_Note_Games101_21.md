@@ -2,7 +2,7 @@
 title: Games101 21.Animation
 category:
  - Game
-sortValue: 390000
+sortValue: 039
 ---
 
 ## History

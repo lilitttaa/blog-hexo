@@ -2,7 +2,7 @@
 title: Use Inversion To Write Chord Progression（使用转位写和弦进行）
 category:
  - Music
-sortValue: 350006
+sortValue: 600035
 ---
 
 https://www.youtube.com/watch?v=LFN-eKved_8

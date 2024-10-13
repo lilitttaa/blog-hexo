@@ -2,7 +2,7 @@
 title: 上帝视角看GPU（4）：完整的软件栈
 category:
  - Game
-sortValue: 180000
+sortValue: 018
 ---
 
 - https://www.bilibili.com/video/BV1QT4y1r7Vq

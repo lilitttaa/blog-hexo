@@ -2,7 +2,7 @@
 title: Write Melody Over Chords
 category:
  - Music
-sortValue: 480006
+sortValue: 600048
 ---
 
 https://www.youtube.com/watch?v=jA7gdz56LtY

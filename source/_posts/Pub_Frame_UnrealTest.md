@@ -6,7 +6,7 @@ tag:
 - test
 category:
  - Game
-sortValue: 50000
+sortValue: 05
 ---
 
 ## 分析问题

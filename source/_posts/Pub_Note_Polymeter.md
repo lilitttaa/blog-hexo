@@ -2,7 +2,7 @@
 title: Polymeter
 category:
  - Music
-sortValue: 140006
+sortValue: 600014
 ---
 
 https://www.youtube.com/watch?v=MqyrPzvN3Zc

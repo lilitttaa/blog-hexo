@@ -2,7 +2,7 @@
 title: 上帝视角看GPU（1）：图形流水线基础
 category:
  - Game
-sortValue: 150000
+sortValue: 015
 ---
 
 - https://www.bilibili.com/video/BV1P44y1V7bu

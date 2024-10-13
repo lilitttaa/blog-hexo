@@ -2,7 +2,7 @@
 title: Games101 17.Materials and Appearances
 category:
  - Game
-sortValue: 350000
+sortValue: 035
 ---
 
 ## Materials and Appearances

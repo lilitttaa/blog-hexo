@@ -2,7 +2,7 @@
 title: Unreal Shader Compile
 category:
  - Game
-sortValue: 70000
+sortValue: 07
 ---
 
 ## Resources

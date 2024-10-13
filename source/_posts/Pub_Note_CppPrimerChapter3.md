@@ -2,7 +2,7 @@
 title: C++ Primer 3.字符串、向量和数组
 category:
  - Cpp
-sortValue: 20001
+sortValue: 10002
 ---
 
 ## 命名空间的 using 声明

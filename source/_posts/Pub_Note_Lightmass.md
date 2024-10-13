@@ -48,7 +48,7 @@ Movable：
 | \                    | Static   | Stationary           | Movable  |
 | -------------------- | -------- | -------------------- | -----category:
  - Game
-sortValue: 80000
+sortValue: 08
 --- |
 | 静态物体直接光       | LightMap | 实时计算             | 实时计算 |
 | 静态物体直接阴影     | LightMap | ShadowMap            | 实时计算 |

@@ -2,7 +2,7 @@
 title: Cinematic Workflow and Pipeline of 'FINAL FANTASY XVI'
 category:
  - Game
-sortValue: 30000
+sortValue: 03
 ---
 
 https://gdcvault.com/play/1034299/Cinematic-Workflow-and-Pipeline-of
