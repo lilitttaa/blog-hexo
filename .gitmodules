@@ -1,0 +1,3 @@
+[submodule "themes/Chic"]
+	path = themes/Chic
+	url = https://github.com/lilitttaa/hexo-theme-Chic.git
