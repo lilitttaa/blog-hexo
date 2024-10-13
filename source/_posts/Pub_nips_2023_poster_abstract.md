@@ -2,7 +2,7 @@
 title: NeurIPS 2023 Poster Abstracts(Reinforcement Learning)
 category:
  - Program
-sortValue: undefined2
+sortValue: 20002
 ---
 
 ## Hierarchical Adaptive Value Estimation for Multi-modal Visual Reinforcement Learning

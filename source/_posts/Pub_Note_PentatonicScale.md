@@ -2,7 +2,7 @@
 title: Pentatonic Scale（五声音阶）
 category:
  - Music
-sortValue: undefined6
+sortValue: 60006
 ---
 
 https://www.youtube.com/watch?v=MPHWcy5I-Uc

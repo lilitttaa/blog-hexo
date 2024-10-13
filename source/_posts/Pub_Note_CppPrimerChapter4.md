@@ -2,7 +2,7 @@
 title: C++ Primer 4.表达式
 category:
  - Cpp
-sortValue: undefined1
+sortValue: 10001
 ---
 
 ## 基础

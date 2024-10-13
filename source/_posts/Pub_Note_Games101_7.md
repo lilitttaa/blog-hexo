@@ -2,7 +2,7 @@
 title: Games101 7.Shading 1 (Illumination, Shading and Graphics Pipeline)
 category:
  - Game
-sortValue: undefined0
+sortValue: 00
 ---
 
 ## Visilibility/Occlusion

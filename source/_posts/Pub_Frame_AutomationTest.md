@@ -3,7 +3,7 @@ title: 游戏自动化测试研究
 cover: game.png
 category:
  - Game
-sortValue: undefined0
+sortValue: 00
 ---
 
 [TOC]

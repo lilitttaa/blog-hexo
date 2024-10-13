@@ -2,7 +2,7 @@
 title: Games101 9.Shading 3 (Texture Mapping cont.)
 category:
  - Game
-sortValue: undefined0
+sortValue: 00
 ---
 
 ## Barycentric Coordinates

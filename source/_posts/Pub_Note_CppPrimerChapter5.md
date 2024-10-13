@@ -2,7 +2,7 @@
 title: C++ Primer 5.语句
 category:
  - Cpp
-sortValue: undefined1
+sortValue: 10001
 ---
 
 ## 简单语句

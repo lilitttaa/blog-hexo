@@ -2,7 +2,7 @@
 title: Games101 10.Geometry 1 (Introduction)
 category:
  - Game
-sortValue: undefined0
+sortValue: 00
 ---
 
 ## Applications of Textures

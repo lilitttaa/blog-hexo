@@ -2,7 +2,7 @@
 title: Read Sheet Music Fast（快速读谱）
 category:
  - Music
-sortValue: undefined6
+sortValue: 60006
 ---
 
 - [How to Read Notes Fast - The Landmark System](https://www.youtube.com/watch?v=jSOU-J9KHbg)

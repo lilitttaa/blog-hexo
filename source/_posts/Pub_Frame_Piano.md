@@ -3,7 +3,7 @@ title: 钢琴学习指南
 cover: piano.png
 category:
  - Music
-sortValue: undefined6
+sortValue: 60006
 ---
 
 [TOC]

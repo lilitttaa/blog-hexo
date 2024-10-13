@@ -2,7 +2,7 @@
 title: Left-Right Hand Coordinate Practice（左右手协调练习）
 category:
  - Music
-sortValue: undefined6
+sortValue: 60006
 ---
 
 - [Easy Hand Coordination Exercises for Piano Beginners](https://www.youtube.com/watch?v=5GYgzD3ph5E)

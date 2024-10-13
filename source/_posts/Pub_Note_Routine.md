@@ -3,7 +3,7 @@ title: Routine Of One Day
 cover: life.png
 category:
  - Daily Life
-sortValue: undefined5
+sortValue: 50005
 ---
 
 <https://www.bilibili.com/video/BV1Cy421v7tj>

@@ -2,7 +2,7 @@
 title: C++ Primer 2.变量和基本类型
 category:
  - Cpp
-sortValue: undefined1
+sortValue: 10001
 ---
 
 ## 基本类型

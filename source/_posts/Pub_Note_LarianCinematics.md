@@ -3,7 +3,7 @@ title: A Top-Down Look at Our Bottom-Up Approach in 'Baldur's Gate 3'
 cover: game.png
 category:
  - Game
-sortValue: undefined0
+sortValue: 00
 ---
 
 - 使用template

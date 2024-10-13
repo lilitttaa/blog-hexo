@@ -2,7 +2,7 @@
 title: C++ Primer 16.模板与泛型编程
 category:
  - Cpp
-sortValue: undefined1
+sortValue: 10001
 ---
 
 ## 定义模板

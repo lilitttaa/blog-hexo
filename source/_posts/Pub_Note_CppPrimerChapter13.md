@@ -2,7 +2,7 @@
 title: C++ Primer 13.拷贝控制
 category:
  - Cpp
-sortValue: undefined1
+sortValue: 10001
 ---
 
 ## 概述

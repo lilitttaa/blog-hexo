@@ -2,7 +2,7 @@
 title: Improvise Solo With Chords（和弦即兴solo）
 category:
  - Music
-sortValue: undefined6
+sortValue: 60006
 ---
 
 https://www.youtube.com/watch?v=Z-KzfB7vfFA

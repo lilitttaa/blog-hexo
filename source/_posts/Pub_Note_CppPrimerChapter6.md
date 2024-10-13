@@ -2,7 +2,7 @@
 title: C++ Primer 6.函数
 category:
  - Cpp
-sortValue: undefined1
+sortValue: 10001
 ---
 
 ## 函数基础

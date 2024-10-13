@@ -2,7 +2,7 @@
 title: Games105 1.Introduction To Character Animation
 category:
  - Game
-sortValue: undefined0
+sortValue: 00
 ---
 
 ## 3D Computer Animation

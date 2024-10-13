@@ -2,7 +2,7 @@
 title: 从台本程序化生成过场动画序列
 category:
  - Game
-sortValue: undefined0
+sortValue: 00
 ---
 
 - [Procedurally Generating Level Sequences from a Dialogue Script | Unreal Fest 2024](https://www.youtube.com/watch?v=CAgTjb_8GFo)

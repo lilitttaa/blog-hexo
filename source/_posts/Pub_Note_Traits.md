@@ -3,7 +3,7 @@ title: 什么是Traits？
 cover: program.png
 category:
  - Cpp
-sortValue: undefined1
+sortValue: 10001
 ---
 
 ## Step1：写一个模板函数实现获得指针指向的值

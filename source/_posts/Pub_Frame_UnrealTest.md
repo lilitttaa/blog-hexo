@@ -6,7 +6,7 @@ tag:
 - test
 category:
  - Game
-sortValue: undefined0
+sortValue: 00
 ---
 
 ## 分析问题

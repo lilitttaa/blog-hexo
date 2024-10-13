@@ -2,7 +2,7 @@
 title: Movable Chord（移调和弦）
 category:
  - Music
-sortValue: undefined6
+sortValue: 60006
 ---
 
 https://www.youtube.com/watch?v=1EvDj2IS6Pg

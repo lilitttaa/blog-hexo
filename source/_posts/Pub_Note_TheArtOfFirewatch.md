@@ -2,7 +2,7 @@
 title: The Art of Firewatch
 category:
  - Game
-sortValue: undefined0
+sortValue: 00
 ---
 
 - [GDC](https://www.youtube.com/watch?v=SdxQ3HlhTE8)

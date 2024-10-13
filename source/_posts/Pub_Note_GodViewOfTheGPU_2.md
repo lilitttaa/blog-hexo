@@ -2,7 +2,7 @@
 title: 上帝视角看GPU（2）：逻辑上的模块划分
 category:
  - Game
-sortValue: undefined0
+sortValue: 00
 ---
 
 随着时代的发展，新的需求逐渐出现。这一节来看看如何从基本的图形流水线逐步扩充成现在的样子。
