@@ -5,8 +5,6 @@ category:
   - Web Frontend
 ---
 
-[TOC]
-
 ### 基础概念:
 
 #### 组件

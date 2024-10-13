@@ -1,10 +1,12 @@
 ---
 title: Unreal 自动化测试源码分析
-cover: game.png
+tag:
+- unreal engine
+- game
+- test
 category:
   - Game
 ---
-[TOC]
 
 ## 分析问题
 
