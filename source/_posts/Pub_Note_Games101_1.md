@@ -2,7 +2,7 @@
 title: Games101 1.Overview of Computer Graphics
 category:
  - Game
-sortValue: 019
+sortValue: 020
 ---
 
 ## What is Computer Graphics?

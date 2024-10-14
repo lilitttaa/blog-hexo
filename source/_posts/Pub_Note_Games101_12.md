@@ -2,7 +2,7 @@
 title: Games101 12.Geometry 3
 category:
  - Game
-sortValue: 030
+sortValue: 031
 ---
 
 ## Mesh Operations: Geometry Processing
