@@ -1,5 +1,6 @@
 ---
 title: Games101 22.Animation (cont.)
+mathjax: true
 category:
  - Game
 sortValue: 041
