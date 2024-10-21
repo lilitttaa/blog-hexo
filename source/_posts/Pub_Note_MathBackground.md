@@ -7,7 +7,7 @@ tag:
 mathjax: true
 category:
  - Game
-sortValue: 012
+sortValue: 013
 ---
 
 - [Lecture Notes](https://games-105.github.io/ppt/02%20-%20Math%20Background.pdf)

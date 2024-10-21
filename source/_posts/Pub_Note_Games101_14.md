@@ -2,7 +2,7 @@
 title: Games101 14.Ray Tracing 2(Acceleration & Radiometry)
 category:
  - Game
-sortValue: 033
+sortValue: 034
 ---
 
 ![Alt text](image.png)

@@ -2,7 +2,7 @@
 title: Games101 3.Transformation
 category:
  - Game
-sortValue: 022
+sortValue: 023
 ---
 
 ## Why study transformation?

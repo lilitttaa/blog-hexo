@@ -2,7 +2,7 @@
 title: Games101 8.Shading 2(Shading, Pipeline and Texture Mapping)
 category:
  - Game
-sortValue: 027
+sortValue: 028
 ---
 
 ## Blinn-Phong Reflectance Model
