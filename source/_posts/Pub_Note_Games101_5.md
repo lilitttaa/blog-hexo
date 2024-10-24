@@ -2,7 +2,7 @@
 title: Games101 5.Rasterization 1 (Triangles)
 category:
  - Game
-sortValue: 025
+sortValue: 026
 ---
 
 光栅化是关于怎么把我们前面的-1~1 的三次方的立方体画到屏幕上的过程

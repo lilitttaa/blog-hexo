@@ -2,7 +2,7 @@
 title: 上帝视角看GPU（5）：图形流水线里的不可编程单元
 category:
  - Game
-sortValue: 020
+sortValue: 021
 ---
 
 - https://www.bilibili.com/video/BV1dL4y1c789
