@@ -2,7 +2,7 @@
 title: C++ Primer 19.特殊工具与技术
 category:
  - Cpp
-sortValue: 100018
+sortValue: 200018
 ---
 
 ## 控制内存分配

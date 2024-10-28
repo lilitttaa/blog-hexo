@@ -2,7 +2,7 @@
 title: How to practice piano effectively
 category:
  - Music
-sortValue: 60001
+sortValue: 70001
 ---
 
 ## Classical Pianist Practice Secrets

@@ -2,7 +2,7 @@
 title: C++ Primer 7.类
 category:
  - Cpp
-sortValue: 10006
+sortValue: 20006
 ---
 
 ## 定义抽象数据类型
