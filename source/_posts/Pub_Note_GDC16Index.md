@@ -1,5 +1,8 @@
 ---
 title: GDC 2016 Index
+category:
+ - GDCIndex
+sortValue: 10008
 ---
 
 ## "Is that Me?" Identity Confusion & Narrative VR Challenges
@@ -2349,7 +2352,7 @@ title: GDC 2016 Index
 ## Gaming, Gambling or Addiction? F2P Scientific and Legal Perspectives
 
 **url**: https://gdcvault.com/play/1023374/Gaming-Gambling-or-Addiction-F2P
-**desc**: F2P games are intentionally designed to encourage player engagement and monetization. While often well-intentioned, history shows that "chasing the whale" could draw unwanted attention---or regulation---from politicians and demagogues already predisposed to see games in a negative light. What is the legal landscape, and what does the good science say? Drawing from parallels to casinos, regulated industries and past moral panics (including comics and even opera!), Dr. Tyler Black, child psychiatrist, and Ryan Black, video game lawyer, will discuss addiction, regulation of games, and the delicate balance between building fun, profitable games and encouraging unhealthy behavour.
+**desc**: F2P games are intentionally designed to encourage player engagement and monetization. While often well-intentioned, history shows that "chasing the whale" could draw unwanted attention or regulation from politicians and demagogues already predisposed to see games in a negative light. What is the legal landscape, and what does the good science say? Drawing from parallels to casinos, regulated industries and past moral panics (including comics and even opera!), Dr. Tyler Black, child psychiatrist, and Ryan Black, video game lawyer, will discuss addiction, regulation of games, and the delicate balance between building fun, profitable games and encouraging unhealthy behavour.
 **author**: Ryan Black
 **association**: McMillan, LLP.
 **track**: Free to Play Summit
@@ -2357,10 +2360,7 @@ title: GDC 2016 Index
 ## Gaming, Gambling or Addiction? F2P Scientific and Legal Perspectives
 
 **url**: https://gdcvault.com/play/1023045/Gaming-Gambling-or-Addiction-F2P
-**desc**: F2P games are intentionally designed to encourage player engagement and monetization. While often well-intentioned, history shows that "chasing the whale" could draw unwanted attention---or regulationcategory:
- - GDCIndex
-sortValue: 10008
----from politicians and demagogues already predisposed to see games in a negative light. What is the legal landscape, and what does the good science say? Drawing from parallels to casinos, regulated industries and past moral panics (including comics and even opera!), Dr. Tyler Black, child psychiatrist, and Ryan Black, video game lawyer, will discuss addiction, regulation of games, and the delicate balance between building fun, profitable games and encouraging unhealthy behavour.
+**desc**: F2P games are intentionally designed to encourage player engagement and monetization. While often well-intentioned, history shows that "chasing the whale" could draw unwanted attention or regulation from politicians and demagogues already predisposed to see games in a negative light. What is the legal landscape, and what does the good science say? Drawing from parallels to casinos, regulated industries and past moral panics (including comics and even opera!), Dr. Tyler Black, child psychiatrist, and Ryan Black, video game lawyer, will discuss addiction, regulation of games, and the delicate balance between building fun, profitable games and encouraging unhealthy behavour.
 **author**: Ryan Black
 **association**: McMillan, LLP.
 **track**: Free to Play Summit
