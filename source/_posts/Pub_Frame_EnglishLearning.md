@@ -3,7 +3,7 @@ title: English Learning
 cover: english.png
 category:
  - English
-sortValue: 50000
+sortValue: 70000
 ---
 
 ## 她们几乎以同样方式，英语达到近母语水平

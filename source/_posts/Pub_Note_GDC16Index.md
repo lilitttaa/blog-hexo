@@ -2,7 +2,7 @@
 title: GDC 2016 Index
 category:
  - GDCIndex
-sortValue: 10008
+sortValue: 30008
 ---
 
 ## "Is that Me?" Identity Confusion & Narrative VR Challenges
@@ -257,16 +257,16 @@ sortValue: 10008
 
 **url**: https://gdcvault.com/play/1023489/16th-Annual-Game-Developers-Choice
 **desc**: The Game Developers Choice Awards are the premier accolades for peer-recognition in the digital games industry, celebrating creativity, artistry and technological genius. Industry professionals from around the world nominate for the awards, free of charge, ensuring that the recipients reflect the community's opinions. Learn more about the GDCA at www.gamechoiceawards.com.
-**author**: 
-**association**: 
+**author**:
+**association**:
 **track**: Special Event
 
 ## 18th Annual Independent Games Festival Awards
 
 **url**: https://gdcvault.com/play/1023490/18th-Annual-Independent-Games-Festival
 **desc**: The IGF was established in 1998 to encourage innovation in game development and to recognize the best independent game developers. At the awards ceremony, the IGF gives out eight awards and over $50,000 in total prize money to the most innovative independent games. The awards are held in conjunction with the Game Developers Choice Awards. Learn more about the IGF at www.igf.com.
-**author**: 
-**association**: 
+**author**:
+**association**:
 **track**: Special Event
 
 ## 5 Mistakes by Good Teams That Produce Bad Free to Play Games
@@ -640,7 +640,7 @@ sortValue: 10008
 ## Angry Birds 2 - Next Gen Audio in Only 10 Megabytes
 
 **url**: https://gdcvault.com/play/1023217/Angry-Birds-2-Next-Gen
-**desc**: Rovio's new flagship game Angry Birds 2 had to stand out from its predecessor and still be downloadable by *everyone*. But how do you fit the expectation of console quality audio on a mobile platform, with only 10 megabytes of space? The audio team at Rovio looked at compression and trends in headphone usage to make the most of the platform limitations, and created the music and sound design to be varied and grand but with a bird-sized memory footprint. Jonatan Crafoord, Audio Director, will talk about best practices for sound design and file formats to save space without compromising quality. Elvira Bjrkman, Music Composer, will show how the music was composed and implemented to feel as refreshing as possible while staying within memory limits.
+**desc**: Rovio's new flagship game Angry Birds 2 had to stand out from its predecessor and still be downloadable by _everyone_. But how do you fit the expectation of console quality audio on a mobile platform, with only 10 megabytes of space? The audio team at Rovio looked at compression and trends in headphone usage to make the most of the platform limitations, and created the music and sound design to be varied and grand but with a bird-sized memory footprint. Jonatan Crafoord, Audio Director, will talk about best practices for sound design and file formats to save space without compromising quality. Elvira Bjrkman, Music Composer, will show how the music was composed and implemented to feel as refreshing as possible while staying within memory limits.
 **author**: Jonatan Crafoord
 **association**: The Brain
 **track**: Audio
@@ -648,7 +648,7 @@ sortValue: 10008
 ## Angry Birds 2 - Next Gen Audio in Only 10 Megabytes
 
 **url**: https://gdcvault.com/play/1022939/Angry-Birds-2-Next-Gen
-**desc**: Rovio's new flagship game Angry Birds 2 had to stand out from its predecessor and still be downloadable by *everyone*. But how do you fit the expectation of console quality audio on a mobile platform, with only 10 megabytes of space? The audio team at Rovio looked at compression and trends in headphone usage to make the most of the platform limitations, and created the music and sound design to be varied and grand but with a bird-sized memory footprint. Jonatan Crafoord, Audio Director, will talk about best practices for sound design and file formats to save space without compromising quality. Elvira Bjrkman, Music Composer, will show how the music was composed and implemented to feel as refreshing as possible while staying within memory limits.
+**desc**: Rovio's new flagship game Angry Birds 2 had to stand out from its predecessor and still be downloadable by _everyone_. But how do you fit the expectation of console quality audio on a mobile platform, with only 10 megabytes of space? The audio team at Rovio looked at compression and trends in headphone usage to make the most of the platform limitations, and created the music and sound design to be varied and grand but with a bird-sized memory footprint. Jonatan Crafoord, Audio Director, will talk about best practices for sound design and file formats to save space without compromising quality. Elvira Bjrkman, Music Composer, will show how the music was composed and implemented to feel as refreshing as possible while staying within memory limits.
 **author**: Jonatan Crafoord
 **association**: The Brain
 **track**: Audio
@@ -976,7 +976,7 @@ sortValue: 10008
 ## Audio Bootcamp: Using Proactive Audio to Push Impact and Immersion
 
 **url**: https://gdcvault.com/play/1033482/Audio-Bootcamp-Using-Proactive-Audio
-**desc**: At GDC 2014, Mick Gordon ended his "Next Generation Audio in Killer Instinct" talk by saying that the next generation of audio in games will be defined by audio's ability to affect gameplay. In other words, next gen audio is Proactive Audio. This talk will explain why Proactive Audio is so impactful, provide examples of current uses in the wild, and show how developers can leverage Proactive Audio to make more cinematic, compelling gameplay experiences for their players today.* Due to technical issues the slides in this presentation do not appear as originally shown and footage of gameplay played live is not available.
+**desc**: At GDC 2014, Mick Gordon ended his "Next Generation Audio in Killer Instinct" talk by saying that the next generation of audio in games will be defined by audio's ability to affect gameplay. In other words, next gen audio is Proactive Audio. This talk will explain why Proactive Audio is so impactful, provide examples of current uses in the wild, and show how developers can leverage Proactive Audio to make more cinematic, compelling gameplay experiences for their players today.\* Due to technical issues the slides in this presentation do not appear as originally shown and footage of gameplay played live is not available.
 **author**: Eric Robinson
 **association**: Sonic Bloom
 **track**: Audio
@@ -984,7 +984,7 @@ sortValue: 10008
 ## Audio Bootcamp: Using Proactive Audio to Push Impact and Immersion
 
 **url**: https://gdcvault.com/play/1023880/Audio-Bootcamp-Using-Proactive-Audio
-**desc**: At GDC 2014, Mick Gordon ended his "Next Generation Audio in Killer Instinct" talk by saying that the next generation of audio in games will be defined by audio's ability to affect gameplay. In other words, next gen audio is Proactive Audio. This talk will explain why Proactive Audio is so impactful, provide examples of current uses in the wild, and show how developers can leverage Proactive Audio to make more cinematic, compelling gameplay experiences for their players today.* Due to technical issues the slides in this presentation do not appear as originally shown and footage of gameplay played live is not available.
+**desc**: At GDC 2014, Mick Gordon ended his "Next Generation Audio in Killer Instinct" talk by saying that the next generation of audio in games will be defined by audio's ability to affect gameplay. In other words, next gen audio is Proactive Audio. This talk will explain why Proactive Audio is so impactful, provide examples of current uses in the wild, and show how developers can leverage Proactive Audio to make more cinematic, compelling gameplay experiences for their players today.\* Due to technical issues the slides in this presentation do not appear as originally shown and footage of gameplay played live is not available.
 **author**: Eric Robinson
 **association**: Sonic Bloom
 **track**: Audio
@@ -2672,7 +2672,7 @@ sortValue: 10008
 ## Identifying Causal Factors in Churn
 
 **url**: https://gdcvault.com/play/1023263/Identifying-Causal-Factors-in
-**desc**: 
+**desc**:
 **author**: Alan Burke
 **association**: Activision
 **track**: Business, Marketing & Management
@@ -2680,7 +2680,7 @@ sortValue: 10008
 ## Identifying Causal Factors in Churn
 
 **url**: https://gdcvault.com/play/1022976/Identifying-Causal-Factors-in
-**desc**: 
+**desc**:
 **author**: Alan Burke
 **association**: Activision
 **track**: Business, Marketing & Management
@@ -3000,7 +3000,7 @@ sortValue: 10008
 ## Leading a Creative Life in the Land of "No"
 
 **url**: https://gdcvault.com/play/1023108/Leading-a-Creative-Life-in
-**desc**: Whether or not you believe in the Indiepocalypse, leading a creative life as an indie is *hard*. Wherever you turn there are people telling you, "No." Your game can't succeed because it doesn't have the right business model, or it won't be discovered, or its genre is unmarketable, or whatever. This talk, from veteran Infocom, Legend Entertainment and Zynga designer and current indie Bob Bates, acknowledges the challenges that creative people face and gives specifics on how to overcome them. It details steps to building a creative life, and gives practical advice about managing your day, your project, and your anxiety.
+**desc**: Whether or not you believe in the Indiepocalypse, leading a creative life as an indie is _hard_. Wherever you turn there are people telling you, "No." Your game can't succeed because it doesn't have the right business model, or it won't be discovered, or its genre is unmarketable, or whatever. This talk, from veteran Infocom, Legend Entertainment and Zynga designer and current indie Bob Bates, acknowledges the challenges that creative people face and gives specifics on how to overcome them. It details steps to building a creative life, and gives practical advice about managing your day, your project, and your anxiety.
 **author**: Bob Bates
 **association**: Independent
 **track**: Advocacy
@@ -3008,7 +3008,7 @@ sortValue: 10008
 ## Leading a Creative Life in the Land of "No"
 
 **url**: https://gdcvault.com/play/1023462/Leading-a-Creative-Life-in
-**desc**: Whether or not you believe in the Indiepocalypse, leading a creative life as an indie is *hard*. Wherever you turn there are people telling you, "No." Your game can't succeed because it doesn't have the right business model, or it won't be discovered, or its genre is unmarketable, or whatever. This talk, from veteran Infocom, Legend Entertainment and Zynga designer and current indie Bob Bates, acknowledges the challenges that creative people face and gives specifics on how to overcome them. It details steps to building a creative life, and gives practical advice about managing your day, your project, and your anxiety.
+**desc**: Whether or not you believe in the Indiepocalypse, leading a creative life as an indie is _hard_. Wherever you turn there are people telling you, "No." Your game can't succeed because it doesn't have the right business model, or it won't be discovered, or its genre is unmarketable, or whatever. This talk, from veteran Infocom, Legend Entertainment and Zynga designer and current indie Bob Bates, acknowledges the challenges that creative people face and gives specifics on how to overcome them. It details steps to building a creative life, and gives practical advice about managing your day, your project, and your anxiety.
 **author**: Bob Bates
 **association**: Independent
 **track**: Advocacy
@@ -4296,7 +4296,7 @@ sortValue: 10008
 ## Security in gaming, how protecting your gamers can be as simple as 1.2.3. (presented by Twilio)
 
 **url**: https://gdcvault.com/play/1023595/Security-in-gaming-how-protecting
-**desc**: 
+**desc**:
 **author**: Simon Thorpe
 **association**: Authy, a Twilio company
 **track**: Programming
@@ -5556,4 +5556,3 @@ sortValue: 10008
 **author**: Josiah Kiehl
 **association**: Riot Games
 **track**: Programming
-

@@ -1,8 +1,8 @@
 ---
 title: Games101 19.Cameras, Lenses and Light Fields
 category:
- - Game
-sortValue: 040
+ - Games101
+sortValue: 200018
 ---
 
 ## Imaging

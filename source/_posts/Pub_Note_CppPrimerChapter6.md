@@ -2,7 +2,7 @@
 title: C++ Primer 6.函数
 category:
  - Cpp
-sortValue: 20005
+sortValue: 40005
 ---
 
 ## 函数基础

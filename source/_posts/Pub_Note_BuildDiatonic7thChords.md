@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=rdLrnZ9E9H0
 | Degree | Chord | Quality |
 |--------|-------|------category:
  - Music
-sortValue: 700037
+sortValue: 900037
 ---|
 | I      | Cmaj7 | Major-major |
 | II     | Dm7   | Minor-minor |

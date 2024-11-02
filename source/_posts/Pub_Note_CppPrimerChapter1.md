@@ -2,7 +2,7 @@
 title: C++ Primer 1.开始
 category:
  - Cpp
-sortValue: 20000
+sortValue: 40000
 ---
 
 ## 编写一个简单的 C++程序

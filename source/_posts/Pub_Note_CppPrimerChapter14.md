@@ -2,7 +2,7 @@
 title: C++ Primer 14.重载运算与类型转换
 category:
  - Cpp
-sortValue: 200013
+sortValue: 400013
 ---
 
 ## 基本概念

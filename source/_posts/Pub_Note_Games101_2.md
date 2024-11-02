@@ -1,8 +1,8 @@
 ---
 title: Games101 2.Review of Linear Algebra
 category:
- - Game
-sortValue: 023
+ - Games101
+sortValue: 20001
 ---
 
 ## Graphics' Dependencies

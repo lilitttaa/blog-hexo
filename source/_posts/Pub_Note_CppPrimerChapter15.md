@@ -2,7 +2,7 @@
 title: C++ Primer 15.面向对象程序设计
 category:
  - Cpp
-sortValue: 200014
+sortValue: 400014
 ---
 
 ## OOP 概述

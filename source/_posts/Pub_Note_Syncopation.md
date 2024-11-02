@@ -3,7 +3,7 @@ title: Syncopation（切分）
 cover: music_staff.png
 category:
  - Music
-sortValue: 70008
+sortValue: 90008
 ---
 <https://www.youtube.com/watch?v=WbultyEVOqw>
 

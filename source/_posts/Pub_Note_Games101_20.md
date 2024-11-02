@@ -1,8 +1,8 @@
 ---
 title: Games101 20.Color and Perception
 category:
- - Game
-sortValue: 041
+ - Games101
+sortValue: 200019
 ---
 
 ## Light Field / Lumigraph

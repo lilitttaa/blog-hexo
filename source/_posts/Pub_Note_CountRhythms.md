@@ -3,7 +3,7 @@ title: Count Rhythms（节奏记数）
 cover: music_staff.png
 category:
  - Music
-sortValue: 70007
+sortValue: 90007
 ---
 - [Always Count Rhythms Like THIS for Best Accuracy](https://www.youtube.com/watch?v=lK0V54_E0bk)
 - [Counting Complicated Rhythms On Piano](https://www.youtube.com/watch?v=KNeEZhpUY9o)

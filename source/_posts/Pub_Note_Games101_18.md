@@ -1,8 +1,8 @@
 ---
 title: Games101 18.Advanced Topics in Rendering
 category:
- - Game
-sortValue: 039
+ - Games101
+sortValue: 200017
 ---
 
 ## Advanced Light Transport

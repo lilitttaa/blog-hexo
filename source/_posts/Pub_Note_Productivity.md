@@ -3,7 +3,7 @@ title: 如何提高效率?
 cover: run.png
 category:
  - Daily Life
-sortValue: 60001
+sortValue: 80001
 ---
 
 ## 博主推荐

@@ -2,7 +2,7 @@
 title: C++ Primer 16.模板与泛型编程
 category:
  - Cpp
-sortValue: 200015
+sortValue: 400015
 ---
 
 ## 定义模板

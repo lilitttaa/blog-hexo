@@ -2,7 +2,7 @@
 title: Power Chords（强力和弦）
 category:
  - Music
-sortValue: 700030
+sortValue: 900030
 ---
 
 https://www.youtube.com/watch?v=dbhF2wnnT7M

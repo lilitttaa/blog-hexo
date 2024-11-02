@@ -3,7 +3,7 @@ title: Chromatic Scales（半音音阶）
 cover: music_staff.png
 category:
  - Music
-sortValue: 70004
+sortValue: 90004
 ---
 
 https://www.youtube.com/watch?v=2gy6E3X2mKQ

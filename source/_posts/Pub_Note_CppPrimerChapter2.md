@@ -2,7 +2,7 @@
 title: C++ Primer 2.变量和基本类型
 category:
  - Cpp
-sortValue: 20001
+sortValue: 40001
 ---
 
 ## 基本类型

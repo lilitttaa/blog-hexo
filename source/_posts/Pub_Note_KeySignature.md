@@ -2,7 +2,7 @@
 title: Key Signatures（调号）
 category:
  - Music
-sortValue: 700019
+sortValue: 900019
 ---
 
 https://www.youtube.com/watch?v=M6588OmxV6Q

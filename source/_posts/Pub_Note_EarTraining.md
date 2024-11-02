@@ -2,7 +2,7 @@
 title: Ear Training
 category:
  - Music
-sortValue: 700033
+sortValue: 900033
 ---
 
 https://www.youtube.com/watch?v=Wzqa44N-sIU

@@ -3,7 +3,7 @@ title: C++ 移动语义
 cover: program.png
 category:
  - Cpp
-sortValue: 200020
+sortValue: 400020
 ---
 
 ## 左值引用与右值引用

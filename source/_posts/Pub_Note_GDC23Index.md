@@ -2,7 +2,7 @@
 title: GDC 2023 Index
 category:
  - GDCIndex
-sortValue: 10001
+sortValue: 30001
 ---
 
 ## "CODE RED!": How We Organized a Game Jam From Bomb Shelters

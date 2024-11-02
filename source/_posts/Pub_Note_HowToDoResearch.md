@@ -2,7 +2,7 @@
 title: How to Do Research
 category:
  - Daily Life
-sortValue: 60003
+sortValue: 80003
 ---
 
 ## 童欣：研究之味

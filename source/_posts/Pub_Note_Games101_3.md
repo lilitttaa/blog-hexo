@@ -1,8 +1,8 @@
 ---
 title: Games101 3.Transformation
 category:
- - Game
-sortValue: 024
+ - Games101
+sortValue: 20002
 ---
 
 ## Why study transformation?

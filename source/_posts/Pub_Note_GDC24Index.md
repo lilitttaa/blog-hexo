@@ -2,7 +2,7 @@
 title: GDC 2024 Index
 category:
  - GDCIndex
-sortValue: 10000
+sortValue: 30000
 ---
 
 
