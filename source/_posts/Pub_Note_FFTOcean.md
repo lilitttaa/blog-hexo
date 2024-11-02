@@ -1,5 +1,9 @@
 ---
 title: Ocean waves simulation with Fast Fourier transform
+tag:
+  - game
+  - water
+  - ocean
 category:
  - Realtime Water Rendering
 sortValue: 10002
