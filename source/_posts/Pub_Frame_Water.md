@@ -59,6 +59,7 @@ sortValue: 10000
 - 怎么表示浮动的效果，比如说船在水上起伏？
 - 小波的渲染怎么表示？
 - 怎么做交互？
+- Whitecaps 怎么表示？
 
 ## TODO
 
@@ -69,6 +70,7 @@ sortValue: 10000
   - [ ] 实现正弦波形图
   - [ ] 实现 Gerstner 波
 - [ ] 看论文
+  - [ ] 硕士论文和浅墨的整理弄清楚Relative Work
   - [ ] Guerilla, 2024
   - [ ] Ubisoft, 2023
   - [ ] Far Cry 6, 2022
