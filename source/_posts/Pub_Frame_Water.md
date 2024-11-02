@@ -14,6 +14,7 @@ sortValue: 10000
 - 从波的实现开始，然后到 FFT，各种数学公式，以及后续的具体的实现，有 Github 参考：[Ocean waves simulation with Fast Fourier transform](https://www.youtube.com/watch?v=kGEqaX4Y4bQ)
 - 这篇硕士论文主要谈论在不同距离下进行观察怎么把不同光谱模型给结合起来。[Ocean Surface Generation and Rendering](https://publik.tuwien.ac.at/files/publik_272334.pdf)
 - 浅墨的整理，很细致，很值得一看：[水体渲染技术发展史](https://github.com/QianMo/Game-Programmer-Study-Notes/tree/master/Content/%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%B0%B4%E4%BD%93%E6%B8%B2%E6%9F%93%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93)
+- 神海 4 的水体渲染：[Rendering Rapids in Uncharted 4](https://advances.realtimerendering.com/s2016/)
 - Guerrilla 上一个关于水的 Talk：[Rendering Water in Horizon Forbidden West](https://advances.realtimerendering.com/s2022/SIGGRAPH2022-Advances-Water-Malan.pdf)
 - Guerrilla2024 最新的 Talk：[Simulation and Representation of Topology-Changing Rolling Waves for Massive Open Ocean Games](https://dl.acm.org/doi/abs/10.1145/3641233.3664308)
 - Shadertoy 上一个用分形实现的海洋渲染：[Shadertoy Seascape](https://www.shadertoy.com/view/Ms2SD1)
@@ -39,17 +40,20 @@ sortValue: 10000
   - [Technical Artist Bootcamp: Distance Fields and Shader Simulation Tricks](https://gdcvault.com/play/1026262/Technical-Artist-Bootcamp-Distance-Fields)
 - 2018 GDC
   - [Advanced Graphics Techniques Tutorial: Water Rendering in 'Far Cry 5'](https://gdcvault.com/play/1025555/Advanced-Graphics-Techniques-Tutorial-Water)
-- 每次海洋的效果总是不一样的，而不是一个静态的 loop 动画一直播
-- 艺术家可以控制海浪的 size、shape、以及一些 time 等参数
-- 性能要求对纹理 memory 要求尽可能的小，速度快
 
-过去的一些方案包括：
-![alt text](image.png)
+插件：
 
-- Gerstner 波是一种波叠加的方法
-- FFT 可以让我们在时域和频域上进行变换，做法通常是拿到真实世界海洋的频谱，分解成一系列的正弦波，换算到时域，然后叠加这些波
+- [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
 
-## reference
+游戏中的水渲染：
+
+- [The Evolution of Water Effects In Video Games](https://www.youtube.com/watch?v=JW9UZeTnVhk)
+
+## 分为三个部分
+
+- Shape
+- Shading
+- Interaction
 
 ## TODO
 
@@ -59,7 +63,14 @@ sortValue: 10000
   - [ ] 理清代码
   - [ ] 实现正弦波形图
   - [ ] 实现 Gerstner 波
-- [ ] 理清 Siggraph 这篇论文
+- [ ] 看论文
+  - [ ] Guerilla, 2024
+  - [ ] Ubisoft, 2023
+  - [ ] Far Cry 6, 2022
+  - [ ] The Last of Us Part II, 2021
+  - [ ] Atlas, 2019
+  - [ ] Sea of Thieves, 2018
+  - [ ] Uncharted 4, 2016
 - [ ] 看 Houdini
 - [ ] 用 ShaderToy 实现
 - [ ] 看 UE 实现教程
