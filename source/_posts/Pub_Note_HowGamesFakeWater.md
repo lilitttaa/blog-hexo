@@ -79,4 +79,4 @@ sortValue: 10001
 ![Alt text](image-24.png)
 
 不过糟糕的我们使用 Noise 添加细节，平铺的 Noise 贴图会产生这样的效果：
-![Alt text](image-25.png)
+![Alt text](image-27.png)

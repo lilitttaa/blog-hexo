@@ -84,4 +84,8 @@ sortValue: 10000
 - [ ] 用 UE 实现
 - [ ] 找找其他的资料，整理其他方案，做可交互水
   - [ ] 盗贼之海
-  - [ ] 交互水
+  - [ ] 交互水	
+
+## 推荐阅读
+
+- 关于Sine和Gerstner波的实现：[GPU Gems: Chapter 1. Effective Water Simulation from Physical Models](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models)
