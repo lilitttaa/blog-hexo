@@ -9,6 +9,8 @@ category:
 sortValue: 10002
 ---
 
+目标：Rolling Water、Close distance、Interactive、variability、performance、artistic
+
 - 每次海洋的效果总是不一样的，而不是一个静态的 loop 动画一直播
 - 艺术家可以控制海浪的 size、shape、以及一些 time 等参数
 - 性能要求对纹理 memory 要求尽可能的小，速度快

@@ -1,5 +1,5 @@
 ---
-title: The roadmap of realtime water rendering
+title: The Roadmap of Realtime Water Rendering
 tag:
   - roadmap
   - game
@@ -34,7 +34,6 @@ sortValue: 10000
 - 2021 GDC
   - [Enhancement of Particle Simulation Using Screen Space Techniques in 'The Last of Us Part II'](https://gdcvault.com/play/1027356/Enhancement-of-Particle-Simulation-Using)
   - [Creative and Experimental VFX in 'The Last of Us Part II'](https://gdcvault.com/play/1027370/Creative-and-Experimental-VFX-in)
-    目标：Rolling Water、Close distance、Interactive、variability、performance、artistic
 - 2019 GDC
   - [Advanced Graphics Techniques Tutorial: Wakes, Explosions and Lighting: Interactive Water Simulation in 'Atlas'](https://gdcvault.com/play/1025819/Advanced-Graphics-Techniques-Tutorial-Wakes)
   - [Technical Artist Bootcamp: Distance Fields and Shader Simulation Tricks](https://gdcvault.com/play/1026262/Technical-Artist-Bootcamp-Distance-Fields)
@@ -54,6 +53,12 @@ sortValue: 10000
 - Shape
 - Shading
 - Interaction
+
+## 一些问题
+
+- 怎么表示浮动的效果，比如说船在水上起伏？
+- 小波的渲染怎么表示？
+- 怎么做交互？
 
 ## TODO
 
