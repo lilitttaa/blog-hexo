@@ -4,6 +4,7 @@ tag:
   - game
   - water
   - ocean
+mathjax: true
 category:
  - Realtime Water Rendering
 sortValue: 10001
