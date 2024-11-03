@@ -73,7 +73,7 @@ sortValue: 10000
 - [A survey of ocean simulation and rendering techniques in computer graphics 2011](https://arxiv.org/pdf/1109.6494)
 - [Wave particles 2007](http://www.cemyuksel.com/research/waveparticles/waveparticles.pdf)
 - [Ocean Surface Generation and Rendering 2018](https://publik.tuwien.ac.at/files/publik_272334.pdf)
-- 白浪：[Real-time Animation and Rendering of Ocean Whitecaps](https://inria.hal.science/hal-00967078/file/Whitecaps-presentation.pdf)
+- 白沫：[Real-time Animation and Rendering of Ocean Whitecaps](https://inria.hal.science/hal-00967078/file/Whitecaps-presentation.pdf)
 
 ## Questions
 
@@ -87,9 +87,9 @@ sortValue: 10000
 - shallow water equation
 - wave particles???
 
-白浪怎么表示？
+白沫怎么表示？
 
-- 认为 Gerstner 波最尖锐的部分会产生白浪，可以用雅可比绝对值计算，小于某个阈值就是白浪。
+- 认为 Gerstner 波最尖锐的部分会产生白沫，可以用雅可比绝对值计算，小于某个阈值就是白沫。
 
 LOD 怎么处理？
 
