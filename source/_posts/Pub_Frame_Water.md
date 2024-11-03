@@ -17,6 +17,7 @@ sortValue: 10000
 - 神海 4 的水体渲染：[Rendering Rapids in Uncharted 4](https://advances.realtimerendering.com/s2016/)
 - Guerrilla 上一个关于水的 Talk：[Rendering Water in Horizon Forbidden West](https://advances.realtimerendering.com/s2022/SIGGRAPH2022-Advances-Water-Malan.pdf)
 - Guerrilla2024 最新的 Talk：[Simulation and Representation of Topology-Changing Rolling Waves for Massive Open Ocean Games](https://dl.acm.org/doi/abs/10.1145/3641233.3664308)
+- 育碧 2020Siggraph：[Advancements in Water and Procedural Technology | Ubisoft [SG]](https://www.youtube.com/watch?v=9qIgA2H90o0)
 - Shadertoy 上一个用分形实现的海洋渲染：[Shadertoy Seascape](https://www.shadertoy.com/view/Ms2SD1)
 - [How Ocean Waves Work in Unreal Engine: FFT & Wave Simulation](https://www.youtube.com/watch?v=OWiyIc2bVwM)
 - [A deep dive into my process of creating this animated stylized ocean in UE](https://www.youtube.com/watch?v=UWGwq-_w08c)
@@ -26,9 +27,11 @@ sortValue: 10000
 - Unity 的一个很强的水插件，它们 2017 和 2019 都上了 Siggraph，水体的交互性很惊艳：
   - [Crest: Novel Ocean Rendering Techniques in an Open Source Framework](https://advances.realtimerendering.com/s2017/index.html)
   - [Multi-resolution Ocean Rendering in Crest Ocean System](https://advances.realtimerendering.com/s2019/index.htm)
+- 2024 GDC
+  - [Technical Artist Summit: H2O in H3LL: The Various Forms of Water in ‘Diablo IV’](https://gdcvault.com/play/1034779/Technical-Artist-Summit-H2O-in)
 - 2023 GDC
   - [Advanced Graphics Summit: Open-World Water Rendering and Real-Time Simulation](https://gdcvault.com/play/1028829/Advanced-Graphics-Summit-Open-World)
-  - [Advancements in Water and Procedural Technology | Ubisoft [SG]](https://www.youtube.com/watch?v=9qIgA2H90o0)
+  - [Making Waves for 'Skull and Bones': Advancements in Water Tech](https://www.bilibili.com/video/BV1Ux4y1X7Xe)
 - 2022 GDC
   - [Simulating Tropical Weather in ‘Far Cry 6’](https://gdcvault.com/play/1027675/Simulating-Tropical-Weather-in-Far)
 - 2021 GDC
@@ -70,9 +73,10 @@ sortValue: 10000
   - [ ] 实现正弦波形图
   - [ ] 实现 Gerstner 波
 - [ ] 看论文
-  - [ ] 硕士论文和浅墨的整理弄清楚Relative Work
+  - [ ] 硕士论文和浅墨的整理弄清楚 Relative Work
   - [ ] Guerilla, 2024
   - [ ] Ubisoft, 2023
+  - [ ] 腾讯光子，2023
   - [ ] Far Cry 6, 2022
   - [ ] The Last of Us Part II, 2021
   - [ ] Atlas, 2019
@@ -84,8 +88,8 @@ sortValue: 10000
 - [ ] 用 UE 实现
 - [ ] 找找其他的资料，整理其他方案，做可交互水
   - [ ] 盗贼之海
-  - [ ] 交互水	
+  - [ ] 交互水
 
 ## 推荐阅读
 
-- 关于Sine和Gerstner波的实现：[GPU Gems: Chapter 1. Effective Water Simulation from Physical Models](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models)
+- 关于 Sine 和 Gerstner 波的实现：[GPU Gems: Chapter 1. Effective Water Simulation from Physical Models](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models)
