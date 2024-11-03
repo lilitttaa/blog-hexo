@@ -28,13 +28,16 @@ sortValue: 10000
 - [Far Cry 5, GDC 2018](https://gdcvault.com/play/1025555/Advanced-Graphics-Techniques-Tutorial-Water)
 - [Crest, Siggraph 2017](https://advances.realtimerendering.com/s2017/index.html)
 - [Uncharted 4, Siggraph 2016](https://advances.realtimerendering.com/s2016/)
+- [Portal2, Siggraph 2010](https://advances.realtimerendering.com/s2010/index.html)
 
-从最终效果上看，个人感觉比较值得关注的有：
+其中：
 
-- Guerrilla, 2024
-- Ubisoft, 2023
-- Sea of Thieves, 2018
-- Uncarted 4, 2016（虽然比较老了，但是流动效果感觉还不错）
+- Guerrilla 2024 海岸的 Rolling Mesh 使用 2d 曲线表示，使用 houdini 生成。渲染时使用了 Wave Particles 方法。
+- 腾讯光子 2023 使用 SWE 进行实时模拟和离线生成 Flow Map
+- Ubisoft 2023 使用 FFT 表示海洋，FBM 表示河流，海岸的 Rolling Mesh 使用 2d 曲线表示
+- Far Cry 6 2022 使用 FBM
+- Uncharted 4 2016 使用 Flow Map + Wave Particles
+- Portal2 2010 使用 Flow Map
 
 ## Resouces
 
@@ -44,11 +47,14 @@ sortValue: 10000
 - Shadertoy 上一个用分形实现的海洋渲染：[Shadertoy Seascape](https://www.shadertoy.com/view/Ms2SD1)
 - [How Ocean Waves Work in Unreal Engine: FFT & Wave Simulation](https://www.youtube.com/watch?v=OWiyIc2bVwM)
 - [A deep dive into my process of creating this animated stylized ocean in UE](https://www.youtube.com/watch?v=UWGwq-_w08c)
+- [#notGDC 2023 - FFT Ocean Flipbook : How to create & sample one using Blender & UE](https://www.youtube.com/watch?v=rV6TJ7YDJY8)
 - [怎么才能边做游戏边划水: 基于浅水方程的水面交互](https://zhuanlan.zhihu.com/p/649003961)
 - SWE 方程的推导：[Games103 Surface Waves](https://www.bilibili.com/video/BV12Q4y1S73g)
+- [Realtime GPGPU FFT Ocean Water Simulation](https://d-nb.info/1143691342/34)
 - [游戏中的实时水体模拟技术](https://zhuanlan.zhihu.com/p/21573239)
 - UE 插件：[Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
 - 游戏中的水渲染发展：[The Evolution of Water Effects In Video Games](https://www.youtube.com/watch?v=JW9UZeTnVhk)
+
 
 ## Courses
 
@@ -66,14 +72,14 @@ sortValue: 10000
 
 - [A survey of ocean simulation and rendering techniques in computer graphics 2011](https://arxiv.org/pdf/1109.6494)
 - [Wave particles 2007](http://www.cemyuksel.com/research/waveparticles/waveparticles.pdf)
-- 这篇硕士论文主要谈论在不同距离下进行观察怎么把不同光谱模型给结合起来：[Ocean Surface Generation and Rendering 2018](https://publik.tuwien.ac.at/files/publik_272334.pdf)
+- [Ocean Surface Generation and Rendering 2018](https://publik.tuwien.ac.at/files/publik_272334.pdf)
 - 白浪：[Real-time Animation and Rendering of Ocean Whitecaps](https://inria.hal.science/hal-00967078/file/Whitecaps-presentation.pdf)
 
 ## Questions
 
 怎么表示浮动的效果，比如说船在水上起伏？
 
-- 这个问题叫做 two-way coupling，有很多论文有对此的讨论，Wave Particles 和 swe 都支持这一点。
+- 这个问题叫做 two-way coupling，有很多论文有对此的讨论，Wave Particles 和 SWE 都支持这一点。
 - 因为物理是在 CPU 上的，所以要么在 CPU 上算，要么在 GPU 上算完回读到 CPU。可以使用异步回读，延迟个几帧。
 
 怎么做交互？
@@ -87,7 +93,9 @@ sortValue: 10000
 
 LOD 怎么处理？
 
+- CDLOD
+- water virtual texture
+
 Tile 的重复怎么处理？
 
 - 多级 FFT 贴图
-
