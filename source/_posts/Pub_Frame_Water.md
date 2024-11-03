@@ -25,17 +25,21 @@ sortValue: 10000
 - [Crest, Siggraph 2019](https://advances.realtimerendering.com/s2019/index.htm)
 - [Unreal Engine, GDC 2019](https://gdcvault.com/play/1026262/Technical-Artist-Bootcamp-Distance-Fields)
 - [Sea of Thieves, GDC 2018](https://www.youtube.com/watch?v=y9BOz2dFZzs)
+- [Call of Duty WWII, GDC 2018](https://www.bilibili.com/video/BV1j4411A7zo)
 - [Far Cry 5, GDC 2018](https://gdcvault.com/play/1025555/Advanced-Graphics-Techniques-Tutorial-Water)
 - [Crest, Siggraph 2017](https://advances.realtimerendering.com/s2017/index.html)
 - [Uncharted 4, Siggraph 2016](https://advances.realtimerendering.com/s2016/)
+- [Ubisoft, 2012](https://www.fxguide.com/fxfeatured/assassins-creed-iii-the-tech-behind-or-beneath-the-action/)
+- [Killzone 3, 2011](https://www.sidefx.com/community/guerrilla-games-killzone-3/)
 - [Portal2, Siggraph 2010](https://advances.realtimerendering.com/s2010/index.html)
 
 其中：
 
-- Guerrilla 2024 海岸的 Rolling Mesh 使用 2d 曲线表示，使用 houdini 生成。渲染时使用了 Wave Particles 方法。
+- Guerrilla 2024 海岸的 Rolling Mesh 使用 2d 曲线表示，使用 houdini 生成。渲染时使用了参考于 Wave Particles 的内部方法。他们用的是一种混合的方法，不过没有提到常规的渲染方法，他们的前作 Killzone 3 参考了 Tessendorf 的工作，所以猜测可能是 FFT。
 - 腾讯光子 2023 使用 SWE 进行实时模拟和离线生成 Flow Map
 - Ubisoft 2023 使用 FFT 表示海洋，FBM 表示河流，海岸的 Rolling Mesh 使用 2d 曲线表示
 - Far Cry 6 2022 使用 FBM
+- COD 2018 基于 Houdini offline bake 的方法
 - Uncharted 4 2016 使用 Flow Map + Wave Particles
 - Portal2 2010 使用 Flow Map
 
@@ -54,7 +58,6 @@ sortValue: 10000
 - [游戏中的实时水体模拟技术](https://zhuanlan.zhihu.com/p/21573239)
 - UE 插件：[Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
 - 游戏中的水渲染发展：[The Evolution of Water Effects In Video Games](https://www.youtube.com/watch?v=JW9UZeTnVhk)
-
 
 ## Courses
 
@@ -89,7 +92,8 @@ sortValue: 10000
 
 白沫怎么表示？
 
-- 认为 Gerstner 波最尖锐的部分会产生白沫，可以用雅可比绝对值计算，小于某个阈值就是白沫。
+- 白沫的方案有很多种：
+  - 认为 Gerstner 波最尖锐的部分会产生白沫，可以用雅可比绝对值计算，小于某个阈值就是白沫。
 
 LOD 怎么处理？
 
@@ -99,3 +103,5 @@ LOD 怎么处理？
 Tile 的重复怎么处理？
 
 - 多级 FFT 贴图
+
+音频怎么处理？
