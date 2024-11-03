@@ -10,6 +10,7 @@ sortValue: 10003
 ---
 
 - [Guerrilla, SIGGRAPH 2024](https://dl.acm.org/doi/abs/10.1145/3641233.3664308)
+- [Wave particles](http://www.cemyuksel.com/research/waveparticles/waveparticles.pdf)
 
 目标：Rolling Water、Close distance、Interactive、variability、performance、artistic
 
@@ -43,3 +44,18 @@ sortValue: 10003
 
 ![Alt text](image-1.png)
 纹理的每一列代表一条曲线，每个像素代表这个曲线中的一个点，像素颜色表示点的位置。
+
+## Wave Particle
+
+- 支持 two-way coupling，即物体对 wave 的影响，以及 wave 对物体的影响。
+- 用于局部 wave 引起的流动，不能处理全局的流动
+- 可以处理有边界和没有边界的情况
+
+早期的工作包括：
+
+- 参数化表示
+- FFT
+
+Tessendorf 方法是 one-way coupling，仅支持物体对 wave 的影响。
+
+以及一些求解 shallow water equation（本身是 Navier-Stokes 方程简化）的方法。

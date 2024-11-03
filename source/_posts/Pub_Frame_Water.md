@@ -31,6 +31,9 @@ sortValue: 10000
 - 从波的实现开始，然后到 FFT，各种数学公式，以及后续的具体的实现，有 Github 参考：[Ocean waves simulation with Fast Fourier transform](https://www.youtube.com/watch?v=kGEqaX4Y4bQ)
 - 这篇硕士论文主要谈论在不同距离下进行观察怎么把不同光谱模型给结合起来。[Ocean Surface Generation and Rendering](https://publik.tuwien.ac.at/files/publik_272334.pdf)
 - 浅墨的整理，很细致，很值得一看：[水体渲染技术发展史](https://github.com/QianMo/Game-Programmer-Study-Notes/tree/master/Content/%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%B0%B4%E4%BD%93%E6%B8%B2%E6%9F%93%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93)
+- 白浪：[Real-time Animation and
+  Rendering of Ocean Whitecaps
+  ](https://inria.hal.science/hal-00967078/file/Whitecaps-presentation.pdf)
 - 神海 4 的水体渲染：[Rendering Rapids in Uncharted 4](https://advances.realtimerendering.com/s2016/)
 - Guerrilla 上一个关于水的 Talk：[Rendering Water in Horizon Forbidden West](https://advances.realtimerendering.com/s2022/SIGGRAPH2022-Advances-Water-Malan.pdf)
 - Guerrilla2024 最新的 Talk：[Simulation and Representation of Topology-Changing Rolling Waves for Massive Open Ocean Games](https://dl.acm.org/doi/abs/10.1145/3641233.3664308)
@@ -68,23 +71,28 @@ sortValue: 10000
 
 - [The Evolution of Water Effects In Video Games](https://www.youtube.com/watch?v=JW9UZeTnVhk)
 
-## 分为三个部分
-
-- Shape
-- Shading
-- Interaction
-
 ## Questions
 
 怎么表示浮动的效果，比如说船在水上起伏？
 
+- 这个问题叫做 two-way coupling，有很多论文有对此的讨论，在 Wave Particles 中也有相关内容。
 - 因为物理是在 CPU 上的，所以要么在 CPU 上算，要么在 GPU 上算完回读到 CPU。可以使用异步回读，延迟个几帧。
 
-小波的渲染怎么表示？
 怎么做交互？
-Whitecaps 怎么表示？
+白浪怎么表示？
+
+- 认为 Gerstner 波最尖锐的部分会产生白浪，可以用雅可比绝对值计算，小于某个阈值就是白浪。
+
 LOD 怎么处理？
+
+Tile 的重复怎么处理？
+
+- 多级 FFT 贴图
 
 ## Courses
 
 - 关于 Sine 和 Gerstner 波的实现：[GPU Gems: Chapter 1. Effective Water Simulation from Physical Models](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models)
+
+## Important Papers
+
+Wave Particles[Yuksel 2007]
