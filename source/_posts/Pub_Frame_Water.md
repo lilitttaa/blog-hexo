@@ -83,34 +83,7 @@ sortValue: 10000
 小波的渲染怎么表示？
 怎么做交互？
 Whitecaps 怎么表示？
-LOD怎么处理？
-
-
-## TODO
-
-- [x] 看几个概述性的视频，了解一下一些基本的概念
-- [ ] 理清前两个视频的具体内容，整理一下，弄清里边的数学公式
-- [ ] 看 ShaderToy 代码
-  - [ ] 理清代码
-  - [ ] 实现正弦波形图
-  - [ ] 实现 Gerstner 波
-- [ ] 看论文
-  - [ ] 硕士论文和浅墨的整理弄清楚 Relative Work
-  - [ ] Guerilla, 2024
-  - [ ] Ubisoft, 2023
-  - [ ] 腾讯光子，2023
-  - [ ] Far Cry 6, 2022
-  - [ ] The Last of Us Part II, 2021
-  - [ ] Atlas, 2019
-  - [ ] Sea of Thieves, 2018
-  - [ ] Uncharted 4, 2016
-- [ ] 看 Houdini
-- [ ] 用 ShaderToy 实现
-- [ ] 看 UE 实现教程
-- [ ] 用 UE 实现
-- [ ] 找找其他的资料，整理其他方案，做可交互水
-  - [ ] 盗贼之海
-  - [ ] 交互水
+LOD 怎么处理？
 
 ## Courses
 
