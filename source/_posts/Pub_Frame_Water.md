@@ -10,6 +10,23 @@ category:
 sortValue: 10000
 ---
 
+## Talks
+
+- [Guerrilla, SIGGRAPH 2024](https://dl.acm.org/doi/abs/10.1145/3641233.3664308)
+- [Diablo IV, GDC 2024](https://gdcvault.com/play/1034779/Technical-Artist-Summit-H2O-in)
+- [Ubisoft, GDC 2023](https://www.bilibili.com/video/BV1Ux4y1X7Xe)
+- [腾讯光子, GDC 2023](https://gdcvault.com/play/1028829/Advanced-Graphics-Summit-Open-World)
+- [Guerrilla, SIGGRAPH 2022](https://advances.realtimerendering.com/s2022/SIGGRAPH2022-Advances-Water-Malan.pdf)
+- [Far Cry 6, GDC 2022](https://gdcvault.com/play/1027675/Simulating-Tropical-Weather-in-Far)
+- [The Last of Us Part II, GDC 2021](https://gdcvault.com/play/1027356/Enhancement-of-Particle-Simulation-Using)
+- [The Last of Us Part II, GDC 2021](https://gdcvault.com/play/1027370/Creative-and-Experimental-VFX-in)
+- [Ubisoft, Siggraph 2020](https://www.youtube.com/watch?v=9qIgA2H90o0)
+- [Atlas, GDC 2019](https://gdcvault.com/play/1025819/Advanced-Graphics-Techniques-Tutorial-Wakes)
+- [Sea of Thieves, GDC 2018](https://www.youtube.com/watch?v=y9BOz2dFZzs)
+- [Uncharted 4, Siggraph 2016](https://advances.realtimerendering.com/s2016/)
+
+## Resouces
+
 - 介绍了 Sine 和 Gerstner 波的实现方式，添加了噪声图、菲涅尔反射：[How Games Fake Water](https://www.youtube.com/watch?v=PH9q0HNBjT4)
 - 从波的实现开始，然后到 FFT，各种数学公式，以及后续的具体的实现，有 Github 参考：[Ocean waves simulation with Fast Fourier transform](https://www.youtube.com/watch?v=kGEqaX4Y4bQ)
 - 这篇硕士论文主要谈论在不同距离下进行观察怎么把不同光谱模型给结合起来。[Ocean Surface Generation and Rendering](https://publik.tuwien.ac.at/files/publik_272334.pdf)
@@ -57,7 +74,7 @@ sortValue: 10000
 - Shading
 - Interaction
 
-## 一些问题
+## Questions
 
 - 怎么表示浮动的效果，比如说船在水上起伏？
 - 小波的渲染怎么表示？
@@ -90,6 +107,6 @@ sortValue: 10000
   - [ ] 盗贼之海
   - [ ] 交互水
 
-## 推荐阅读
+## Courses
 
 - 关于 Sine 和 Gerstner 波的实现：[GPU Gems: Chapter 1. Effective Water Simulation from Physical Models](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models)
