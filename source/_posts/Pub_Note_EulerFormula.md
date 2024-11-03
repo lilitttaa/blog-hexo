@@ -1,5 +1,8 @@
 ---
 title: Euler's Formula
+tag:
+  - math
+mathjax: true
 category:
  - Mathematics
 sortValue: 100001
