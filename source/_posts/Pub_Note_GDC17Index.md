@@ -1,7 +1,7 @@
 ---
 title: GDC 2017 Index
 category:
- - GDCIndex
+ - GDC Index
 sortValue: 30007
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: GDC 2016 Index
 category:
- - GDCIndex
+ - GDC Index
 sortValue: 30008
 ---
 
