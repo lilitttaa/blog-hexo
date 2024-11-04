@@ -76,7 +76,7 @@ sortValue: 10000
 - [A survey of ocean simulation and rendering techniques in computer graphics 2011](https://arxiv.org/pdf/1109.6494)
 - [Wave particles 2007](http://www.cemyuksel.com/research/waveparticles/waveparticles.pdf)
 - [Ocean Surface Generation and Rendering 2018](https://publik.tuwien.ac.at/files/publik_272334.pdf)
-- 白沫：[Real-time Animation and Rendering of Ocean Whitecaps](https://inria.hal.science/hal-00967078/file/Whitecaps-presentation.pdf)
+- [Real-time Animation and Rendering of Ocean Whitecaps](https://inria.hal.science/hal-00967078/file/Whitecaps-presentation.pdf)
 
 ## Questions
 
@@ -84,6 +84,7 @@ sortValue: 10000
 
 - 这个问题叫做 two-way coupling，有很多论文有对此的讨论，Wave Particles 和 SWE 都支持这一点。
 - 因为物理是在 CPU 上的，所以要么在 CPU 上算，要么在 GPU 上算完回读到 CPU。可以使用异步回读，延迟个几帧。
+- Ubisoft 2012 有相关讨论
 
 怎么做交互？
 
@@ -105,3 +106,26 @@ Tile 的重复怎么处理？
 - 多级 FFT 贴图
 
 音频怎么处理？
+
+## A survey of ocean simulation and rendering techniques in computer graphics
+
+- We will see that this type of methods essentially allows the simulation of ocean scenes in the deep water domain, without breaking waves.
+
+- physically-based methods use Navier-Stokes Equations (NSE) to represent breaking waves and more generally ocean surface near the shore
+
+- In deep waters, the free surface defined by the interface between air and water is generally subjected to a large oscillatory behavior, whereas in shallow waters waves break near the shore.
+- parametric description, spectral description as well as models from Computational Fluid Dynamics (CFD) and more specifically Navier-Stokes Equations (NSE).
+
+分为深水区和浅水区，深水区主要表现为一种震荡行为，通常使用参数和频谱描述。而浅水区存在 wave break，使用 NSE 模拟。
+
+参数和频谱描述来自于海洋学，其中参数方法来自于浮标的测量，频谱描述则是对海洋波动的统计描述。
+
+而 NSE 则是一种物理方法，可以处理各种流体，尤其是处理动态行为
+
+光学上，浮游植物会影响海洋颜色，以及其他的泡沫、喷雾，以及光与水的相互作用。
+
+深水区的方法主要分为三类：
+
+- 时域方法：使用高度图作为周期函数叠加的结果
+- 谱域方法：使用波谱描述海洋表面的谱域，然后使用 FT 获取时域的变换
+- 混合方法
