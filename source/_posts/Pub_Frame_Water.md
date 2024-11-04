@@ -53,6 +53,8 @@ sortValue: 10000
 - [How Ocean Waves Work in Unreal Engine: FFT & Wave Simulation](https://www.youtube.com/watch?v=OWiyIc2bVwM)
 - [A deep dive into my process of creating this animated stylized ocean in UE](https://www.youtube.com/watch?v=UWGwq-_w08c)
 - [#notGDC 2023 - FFT Ocean Flipbook : How to create & sample one using Blender & UE](https://www.youtube.com/watch?v=rV6TJ7YDJY8)
+- [ocean simulation system in Niagara](https://dev.epicgames.com/community/learning/tutorials/qM1o/unreal-engine-ocean-simulation)
+- [Advanced Boat Simulation PART 1 - Building a buoyancy system using Niagara in UE5!](https://www.youtube.com/watch?v=hbrBCOxeLqw)
 - [怎么才能边做游戏边划水: 基于浅水方程的水面交互](https://zhuanlan.zhihu.com/p/649003961)
 - SWE 方程的推导：[Games103 Surface Waves](https://www.bilibili.com/video/BV12Q4y1S73g)
 - [Realtime GPGPU FFT Ocean Water Simulation](https://d-nb.info/1143691342/34)
@@ -73,6 +75,7 @@ sortValue: 10000
 - [Skull and Bones: Creating the Ocean](https://www.youtube.com/watch?v=JiZ4hFgE5tE)
 - [Uncharted 4 Water effect](https://www.youtube.com/watch?v=FFaXXzcr8Mc)
 - [Far Cry 6 Amazing Water Physics and Stunning Graphics](https://www.youtube.com/watch?v=9d9V9jjTh3w)
+- [【黑神话悟空试玩】雪地、水面变化实录 （自录）](https://www.bilibili.com/video/BV1km4y1H77a)
 
 ## Papers
 
@@ -90,9 +93,10 @@ sortValue: 10000
 
 怎么表示浮动的效果，比如说船在水上起伏？
 
-- 这个问题叫做 two-way coupling，有很多论文有对此的讨论，Wave Particles 和 SWE 都支持这一点。
 - 因为物理是在 CPU 上的，所以要么在 CPU 上算，要么在 GPU 上算完回读到 CPU。可以使用异步回读，延迟个几帧。
+- 大概的思路是在物体上挂几个点，这些点能对物体产生浮力。然后根据这些点沉没水中的深度（访问水的高度图）计算浮力。
 - Ubisoft 2012 有相关讨论
+- 在学术界有更复杂的讨论，叫做 two-way coupling，物体对水产生影响，同时水对物体产生影响。有很多论文有对此的讨论，Wave Particles 和 SWE 都支持这一点。(跟之前想的不一样，浮动效果不需要这么复杂)
 
 怎么做交互？
 
