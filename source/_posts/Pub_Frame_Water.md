@@ -32,6 +32,7 @@ sortValue: 10000
 - [Ubisoft, 2012](https://www.fxguide.com/fxfeatured/assassins-creed-iii-the-tech-behind-or-beneath-the-action/)
 - [Killzone 3, 2011](https://www.sidefx.com/community/guerrilla-games-killzone-3/)
 - [Portal2, Siggraph 2010](https://advances.realtimerendering.com/s2010/index.html)
+- [Insomniac, 2009](https://www.gamedevs.org/uploads/insomniac-water.pdf)
 
 其中：
 
@@ -51,21 +52,24 @@ sortValue: 10000
 - 浅墨的整理，很细致，很值得一看：[水体渲染技术发展史](https://github.com/QianMo/Game-Programmer-Study-Notes/tree/master/Content/%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%B0%B4%E4%BD%93%E6%B8%B2%E6%9F%93%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93)
 - Shadertoy 上一个用分形实现的海洋渲染：[Shadertoy Seascape](https://www.shadertoy.com/view/Ms2SD1)
 - [How Ocean Waves Work in Unreal Engine: FFT & Wave Simulation](https://www.youtube.com/watch?v=OWiyIc2bVwM)
-- [A deep dive into my process of creating this animated stylized ocean in UE](https://www.youtube.com/watch?v=UWGwq-_w08c)
 - [#notGDC 2023 - FFT Ocean Flipbook : How to create & sample one using Blender & UE](https://www.youtube.com/watch?v=rV6TJ7YDJY8)
 - [ocean simulation system in Niagara](https://dev.epicgames.com/community/learning/tutorials/qM1o/unreal-engine-ocean-simulation)
 - [Advanced Boat Simulation PART 1 - Building a buoyancy system using Niagara in UE5!](https://www.youtube.com/watch?v=hbrBCOxeLqw)
 - [怎么才能边做游戏边划水: 基于浅水方程的水面交互](https://zhuanlan.zhihu.com/p/649003961)
 - SWE 方程的推导：[Games103 Surface Waves](https://www.bilibili.com/video/BV12Q4y1S73g)
-- [Realtime GPGPU FFT Ocean Water Simulation](https://d-nb.info/1143691342/34)
 - [游戏中的实时水体模拟技术](https://zhuanlan.zhihu.com/p/21573239)
 - UE 插件：[Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
 - UE 插件：[Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)
 - 游戏中的水渲染发展：[The Evolution of Water Effects In Video Games](https://www.youtube.com/watch?v=JW9UZeTnVhk)
+- Gerstner 实现：
+  - [Unreal Engine 4 Gerstner Waves Ocean Material Livestream](https://www.youtube.com/watch?v=_y7Z0MbGOMw)
+  - [Tutorial: Ocean Shader with Gerstner Waves](https://80.lv/articles/tutorial-ocean-shader-with-gerstner-waves)
+  - [A deep dive into my process of creating this animated stylized ocean in UE](https://www.youtube.com/watch?v=UWGwq-_w08c)
 
 ## Courses
 
 - 关于 Sine 和 Gerstner 波的实现：[GPU Gems: Chapter 1. Effective Water Simulation from Physical Models](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models)
+- [Realtime GPGPU FFT Ocean Water Simulation](https://d-nb.info/1143691342/34)
 - SIGGRAPH 2007 Course：[Fluid Simulation for Computer Animation](https://www.cs.ubc.ca/~rbridson/fluidsimulation/)
 
 ## Comparison
