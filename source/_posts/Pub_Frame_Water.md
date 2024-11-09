@@ -58,8 +58,11 @@ sortValue: 10000
 - [怎么才能边做游戏边划水: 基于浅水方程的水面交互](https://zhuanlan.zhihu.com/p/649003961)
 - SWE 方程的推导：[Games103 Surface Waves](https://www.bilibili.com/video/BV12Q4y1S73g)
 - [游戏中的实时水体模拟技术](https://zhuanlan.zhihu.com/p/21573239)
-- UE 插件：[Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
-- UE 插件：[Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)
+- [Unified Interactive Water System for UE](https://80.lv/articles/unified-interactive-water-system-for-ue/)
+- UE 插件：
+	- [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
+	- [Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)
+	- [UIWS - Unified Interactive Water System](https://www.fab.com/listings/798b269a-b760-42c5-9c2c-8e11d723d5be)
 - 游戏中的水渲染发展：[The Evolution of Water Effects In Video Games](https://www.youtube.com/watch?v=JW9UZeTnVhk)
 - Gerstner 实现：
   - [Unreal Engine 4 Gerstner Waves Ocean Material Livestream](https://www.youtube.com/watch?v=_y7Z0MbGOMw)
@@ -122,3 +125,22 @@ Tile 的重复怎么处理？
 - 多级 FFT 贴图
 
 音频怎么处理？
+
+## A deep dive into my process of creating this animated stylized ocean in UE
+
+只使用 material node
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+
+在 2d 里实际上就是：
+$ y = A\sin(w(x + st)) $
+其中 w 是空间频率，s 是速度，t 是时间，A 是振幅
+因为：
+$w = 2/ L$，$ws = 2s/L = \phi$
+所以又可以写作：
+$y = A\sin(wx+\phi t)$
+其中 L 是波长，$\phi$ 是时间频率
