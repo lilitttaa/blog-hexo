@@ -59,10 +59,12 @@ sortValue: 10000
 - SWE 方程的推导：[Games103 Surface Waves](https://www.bilibili.com/video/BV12Q4y1S73g)
 - [游戏中的实时水体模拟技术](https://zhuanlan.zhihu.com/p/21573239)
 - [Unified Interactive Water System for UE](https://80.lv/articles/unified-interactive-water-system-for-ue/)
+- [River Editor: Water Simulation in Real-Time](https://80.lv/articles/river-editor-water-simulation-in-real-time/)
+- LBM 方法求解浅水方程：[Lattice Boltzmann Methods for Shallow Water Flows](https://link.springer.com/book/10.1007/978-3-662-08276-8)
 - UE 插件：
-	- [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
-	- [Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)
-	- [UIWS - Unified Interactive Water System](https://www.fab.com/listings/798b269a-b760-42c5-9c2c-8e11d723d5be)
+  - [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
+  - [Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)
+  - [UIWS - Unified Interactive Water System](https://www.fab.com/listings/798b269a-b760-42c5-9c2c-8e11d723d5be)
 - 游戏中的水渲染发展：[The Evolution of Water Effects In Video Games](https://www.youtube.com/watch?v=JW9UZeTnVhk)
 - Gerstner 实现：
   - [Unreal Engine 4 Gerstner Waves Ocean Material Livestream](https://www.youtube.com/watch?v=_y7Z0MbGOMw)
@@ -95,6 +97,7 @@ sortValue: 10000
 - [Water wave packets 2017](https://dl.acm.org/doi/abs/10.1145/3072959.3073678)
 - [Water surface wavelets 2018](https://dl.acm.org/doi/abs/10.1145/3197517.3201336)
 - [Ships, splashes, and waves on a vast ocean 2021](https://dl.acm.org/doi/abs/10.1145/3478513.3480495)
+- [Solving General Shallow Wave Equations on Surfaces 2007](https://faculty.cc.gatech.edu/~turk/paper_pages/2007_shallow_waves/index.html)
 
 ## Questions
 
@@ -122,7 +125,9 @@ LOD 怎么处理？
 
 Tile 的重复怎么处理？
 
-- 多级 FFT 贴图
+- 多级 FFT
+
+UIWS 里边的交互是怎么做的，粒子碰撞是怎么实现的？
 
 音频怎么处理？
 
