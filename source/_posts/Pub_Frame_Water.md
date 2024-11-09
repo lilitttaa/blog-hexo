@@ -66,6 +66,7 @@ sortValue: 10000
   - [Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)
   - [UIWS - Unified Interactive Water System](https://www.fab.com/listings/798b269a-b760-42c5-9c2c-8e11d723d5be)
 - 游戏中的水渲染发展：[The Evolution of Water Effects In Video Games](https://www.youtube.com/watch?v=JW9UZeTnVhk)
+- [Shallow Water Simulation with Niagara Fluids](https://dev.epicgames.com/community/learning/tutorials/Ddwx/unreal-engine-shallow-water-simulation-with-niagara-fluids)
 - Gerstner 实现：
   - [Unreal Engine 4 Gerstner Waves Ocean Material Livestream](https://www.youtube.com/watch?v=_y7Z0MbGOMw)
   - [Tutorial: Ocean Shader with Gerstner Waves](https://80.lv/articles/tutorial-ocean-shader-with-gerstner-waves)
