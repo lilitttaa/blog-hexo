@@ -18,7 +18,6 @@ sortValue: 10000
 - [腾讯光子, GDC 2023](https://gdcvault.com/play/1028829/Advanced-Graphics-Summit-Open-World)
 - [Guerrilla, SIGGRAPH 2022](https://advances.realtimerendering.com/s2022/SIGGRAPH2022-Advances-Water-Malan.pdf)
 - [Far Cry 6, GDC 2022](https://gdcvault.com/play/1027675/Simulating-Tropical-Weather-in-Far)
-- [The Last of Us Part II, GDC 2021](https://gdcvault.com/play/1027356/Enhancement-of-Particle-Simulation-Using)
 - [The Last of Us Part II, GDC 2021](https://gdcvault.com/play/1027370/Creative-and-Experimental-VFX-in)
 - [Ubisoft, Siggraph 2020](https://www.youtube.com/watch?v=9qIgA2H90o0)
 - [Atlas, GDC 2019](https://gdcvault.com/play/1025819/Advanced-Graphics-Techniques-Tutorial-Wakes)
@@ -61,6 +60,7 @@ sortValue: 10000
 - [Unified Interactive Water System for UE](https://80.lv/articles/unified-interactive-water-system-for-ue/)
 - [River Editor: Water Simulation in Real-Time](https://80.lv/articles/river-editor-water-simulation-in-real-time/)
 - LBM 方法求解浅水方程：[Lattice Boltzmann Methods for Shallow Water Flows](https://link.springer.com/book/10.1007/978-3-662-08276-8)
+- Github 开源：[UE4_FFT_Ocean](https://github.com/tigershan1130/UE4_FFT_Ocean)
 - UE 插件：
   - [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
   - [Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)
