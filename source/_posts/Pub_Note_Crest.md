@@ -93,3 +93,12 @@ https://www.youtube.com/watch?v=rkN-CMtafCg
 ![Alt text](image-13.png)
 
 - 按照 CFL 条件，模拟要保持稳定，时间步长需要满足一定条件
+
+
+https://github.dev/wave-harmonic/crest
+![Alt text](image-14.png)
+
+- FFT 计算时用到三步 Compute：
+  - 1.  Init Spectrum
+  - 2.  Update Spectrum
+  - 3.  Compute FFT
