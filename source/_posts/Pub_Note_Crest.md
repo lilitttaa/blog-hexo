@@ -1,5 +1,5 @@
 ---
-titile: Multi-resolution water rendering in crest
+title: Multi-resolution water rendering in crest
 category:
  - Realtime Water Rendering
 sortValue: 10006
