@@ -99,6 +99,7 @@ sortValue: 10000
 - [Water surface wavelets 2018](https://dl.acm.org/doi/abs/10.1145/3197517.3201336)
 - [Ships, splashes, and waves on a vast ocean 2021](https://dl.acm.org/doi/abs/10.1145/3478513.3480495)
 - [Solving General Shallow Wave Equations on Surfaces 2007](https://faculty.cc.gatech.edu/~turk/paper_pages/2007_shallow_waves/index.html)
+- [Real-time Simulation of Large Bodies of Water with Small Scale Details 2010](https://matthias-research.github.io/pages/publications/hfFluid.pdf)
 
 ## Questions
 
