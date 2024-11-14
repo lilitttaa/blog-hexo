@@ -60,6 +60,7 @@ sortValue: 10000
 - [Unified Interactive Water System for UE](https://80.lv/articles/unified-interactive-water-system-for-ue/)
 - [River Editor: Water Simulation in Real-Time](https://80.lv/articles/river-editor-water-simulation-in-real-time/)
 - LBM 方法求解浅水方程：[Lattice Boltzmann Methods for Shallow Water Flows](https://link.springer.com/book/10.1007/978-3-662-08276-8)
+- [TA实践分享：材质与渲染——水体(Unity+UE）](https://zhuanlan.zhihu.com/p/668628968)
 - Github 开源：[UE4_FFT_Ocean](https://github.com/tigershan1130/UE4_FFT_Ocean)
 - UE 插件：
   - [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
