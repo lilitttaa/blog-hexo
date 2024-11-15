@@ -13,8 +13,8 @@ sortValue: 100002
 - [Games001-傅里叶变换与球谐函数](https://www.bilibili.com/video/BV1MF4m1V7e3)
 - [快速理解 FFT 算法（完整无废话）](https://zhuanlan.zhihu.com/p/407885496)
 - [FFT 蝶形图](https://www.zhihu.com/question/20456490/answer/25440654)
-- [GPGPU FFT实现](https://d-nb.info/1143691342/34)
 - [Python Numerical Methods](https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/chapter24.02-Discrete-Fourier-Transform.html)
+- [库利-图基快速傅里叶变换算法](https://zh.wikipedia.org/wiki/%E5%BA%93%E5%88%A9-%E5%9B%BE%E5%9F%BA%E5%BF%AB%E9%80%9F%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E7%AE%97%E6%B3%95)
 
 ## Prerequisite
 
