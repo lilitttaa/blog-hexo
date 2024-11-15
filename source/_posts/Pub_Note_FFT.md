@@ -120,11 +120,14 @@ $$a_n = \frac{2}{T} \int_{0}^{T} f(t) cos(n\omega t) dt, n = 1, 2, 3, ...$$
 $b_n$同理：
 $$b_n = \frac{2}{T} \int_{0}^{T} f(t) sin(n\omega t) dt, n = 1, 2, 3, ...$$
 把$a_0$、$a_n$和$b_n$带入$c_n$的公式：
-$$c_n = a_0 = \frac{1}{T} \int_{0}^{T} f(t) dt = \frac{1}{T} \int_{0}^{T} f(t) e^{-i\omega0} dt, n = 0$$
+n = 0：
+$$c_n = a_0 = \frac{1}{T} \int_{0}^{T} f(t) dt = \frac{1}{T} \int_{0}^{T} f(t) e^{-i\omega0} dt$$
+n = 1, 2, 3, ...：
 $$c_n = \frac{1}{2} (a_n - ib_n) = \frac{1}{2} (\frac{2}{T} \int_{0}^{T} f(t) cos(n\omega t) dt - i \frac{2}{T} \int_{0}^{T} f(t) sin(n\omega t) dt) $$
-$$= \frac{1}{T} \int_{0}^{T} f(t) [cos(n\omega t) - isin(n\omega t)] dt = \frac{1}{T} \int_{0}^{T} f(t) e^{-in\omega t} dt, n = 1, 2, 3, ...$$
+$$= \frac{1}{T} \int_{0}^{T} f(t) [cos(n\omega t) - isin(n\omega t)] dt = \frac{1}{T} \int_{0}^{T} f(t) e^{-in\omega t} dt$$
+n = -1, -2, -3, ...：
 $$c_n = \frac{1}{2} (a_{-n} + ib_{-n}) = \frac{1}{2} (\frac{2}{T} \int_{0}^{T} f(t) cos(-n\omega t) dt + i \frac{2}{T} \int_{0}^{T} f(t) sin(-n\omega t) dt) $$
-$$= \frac{1}{T} \int_{0}^{T} f(t) [cos(n\omega t) - isin(n\omega t)] dt = \frac{1}{T} \int_{0}^{T} f(t) e^{in\omega t} dt, n = -1, -2, -3, ...$$
+$$= \frac{1}{T} \int_{0}^{T} f(t) [cos(n\omega t) - isin(n\omega t)] dt = \frac{1}{T} \int_{0}^{T} f(t) e^{in\omega t} dt$$
 我们发现不管n是正还是负，$c_n$都使用同一个表示，最终：
 $$f(t) = \sum_{n=-\infty}^{\infty} c_n e^{in\omega t}$$
 其中：
@@ -168,7 +171,7 @@ $$F[k] = \frac{1}{N} \sum_{n=0}^{N-1} f[n]e^{-i\frac{2\pi}{N} kn}$$
 这样我们就得到了离散傅里叶变换（DFT），下面我们来看一下DFT的计算复杂度：
 对于每个k，我们都需要计算N次$f[n]$和$e^{-i\frac{2\pi}{N} kn}$的乘积，然后做N-1次加法，所以对于单个k来说时间复杂度是O(N)。
 
-时域上N个采样的信号，到了频域会分别分解为$\frac{1}{N}+1$个cos和sin，为什么？
+时域上N个采样的信号，到了频域会分别分解为$\frac{1}{N}+1$个cos和sin，为什么是$\frac{1}{N}+1$呢？
 ![alt text](image-3.png)
 ![alt text](image-6.png)
 可以看到最后，频域上再取更多的k已经没有意义了，因为此时的采样周期已经比信号周期都要大了。
@@ -178,4 +181,31 @@ $$F[k] = \frac{1}{N} \sum_{n=0}^{N-1} f[n]e^{-i\frac{2\pi}{N} kn}$$
 
 重新把DFT写一遍：
 $$F[k] = \frac{1}{N} \sum_{n=0}^{N-1} f[n]e^{-i\frac{2\pi}{N} kn}$$
-其中：$F[k] = F(k\omega_o)T_s$，$f[n] = f(nT_s)$
+写的更简洁一点，令$W_N = e^{-i\frac{2\pi}{N}}$：
+$$F[k] = \frac{1}{N} \sum_{n=0}^{N-1} f[n]W_N^{kn}$$
+FFT的思路是把信号样本分为偶数部分和奇数部分，这里我们用2n表示偶数部分，2n+1表示奇数部分：
+$$F[k] = \frac{1}{N} \sum_{n=0}^{N/2-1} f[2n]W_N^{k(2n)} + \frac{1}{N} \sum_{n=0}^{N/2-1} f[2n+1]W_N^{k(2n+1)}$$
+把奇数项指数部分的1提出来：
+$$F[k] = \frac{1}{N} \sum_{n=0}^{N/2-1} f[2n]W_N^{2kn} + W_N^k \frac{1}{N} \sum_{n=0}^{N/2-1} f[2n+1]W_N^{2kn}$$
+因为：
+$$W_N^{2kn} = e^{-i\frac{2\pi}{N} 2kn} = e^{-i\frac{2\pi}{N/2} kn} = W_{N/2}^{kn}$$
+所以：
+$$F[k] = \frac{1}{N} (\sum_{n=0}^{N/2-1} f[2n]W_{N/2}^{kn} + W_N^k \sum_{n=0}^{N/2-1} f[2n+1]W_{N/2}^{kn})$$
+其中$f[2n]$和$f[2n+1]$是已知的，对比$F[k]$的形式，我们可以发现奇数项和偶数项就是两个N/2更小的DFT。我们把它们提出来，写作：
+$$E[k] = \sum_{n=0}^{N/2-1} f[2n]W_{N/2}^{kn}$$
+$$O[k] = \sum_{n=0}^{N/2-1} f[2n+1]W_{N/2}^{kn}$$
+所以：
+$$F[k] = \frac{1}{N} (E[k] + W_N^k O[k])$$
+$W_N$，我们通常叫做Twiddle Factor（旋转因子），它有很有趣的周期性：
+$$W_N^{N/2} = e^{-i\pi} = -1$$
+$$W_N^{N} = e^{-i2\pi} = 1$$
+所以：
+$$W_N^{k+N/2} = W_N^k W_N^{N/2} = -W_N^k$$
+$$W_N^{k+N} = W_N^k W_N^N = W_N^k$$
+因此：
+$$E[k] = E[k+N/2]$$
+$$O[k] = O[k+N/2]$$
+由此可得：
+$$F[k+N/2] = \frac{1}{N} (E[k+N/2] + W_N^{k+N/2} O[k+N/2]) = \frac{1}{N} (E[k] - W_N^k O[k])$$
+这样F[k]和F[k+N/2]的关系看上去就很清晰了，只要把偶数项和奇数项分别计算出来，就能同时得到F[k]和F[k+N/2]，这就把计算量减少了一半。
+另外，前面提到了$E[k]$和$O[k]$是两个更小的DFT，所以我们可以继续递归分治，直到N=1。
