@@ -48,7 +48,7 @@ sortValue: 10000
 
 - 介绍了 Sine 和 Gerstner 波的实现方式，添加了噪声图、菲涅尔反射：[How Games Fake Water](https://www.youtube.com/watch?v=PH9q0HNBjT4)
 - 从波的实现开始，然后到 FFT，各种数学公式，以及后续的具体的实现，有 Github 参考：[Ocean waves simulation with Fast Fourier transform](https://www.youtube.com/watch?v=kGEqaX4Y4bQ)
-- 浅墨的整理，很细致，很值得一看：[水体渲染技术发展史](https://github.com/QianMo/Game-Programmer-Study-Notes/tree/master/Content/%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%B0%B4%E4%BD%93%E6%B8%B2%E6%9F%93%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93)
+- 浅墨的整理：[水体渲染技术发展史](https://github.com/QianMo/Game-Programmer-Study-Notes/tree/master/Content/%E7%9C%9F%E5%AE%9E%E6%84%9F%E6%B0%B4%E4%BD%93%E6%B8%B2%E6%9F%93%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93)
 - Shadertoy 上一个用分形实现的海洋渲染：[Shadertoy Seascape](https://www.shadertoy.com/view/Ms2SD1)
 - [How Ocean Waves Work in Unreal Engine: FFT & Wave Simulation](https://www.youtube.com/watch?v=OWiyIc2bVwM)
 - [#notGDC 2023 - FFT Ocean Flipbook : How to create & sample one using Blender & UE](https://www.youtube.com/watch?v=rV6TJ7YDJY8)
@@ -62,10 +62,16 @@ sortValue: 10000
 - LBM 方法求解浅水方程：[Lattice Boltzmann Methods for Shallow Water Flows](https://link.springer.com/book/10.1007/978-3-662-08276-8)
 - [TA实践分享：材质与渲染——水体(Unity+UE）](https://zhuanlan.zhihu.com/p/668628968)
 - Github 开源：[UE4_FFT_Ocean](https://github.com/tigershan1130/UE4_FFT_Ocean)
+- FFT实现：[oreon-engine](https://github.com/fynnfluegge/oreon-engine/tree/main)
+- Nvidia：[Ocean Surface Simulation](https://developer.download.nvidia.com/assets/gamedev/files/sdk/11/OceanCS_Slides.pdf)
+- 搜狐畅游引擎部：[图形引擎实战：FFT海洋系统开发手记（一）](https://blog.csdn.net/qq_41166022/article/details/136563096?spm=1001.2014.3001.5502)
+- [fft海面模拟(一)](https://zhuanlan.zhihu.com/p/64414956)
+- [近岸海浪效果（一）](https://zhuanlan.zhihu.com/p/63722738)
 - UE 插件：
   - [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
   - [Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)
   - [UIWS - Unified Interactive Water System](https://www.fab.com/listings/798b269a-b760-42c5-9c2c-8e11d723d5be)
+  - [Ocean System for Rendered Cinematics](https://www.fab.com/listings/a59fd748-1ff5-4614-89b0-1a923a7c503b)
 - 游戏中的水渲染发展：[The Evolution of Water Effects In Video Games](https://www.youtube.com/watch?v=JW9UZeTnVhk)
 - [Shallow Water Simulation with Niagara Fluids](https://dev.epicgames.com/community/learning/tutorials/Ddwx/unreal-engine-shallow-water-simulation-with-niagara-fluids)
 - Gerstner 实现：

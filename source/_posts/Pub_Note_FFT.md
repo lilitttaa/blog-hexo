@@ -1,5 +1,5 @@
 ---
-title: 傅里叶变换
+title: Fourier Transform
 mathjax: true
 category:
  - Mathematics
@@ -58,7 +58,7 @@ $$ \delta_s(t) = \sum_{n=-\infty}^{\infty} \delta(t-nT_s) $$
 采样可以表示为：
 $$ f_s = \sum_{n=-\infty}^{\infty} f(t)\delta(t-nT_s) $$
 
-## 思路
+## Thinking
 
 1. 根据傅里叶级数一个周期函数可以展开为基频为w、频率为nw、振幅分别为a_n和b_n的sin和cos函数之和的累计。其中a_n和b_n跟n有关，频率越大幅值越小，他们也都是可以表示出来。
    这就引入了一个频域的视角，此时自变量是n，因变量是a_n和b_n。
@@ -69,7 +69,7 @@ $$ f_s = \sum_{n=-\infty}^{\infty} f(t)\delta(t-nT_s) $$
 6. 除了离散，我们采样的次数是有限的，比如说我们只采样N次，那么我们也只涉及到了一部分作用域。为了将其扩展到整个作用域，我们进行周期延拓，也就是把这个函数进行复制表示为周期函数。这个时域上的周期函数，到了频域就使得原本连续的函数变为了离散的函数。这样我们得到了离散版本的傅里叶变换，也就是DFT。
 7. DFT的复杂度是O(n^2)，为了提高效率，我们引入了FFT。我们将时间取值拆分为偶数项和奇数项，根据其中公共项的周期性，我们可以发现某些时间取值得到的频域密度的偶数项和奇数项是重复的。并且偶数项和奇数项是一个N更小的DFT，这样我们就能够通过递归分治的方式来降低复杂度。FFT的复杂度是O(nlogn)。
 
-## 傅里叶级数
+## Fourier Series（傅里叶级数）
 
 周期函数：
 $$f(t) = f(t+T)$$
@@ -130,7 +130,7 @@ $$f(t) = \sum_{n=-\infty}^{\infty} c_n e^{in\omega t}$$
 其中：
 $$c_n = \frac{1}{T} \int_{0}^{T} f(t) e^{-in\omega t} dt$$
 
-## 傅里叶变换
+## Fourier Transform（傅里叶变换）
 
 自此我们已经得到周期函数的傅里叶级数展开式，此时在频域上自变量是$n\omega$，其中n是整数，所以这实际上是一个离散函数。
 
@@ -147,7 +147,7 @@ $$F(W) = \int_{-\infty}^{\infty} f(t) e^{-iWt} dt$$
 傅里叶变换的逆变换：
 $$f(t) = \frac{1}{2\pi}\int_{-\infty}^{\infty} F(W) e^{iWt} dW$$
 
-## 离散傅里叶变换（DFT）
+## Discrete Fourier Transform（离散傅里叶变换）
 
 在前面FT中我们涉及到的时域函数是连续的，但计算机采集的信号在时域上是离散的，我们需要引入冲激函数（Dirac函数）来表示这个离散采样后的函数：
 $$F_s(W) = \int_{-\infty}^{\infty} (\sum_{n=-\infty}^{\infty} f(t)\delta(t-nT_s)) e^{-iWt} dt$$
@@ -174,7 +174,7 @@ $$F[k] = \frac{1}{N} \sum_{n=0}^{N-1} f[n]e^{-i\frac{2\pi}{N} kn}$$
 可以看到最后，频域上再取更多的k已经没有意义了，因为此时的采样周期已经比信号周期都要大了。
 所以最后整个DFT的复杂度是O(N^2)。
 
-## 快速傅里叶变换（FFT）
+## Fast Fourier Transform（快速傅里叶变换）
 
 重新把DFT写一遍：
 $$F[k] = \frac{1}{N} \sum_{n=0}^{N-1} f[n]e^{-i\frac{2\pi}{N} kn}$$
