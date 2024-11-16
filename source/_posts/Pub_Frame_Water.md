@@ -60,12 +60,12 @@ sortValue: 10000
 - [Unified Interactive Water System for UE](https://80.lv/articles/unified-interactive-water-system-for-ue/)
 - [River Editor: Water Simulation in Real-Time](https://80.lv/articles/river-editor-water-simulation-in-real-time/)
 - LBM 方法求解浅水方程：[Lattice Boltzmann Methods for Shallow Water Flows](https://link.springer.com/book/10.1007/978-3-662-08276-8)
-- [TA实践分享：材质与渲染——水体(Unity+UE）](https://zhuanlan.zhihu.com/p/668628968)
+- [TA 实践分享：材质与渲染——水体(Unity+UE）](https://zhuanlan.zhihu.com/p/668628968)
 - Github 开源：[UE4_FFT_Ocean](https://github.com/tigershan1130/UE4_FFT_Ocean)
-- FFT实现：[oreon-engine](https://github.com/fynnfluegge/oreon-engine/tree/main)
+- FFT 实现：[oreon-engine](https://github.com/fynnfluegge/oreon-engine/tree/main)
 - Nvidia：[Ocean Surface Simulation](https://developer.download.nvidia.com/assets/gamedev/files/sdk/11/OceanCS_Slides.pdf)
-- 搜狐畅游引擎部：[图形引擎实战：FFT海洋系统开发手记（一）](https://blog.csdn.net/qq_41166022/article/details/136563096?spm=1001.2014.3001.5502)
-- [fft海面模拟(一)](https://zhuanlan.zhihu.com/p/64414956)
+- 搜狐畅游引擎部：[图形引擎实战：FFT 海洋系统开发手记（一）](https://blog.csdn.net/qq_41166022/article/details/136563096?spm=1001.2014.3001.5502)
+- [fft 海面模拟(一)](https://zhuanlan.zhihu.com/p/64414956)
 - [近岸海浪效果（一）](https://zhuanlan.zhihu.com/p/63722738)
 - UE 插件：
   - [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
@@ -94,18 +94,24 @@ sortValue: 10000
 - [Far Cry 6 Amazing Water Physics and Stunning Graphics](https://www.youtube.com/watch?v=9d9V9jjTh3w)
 - [【黑神话悟空试玩】雪地、水面变化实录 （自录）](https://www.bilibili.com/video/BV1km4y1H77a)
 
+## Researcher
+
+- [Stefan Jeschke](https://scholar.google.com/citations?hl=zh-CN&user=e_7oynAAAAAJ&view_op=list_works&sortby=pubdate)
+
 ## Papers
 
 - [A survey of ocean simulation and rendering techniques in computer graphics 2011](https://arxiv.org/pdf/1109.6494)
-- [Wave particles 2007](http://www.cemyuksel.com/research/waveparticles/waveparticles.pdf)
-- [Ocean Surface Generation and Rendering 2018](https://publik.tuwien.ac.at/files/publik_272334.pdf)
-- [Real-time Animation and Rendering of Ocean Whitecaps 2012](https://inria.hal.science/hal-00967078/file/Whitecaps-presentation.pdf)
-- [Wave curves: simulating lagrangian water waves on dynamically deforming surfaces 2020](https://dl.acm.org/doi/abs/10.1145/3386569.3392466)
-- [Fundamental solutions for water wave animation 2019](https://dl.acm.org/doi/abs/10.1145/3306346.3323002)
-- [Water wave packets 2017](https://dl.acm.org/doi/abs/10.1145/3072959.3073678)
+- [Wave particles 2007](http://www.cemyuksel.com/research/waveparticles/)
 - [Water surface wavelets 2018](https://dl.acm.org/doi/abs/10.1145/3197517.3201336)
-- [Ships, splashes, and waves on a vast ocean 2021](https://dl.acm.org/doi/abs/10.1145/3478513.3480495)
+- [Water wave packets 2017](https://dl.acm.org/doi/abs/10.1145/3072959.3073678)
+- [Fundamental Solutions for Water Wave Animation 2019](https://www.youtube.com/watch?v=2ZhRNoIbf0g)
+- [Generalizing Shallow Water Simulations with Dispersive Surface Waves 2023](https://www.youtube.com/watch?v=KwLbYh-oVlo)
+- [SCA2020: Making Procedural Water Waves Boundary-Aware (Jeschke et al.) 2020](https://www.youtube.com/watch?v=U3lFWQVk_zc)
 - [Solving General Shallow Wave Equations on Surfaces 2007](https://faculty.cc.gatech.edu/~turk/paper_pages/2007_shallow_waves/index.html)
+- [Real-time Animation and Rendering of Ocean Whitecaps 2012](https://inria.hal.science/hal-00967078/file/Whitecaps-presentation.pdf)
+- [Ocean Surface Generation and Rendering 2018](https://publik.tuwien.ac.at/files/publik_272334.pdf)
+- [Wave curves: simulating lagrangian water waves on dynamically deforming surfaces 2020](https://dl.acm.org/doi/abs/10.1145/3386569.3392466)
+- [Ships, splashes, and waves on a vast ocean 2021](https://dl.acm.org/doi/abs/10.1145/3478513.3480495)
 - [Real-time Simulation of Large Bodies of Water with Small Scale Details 2010](https://matthias-research.github.io/pages/publications/hfFluid.pdf)
 
 ## Questions
