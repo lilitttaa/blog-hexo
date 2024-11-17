@@ -67,6 +67,7 @@ sortValue: 10000
 - 搜狐畅游引擎部：[图形引擎实战：FFT 海洋系统开发手记（一）](https://blog.csdn.net/qq_41166022/article/details/136563096?spm=1001.2014.3001.5502)
 - [fft 海面模拟(一)](https://zhuanlan.zhihu.com/p/64414956)
 - [近岸海浪效果（一）](https://zhuanlan.zhihu.com/p/63722738)
+- [Ocean Simulation with FFT and WebGPU](https://barthpaleologue.github.io/Blog/posts/ocean-simulation-webgpu/)
 - UE 插件：
   - [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
   - [Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)
@@ -101,6 +102,8 @@ sortValue: 10000
 ## Papers
 
 - [A survey of ocean simulation and rendering techniques in computer graphics 2011](https://arxiv.org/pdf/1109.6494)
+- [Physics-based fluid simulation in computer graphics: Survey, research trends, and challenges 2024](https://link.springer.com/article/10.1007/s41095-023-0368-y)
+- [Simulating Ocean Water 2004](https://people.computing.clemson.edu/~jtessen/reports/papers_files/coursenotes2004.pdf)
 - [Wave particles 2007](http://www.cemyuksel.com/research/waveparticles/)
 - [Water surface wavelets 2018](https://dl.acm.org/doi/abs/10.1145/3197517.3201336)
 - [Water wave packets 2017](https://dl.acm.org/doi/abs/10.1145/3072959.3073678)
@@ -109,10 +112,13 @@ sortValue: 10000
 - [SCA2020: Making Procedural Water Waves Boundary-Aware (Jeschke et al.) 2020](https://www.youtube.com/watch?v=U3lFWQVk_zc)
 - [Solving General Shallow Wave Equations on Surfaces 2007](https://faculty.cc.gatech.edu/~turk/paper_pages/2007_shallow_waves/index.html)
 - [Real-time Animation and Rendering of Ocean Whitecaps 2012](https://inria.hal.science/hal-00967078/file/Whitecaps-presentation.pdf)
+- [Fast orientable aperiodic ocean synthesis using tiling and blending 2024](https://dl.acm.org/doi/10.1145/3675388)
 - [Ocean Surface Generation and Rendering 2018](https://publik.tuwien.ac.at/files/publik_272334.pdf)
 - [Wave curves: simulating lagrangian water waves on dynamically deforming surfaces 2020](https://dl.acm.org/doi/abs/10.1145/3386569.3392466)
 - [Ships, splashes, and waves on a vast ocean 2021](https://dl.acm.org/doi/abs/10.1145/3478513.3480495)
 - [Real-time Simulation of Large Bodies of Water with Small Scale Details 2010](https://matthias-research.github.io/pages/publications/hfFluid.pdf)
+- [Real-time Breaking Waves for Shallow Water Simulations](https://matthias-research.github.io/pages/publications/breakingWaves.pdf)
+- [ACHIEVING SCALABLE PERFORMANCES FOR LARGE SCALE GAME COMPONENTS WITH CBTS 2024](https://advances.realtimerendering.com/s2024/content/Intel/large_scale_cbt_slides_siggraph_advances_2024.pdf)
 
 ## Questions
 
