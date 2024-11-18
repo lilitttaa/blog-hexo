@@ -1,5 +1,6 @@
 ---
 title: Insomniac’s Water Rendering System
+mathjax: true
 category:
  - Realtime Water Rendering
 sortValue: 10007
