@@ -21,9 +21,39 @@ sortValue: 10008
 
 ## Dispersion Relation
 
-表面波方程是线性微分方程，通解需要用特殊解来获得。带入特殊解后，可以得到时间频率$\omega$和波数$k$之间的关系，这个关系叫做dispersion relation：
-$$  \omega = \pm \sqrt{gk} $$
+表面波方程是线性微分方程，通解需要用特殊解来获得。带入特殊解后，可以得到时间频率$\omega$和波数$k$之间的关系，这个关系叫做 dispersion relation：
+$$ \omega = \pm \sqrt{gk} $$
 
-ns方程没有对h有任何表述，我们可以表面高度和垂直速度施加一个初始条件。
+ns 方程没有对 h 有任何表述，我们可以表面高度和垂直速度施加一个初始条件。
 
 对于振幅，我们通过开放海洋的测量数据来进行统计学的随机生成。
+
+## Ocean Algorithm
+
+- Linear Wave/ Gravity Wave
+- Capillary Wave
+
+### Gerstner Wave
+
+$$ \vec{x} = \vec{x_0} + (\vec{k}/k) \cdot A \cdot sin(\vec{k} \cdot \vec{x_0} - \omega \cdot t) $$
+$$ \vec{y} = A \cdot cos(\vec{k} \cdot \vec{x_0} - \omega \cdot t) $$
+
+其中：
+
+- $\vec{k}$表示 wave vector，它的方向表示波的传播方向，它的长度 k 叫做 wave number 跟波长成反比
+
+kA < 1 且接近1时，波的顶端会变得尖锐，kA > 1 时，会出现环
+
+### Disperion Relation
+
+对于深水不考虑深度：
+$$ \omega = \sqrt{gk} $$
+
+对于浅水：
+$$ \omega = \sqrt{gk tanh(kD)} $$
+
+对于非常小的波Dispersion Relation被表面张力所影响：
+$$ \omega = \sqrt{gk(1+k^2L^2)} $$
+其中 L 是长度单位，它决定了表面张力的影响尺度
+
+我们需要让波能够循环（也就是算出来的displacement map能够无缝的拼接起来）
