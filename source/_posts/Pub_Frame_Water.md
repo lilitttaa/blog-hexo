@@ -117,6 +117,7 @@ sortValue: 10000
 - [Wave curves: simulating lagrangian water waves on dynamically deforming surfaces 2020](https://dl.acm.org/doi/abs/10.1145/3386569.3392466)
 - [Ships, splashes, and waves on a vast ocean 2021](https://dl.acm.org/doi/abs/10.1145/3478513.3480495)
 - [Real-time Simulation of Large Bodies of Water with Small Scale Details 2010](https://matthias-research.github.io/pages/publications/hfFluid.pdf)
+- [FAST FLUID SIMULATION WITH SPARSE VOLUMES ON THE GPU 2018](https://ramakarl.com/flip-sim/)
 - [Real-time Breaking Waves for Shallow Water Simulations](https://matthias-research.github.io/pages/publications/breakingWaves.pdf)
 - [ACHIEVING SCALABLE PERFORMANCES FOR LARGE SCALE GAME COMPONENTS WITH CBTS 2024](https://advances.realtimerendering.com/s2024/content/Intel/large_scale_cbt_slides_siggraph_advances_2024.pdf)
 
