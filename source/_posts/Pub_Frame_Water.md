@@ -79,6 +79,8 @@ sortValue: 10000
   - [Unreal Engine 4 Gerstner Waves Ocean Material Livestream](https://www.youtube.com/watch?v=_y7Z0MbGOMw)
   - [Tutorial: Ocean Shader with Gerstner Waves](https://80.lv/articles/tutorial-ocean-shader-with-gerstner-waves)
   - [A deep dive into my process of creating this animated stylized ocean in UE](https://www.youtube.com/watch?v=UWGwq-_w08c)
+- 各种水的实现：[Ceto: Ocean system for Unity](https://github.com/Scrawk/Ceto)
+- WaveParticles开源实现：[Wave-Particles-with-Interactive-Vortices](https://github.com/ACskyline/Wave-Particles-with-Interactive-Vortices)
 
 ## Courses
 
