@@ -87,6 +87,7 @@ sortValue: 10000
 - 关于 Sine 和 Gerstner 波的实现：[GPU Gems: Chapter 1. Effective Water Simulation from Physical Models](https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models)
 - [Realtime GPGPU FFT Ocean Water Simulation](https://d-nb.info/1143691342/34)
 - SIGGRAPH 2007 Course：[Fluid Simulation for Computer Animation](https://www.cs.ubc.ca/~rbridson/fluidsimulation/)
+- [Fluid Simulation for Computer Graphics](https://github.com/mordak42/fluid-simulation/blob/master/doc/Fluid%20Simulation%20for%20Computer%20Graphics%2C%20Second%20Edition.pdf)
 
 ## Comparison
 
