@@ -12,6 +12,7 @@ sortValue: 10000
 
 ## Talks
 
+- [Ubisoft LAFORGE, 2024](https://www.ubisoft.com/en-us/studio/laforge/news/5WHMK3tLGMGsqhxmWls1Jw/making-waves-in-ocean-surface-rendering-using-tiling-and-blending)
 - [Guerrilla, SIGGRAPH 2024](https://dl.acm.org/doi/abs/10.1145/3641233.3664308)
 - [Diablo IV, GDC 2024](https://gdcvault.com/play/1034779/Technical-Artist-Summit-H2O-in)
 - [Ubisoft, GDC 2023](https://www.bilibili.com/video/BV1Ux4y1X7Xe)
@@ -28,10 +29,13 @@ sortValue: 10000
 - [Far Cry 5, GDC 2018](https://gdcvault.com/play/1025555/Advanced-Graphics-Techniques-Tutorial-Water)
 - [Crest, Siggraph 2017](https://advances.realtimerendering.com/s2017/index.html)
 - [Uncharted 4, Siggraph 2016](https://advances.realtimerendering.com/s2016/)
+- [Studio Gobo, Siggraph 2013](https://advances.realtimerendering.com/s2013/index.html)
+- [Uncharted, GDC 2012](https://gdcvault.com/play/1015517/Water-Technology-of)
 - [Ubisoft, 2012](https://www.fxguide.com/fxfeatured/assassins-creed-iii-the-tech-behind-or-beneath-the-action/)
 - [Killzone 3, 2011](https://www.sidefx.com/community/guerrilla-games-killzone-3/)
 - [Portal2, Siggraph 2010](https://advances.realtimerendering.com/s2010/index.html)
 - [Insomniac, 2009](https://www.gamedevs.org/uploads/insomniac-water.pdf)
+- [AGEIA, GDC 2008](https://gdcvault.com/play/203/Fast-Water-Simulation-for-Games)
 
 其中：
 
@@ -65,6 +69,7 @@ sortValue: 10000
 - FFT 实现：[oreon-engine](https://github.com/fynnfluegge/oreon-engine/tree/main)
 - Nvidia：[Ocean Surface Simulation](https://developer.download.nvidia.com/assets/gamedev/files/sdk/11/OceanCS_Slides.pdf)
 - 搜狐畅游引擎部：[图形引擎实战：FFT 海洋系统开发手记（一）](https://blog.csdn.net/qq_41166022/article/details/136563096?spm=1001.2014.3001.5502)
+- 自适应视锥：[手机端水系统的小 Tips~~](https://zhuanlan.zhihu.com/p/666428978)
 - [fft 海面模拟(一)](https://zhuanlan.zhihu.com/p/64414956)
 - [近岸海浪效果（一）](https://zhuanlan.zhihu.com/p/63722738)
 - [Ocean Simulation with FFT and WebGPU](https://barthpaleologue.github.io/Blog/posts/ocean-simulation-webgpu/)
@@ -80,7 +85,7 @@ sortValue: 10000
   - [Tutorial: Ocean Shader with Gerstner Waves](https://80.lv/articles/tutorial-ocean-shader-with-gerstner-waves)
   - [A deep dive into my process of creating this animated stylized ocean in UE](https://www.youtube.com/watch?v=UWGwq-_w08c)
 - 各种水的实现：[Ceto: Ocean system for Unity](https://github.com/Scrawk/Ceto)
-- WaveParticles开源实现：[Wave-Particles-with-Interactive-Vortices](https://github.com/ACskyline/Wave-Particles-with-Interactive-Vortices)
+- WaveParticles 开源实现：[Wave-Particles-with-Interactive-Vortices](https://github.com/ACskyline/Wave-Particles-with-Interactive-Vortices)
 
 ## Courses
 
