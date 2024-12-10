@@ -1,5 +1,5 @@
 ---
-title: The roadmap of data-driven rendering
+title: The Roadmap of Rendering Architecture
 category:
  - Rendering Architecture
 sortValue: 20000
