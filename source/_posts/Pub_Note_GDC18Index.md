@@ -2,7 +2,7 @@
 title: GDC 2018 Index
 category:
  - GDC Index
-sortValue: 30006
+sortValue: 40006
 ---
 
 ## "Advances in Real-Time Voxel-Based GI" & "Temporal Super-Resolution" (Presented by NVIDIA)

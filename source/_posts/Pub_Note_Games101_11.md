@@ -2,7 +2,7 @@
 title: Games101 11.Geometry 2 (Curves and Surfaces)
 category:
  - Games101
-sortValue: 200010
+sortValue: 300010
 ---
 
 ## Many Explicit Representations in Graphics

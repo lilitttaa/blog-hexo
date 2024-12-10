@@ -7,6 +7,7 @@ sortValue: 08
 
 ## Resources
 
+- [A Review of Shader Languages](https://alain.xyz/blog/a-review-of-shader-languages)
 - [UE4 Shader 编译以及变种实现](https://blog.csdn.net/UWA4D/article/details/107689394)
 - [UE 着色器开发文档](https://docs.unrealengine.com/4.27/zh-CN/ProgrammingAndScripting/Rendering/ShaderDevelopment/)
 - [交叉编译](https://docs.unrealengine.com/4.27/zh-CN/ProgrammingAndScripting/Rendering/ShaderDevelopment/HLSLCrossCompiler/)

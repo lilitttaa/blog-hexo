@@ -3,7 +3,7 @@ title: Major Scales（大调音阶）
 cover: music_staff.png
 category:
  - Music
-sortValue: 90005
+sortValue: 100005
 ---
 
 <https://www.youtube.com/watch?v=v44NY4fyxHA>

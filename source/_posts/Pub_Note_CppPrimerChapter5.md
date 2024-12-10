@@ -2,7 +2,7 @@
 title: C++ Primer 5.语句
 category:
  - Cpp
-sortValue: 40004
+sortValue: 50004
 ---
 
 ## 简单语句

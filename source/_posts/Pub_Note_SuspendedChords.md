@@ -2,7 +2,7 @@
 title: Suspended Chords（挂留和弦）
 category:
  - Music
-sortValue: 900026
+sortValue: 1000026
 ---
 
 https://www.youtube.com/watch?v=qu49nYaBfdM

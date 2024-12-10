@@ -3,7 +3,7 @@ title: Fourier Transform
 mathjax: true
 category:
  - Mathematics
-sortValue: 100002
+sortValue: 110002
 ---
 
 - [三角函数的正交性及其公式推导](https://blog.csdn.net/zhaohongfei_358/article/details/118461151)

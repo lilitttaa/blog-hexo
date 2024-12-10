@@ -2,7 +2,7 @@
 title: Pyinstaller打包
 category:
  - Program
-sortValue: 50005
+sortValue: 60005
 ---
 
 最好是在一个虚拟环境中进行打包，这样可以避免一些依赖问题。

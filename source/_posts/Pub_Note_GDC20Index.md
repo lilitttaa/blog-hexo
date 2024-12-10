@@ -2,7 +2,7 @@
 title: GDC 2020 Index
 category:
  - GDC Index
-sortValue: 30004
+sortValue: 40004
 ---
 
 ## 'A Plague Tale' Audio Design: Not Only Squeaks

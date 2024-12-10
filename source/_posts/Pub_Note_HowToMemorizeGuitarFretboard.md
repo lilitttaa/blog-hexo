@@ -3,7 +3,7 @@ title: How to Memorize Guitar Fretboard（如何记忆吉他指板）
 cover: music_staff.png
 category:
  - Music
-sortValue: 900010
+sortValue: 1000010
 ---
 https://www.youtube.com/watch?v=jTCyiq5mjn8
 

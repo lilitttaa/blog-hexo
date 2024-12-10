@@ -2,7 +2,7 @@
 title: Meter And Time Signatures（拍子与拍号）
 category:
  - Music
-sortValue: 900012
+sortValue: 1000012
 ---
 
 - https://www.youtube.com/watch?v=OgFy_TAFsV0

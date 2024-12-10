@@ -2,7 +2,7 @@
 title: GDC 2016 Index
 category:
  - GDC Index
-sortValue: 30008
+sortValue: 40008
 ---
 
 ## "Is that Me?" Identity Confusion & Narrative VR Challenges

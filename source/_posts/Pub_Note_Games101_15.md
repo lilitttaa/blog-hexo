@@ -2,7 +2,7 @@
 title: Games101 15.Ray Tracing 3(Light Transport & Global Illumination)
 category:
  - Games101
-sortValue: 200014
+sortValue: 300014
 ---
 
 ## Radiometry

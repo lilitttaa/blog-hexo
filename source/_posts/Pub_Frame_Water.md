@@ -73,6 +73,7 @@ sortValue: 10000
 - [fft 海面模拟(一)](https://zhuanlan.zhihu.com/p/64414956)
 - [近岸海浪效果（一）](https://zhuanlan.zhihu.com/p/63722738)
 - [Ocean Simulation with FFT and WebGPU](https://barthpaleologue.github.io/Blog/posts/ocean-simulation-webgpu/)
+- [Coding Adventure: Rendering Fluids](https://www.youtube.com/watch?v=kOkfC5fLfgE)
 - UE 插件：
   - [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
   - [Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)

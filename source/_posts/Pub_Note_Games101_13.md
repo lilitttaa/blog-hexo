@@ -2,7 +2,7 @@
 title: Games101 13.Ray Tracing 1(Whitted-Style Ray Tracing)
 category:
  - Games101
-sortValue: 200012
+sortValue: 300012
 ---
 
 ## Ray Tracing

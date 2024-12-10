@@ -2,7 +2,7 @@
 title: Memorize Pentatonic Scale
 category:
  - Music
-sortValue: 900032
+sortValue: 1000032
 ---
 
 https://www.youtube.com/watch?v=Vj-BOmKgdE4

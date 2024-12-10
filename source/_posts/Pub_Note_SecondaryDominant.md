@@ -2,7 +2,7 @@
 title: Secondary Dominant（副属和弦）
 category:
  - Music
-sortValue: 900039
+sortValue: 1000039
 ---
 
 https://www.youtube.com/watch?v=py4HaueW50Q

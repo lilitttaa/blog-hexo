@@ -2,7 +2,7 @@
 title: Write Chord Progression（和弦进行）
 category:
  - Music
-sortValue: 900024
+sortValue: 1000024
 ---
 
 - https://www.youtube.com/watch?v=M8eItITv8QA

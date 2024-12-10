@@ -2,7 +2,7 @@
 title: Games101 6.Rasterization 2(Antialiasing and Z-Buffering)
 category:
  - Games101
-sortValue: 20005
+sortValue: 30005
 ---
 
 一幅照片就是所有到达感光元件所在的这个平面的一些光学的信息，离散成这一系列的图像上的像素

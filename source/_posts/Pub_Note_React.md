@@ -3,7 +3,7 @@ title: React 学习笔记
 cover: web_design.png
 category:
  - Web Frontend
-sortValue: 60001
+sortValue: 70001
 ---
 
 ### 基础概念:

@@ -5,7 +5,7 @@ tag:
 mathjax: true
 category:
  - Mathematics
-sortValue: 100001
+sortValue: 110001
 ---
 
 - [e^(iπ) in 3.14 minutes, using dynamics | DE5](https://www.youtube.com/watch?v=v0YEaeIClKY)

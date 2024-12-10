@@ -2,7 +2,7 @@
 title: The Mode Of Harmonic Minor Scale
 category:
  - Music
-sortValue: 900042
+sortValue: 1000042
 ---
 
 https://www.youtube.com/watch?v=qk8uobP4uJE

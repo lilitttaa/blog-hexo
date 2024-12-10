@@ -2,7 +2,7 @@
 title: Song Structure
 category:
  - Music
-sortValue: 900046
+sortValue: 1000046
 ---
 
 https://www.youtube.com/watch?v=CbmWdKOmEBc
