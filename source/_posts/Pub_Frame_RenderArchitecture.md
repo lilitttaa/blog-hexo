@@ -23,3 +23,6 @@ sortValue: 20000
 - [Our Machinery: High-Level Rendering Using Render Graphs](https://ruby0x1.github.io/machinery_blog_archive/post/high-level-rendering-using-render-graphs/index.html)
 - [island](https://github.com/tgfrerer/island)
 - [Unity ShaderLab](https://docs.unity3d.com/Manual/SL-Reference.html)
+
+多线程：
+- [Destiny's Multithreaded Rendering Architecture](https://www.gdcvault.com/play/1021926/Destiny-s-Multithreaded-Rendering)

@@ -27,6 +27,7 @@ sortValue: 10000
 - [Sea of Thieves, GDC 2018](https://www.youtube.com/watch?v=y9BOz2dFZzs)
 - [Call of Duty WWII, GDC 2018](https://www.bilibili.com/video/BV1j4411A7zo)
 - [Far Cry 5, GDC 2018](https://gdcvault.com/play/1025555/Advanced-Graphics-Techniques-Tutorial-Water)
+- [Shadow of the Tomb Raider, 2018](https://www.youtube.com/watch?v=gJMBEvYEfJI)
 - [Crest, Siggraph 2017](https://advances.realtimerendering.com/s2017/index.html)
 - [Uncharted 4, Siggraph 2016](https://advances.realtimerendering.com/s2016/)
 - [Studio Gobo, Siggraph 2013](https://advances.realtimerendering.com/s2013/index.html)
