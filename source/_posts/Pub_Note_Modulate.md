@@ -2,7 +2,7 @@
 title: Modulate（调性转换）
 category:
  - Music
-sortValue: 1000045
+sortValue: 1100045
 ---
 
 https://www.youtube.com/watch?v=Tgyq6RfIF6c

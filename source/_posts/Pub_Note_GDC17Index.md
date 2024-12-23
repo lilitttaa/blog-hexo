@@ -2,7 +2,7 @@
 title: GDC 2017 Index
 category:
  - GDC Index
-sortValue: 40007
+sortValue: 50007
 ---
 
 ## #1ReasonToBe

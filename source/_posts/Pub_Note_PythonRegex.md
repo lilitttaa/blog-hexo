@@ -2,7 +2,7 @@
 title: Python Regex
 category:
  - Program
-sortValue: 60004
+sortValue: 70004
 ---
 
 ```python

@@ -2,7 +2,7 @@
 title: C++ Primer 13.拷贝控制
 category:
  - Cpp
-sortValue: 500012
+sortValue: 600012
 ---
 
 ## 概述

@@ -2,7 +2,7 @@
 title: GDC 2022 Index
 category:
  - GDC Index
-sortValue: 40002
+sortValue: 50002
 ---
 
 ## 'Blaseball': Game Development as Performance

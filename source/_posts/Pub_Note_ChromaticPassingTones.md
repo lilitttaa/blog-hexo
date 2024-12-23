@@ -2,7 +2,7 @@
 title: Chromatic Passing Tones（半音经过音）
 category:
  - Music
-sortValue: 1000043
+sortValue: 1100043
 ---
 
 https://guitarkl.com/2020/04/12/using-chromatic-passing-tones-in-your-lead-playing/

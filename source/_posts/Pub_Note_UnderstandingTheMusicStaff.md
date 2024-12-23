@@ -3,7 +3,7 @@ title: Understanding The Music Staff（认识五线谱）
 cover: music_staff.png
 category:
  - Music
-sortValue: 100003
+sortValue: 110003
 ---
 <https://www.youtube.com/watch?v=fBFcyyDZR7g>
 <https://www.youtube.com/watch?v=ZN41d7Txcq0>

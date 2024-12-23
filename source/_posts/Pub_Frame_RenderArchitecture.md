@@ -7,6 +7,7 @@ sortValue: 20000
 
 - Data-Driven 解释字节码的 Shader 语言：[Destiny Shader Pipeline 2017](https://advances.realtimerendering.com/destiny/gdc_2017/)
 - Data-Driven Shader Effect Language：[Writing a Shader Effect Language Part 1](https://jorenjoestar.github.io/post/writing_shader_effect_language_1/)
+- [Unity Rendering Architecture](https://enginearchitecture.org/downloads/reac2021_unity_rendering_engine_architecture.pdf)
 - Shader 中引入抽象：[Slang](https://shader-slang.com/slang/user-guide/index.html)
 - Shader 中引入抽象：[Flexible and Extensible Shader Authoring in Frostbite with Serac 2024](https://advances.realtimerendering.com/s2024/index.html#serac)
 - EA 的渲染实验平台，代码生成方案，debug 很强：[Gigi: Rapid Prototyping Platform for Real-Time Rendering](https://www.ea.com/seed/news/gigi)
@@ -26,3 +27,9 @@ sortValue: 20000
 
 多线程：
 - [Destiny's Multithreaded Rendering Architecture](https://www.gdcvault.com/play/1021926/Destiny-s-Multithreaded-Rendering)
+
+几何渲染管线：
+- [Geometry Rendering Pipeline Architecture at Activision](https://www.youtube.com/watch?v=NoTUzzmxPo0)
+
+REAC：
+- [REAC](https://enginearchitecture.org/2021.htm)

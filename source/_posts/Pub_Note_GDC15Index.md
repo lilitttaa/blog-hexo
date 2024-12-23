@@ -2,7 +2,7 @@
 title: GDC 2015 Index
 category:
  - GDC Index
-sortValue: 40009
+sortValue: 50009
 ---
 
 ## 15th Annual Game Developers Choice Awards

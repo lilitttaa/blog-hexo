@@ -2,7 +2,7 @@
 title: GDC 2019 Index
 category:
  - GDC Index
-sortValue: 40005
+sortValue: 50005
 ---
 
 ## "Alexa, Give Your Game a Voice" (Presented by Amazon)

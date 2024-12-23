@@ -2,7 +2,7 @@
 title: GDC 2021 Index
 category:
  - GDC Index
-sortValue: 40003
+sortValue: 50003
 ---
 
 ## "Alpha Point" UE5 Demo: Unlocking Artist Potential (Presented by Epic Games - Unreal Engine)
