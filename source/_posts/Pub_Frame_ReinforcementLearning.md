@@ -19,6 +19,10 @@ sortValue: 60002
 - <https://github.com/anhOfTheStars/RLStudyGuide>
 - <https://www.reddit.com/r/reinforcementlearning/comments/d0x8y6/deep_reinforcement_learning_roadmap/>
 
+## Tutorial
+
+- [Introduction to OpenAI Gym and Frozen Lake Environment in Python- Reinforcement Learning Tutorial](https://www.youtube.com/watch?v=Vrro7W7iW2w&list=PLO89phzZmnHjYXlCNR_y2qF0gr9x8YpC8)
+
 ## Survey
 
 - [Reinforcement Learning: A Survey]<http://www.cs.cmu.edu/afs/cs/project/jair/pub/volume4/kaelbling96a-html/rl-survey.html>
@@ -39,7 +43,7 @@ sortValue: 60002
 
 ## Books
 
-- [蘑菇书EasyRL](https://datawhalechina.github.io/easy-rl/#/)
+- [蘑菇书 EasyRL](https://datawhalechina.github.io/easy-rl/#/)
 - [Reinforcement Learning An Introduction](http://incompleteideas.net/book/RLbook2020.pdf)
 
 ## Competition
