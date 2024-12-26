@@ -163,22 +163,3 @@ Tile 的重复怎么处理？
 UIWS 里边的交互是怎么做的，粒子碰撞是怎么实现的？
 
 音频怎么处理？
-
-## A deep dive into my process of creating this animated stylized ocean in UE
-
-只使用 material node
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
-
-在 2d 里实际上就是：
-$ y = A\sin(w(x + st)) $
-其中 w 是空间频率，s 是速度，t 是时间，A 是振幅
-因为：
-$w = 2/ L$，$ws = 2s/L = \phi$
-所以又可以写作：
-$y = A\sin(wx+\phi t)$
-其中 L 是波长，$\phi$ 是时间频率
