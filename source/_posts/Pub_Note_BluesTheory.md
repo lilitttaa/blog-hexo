@@ -2,7 +2,7 @@
 title: Blues Theory
 category:
  - Music
-sortValue: 1100038
+sortValue: 1200038
 ---
 
 https://www.youtube.com/watch?v=_LDgu8dGiME

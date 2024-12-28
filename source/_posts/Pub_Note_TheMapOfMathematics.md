@@ -3,7 +3,7 @@ title: The Map of Mathematics（数学地图）
 cover: math.png
 category:
  - Mathematics
-sortValue: 120000
+sortValue: 130000
 ---
 
 

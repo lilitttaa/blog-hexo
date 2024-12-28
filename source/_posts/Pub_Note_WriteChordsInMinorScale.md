@@ -2,7 +2,7 @@
 title: Write Chords in Minor Scale
 category:
  - Music
-sortValue: 1100028
+sortValue: 1200028
 ---
 
 https://www.youtube.com/watch?v=j-j4g0ktPGw

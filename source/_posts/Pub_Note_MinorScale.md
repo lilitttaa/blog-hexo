@@ -2,7 +2,7 @@
 title: Minor Scale（小调音阶）
 category:
  - Music
-sortValue: 1100027
+sortValue: 1200027
 ---
 
 https://www.youtube.com/watch?v=qXLr-O2ZNDU

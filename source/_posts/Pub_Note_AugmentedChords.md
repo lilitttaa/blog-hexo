@@ -2,7 +2,7 @@
 title: Augmented Chords（增和弦）
 category:
  - Music
-sortValue: 1100041
+sortValue: 1200041
 ---
 
 https://www.youtube.com/watch?v=fDIHxTWaKos
