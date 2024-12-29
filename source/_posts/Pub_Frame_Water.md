@@ -132,6 +132,12 @@ sortValue: 10000
 - [Real-time Breaking Waves for Shallow Water Simulations](https://matthias-research.github.io/pages/publications/breakingWaves.pdf)
 - [ACHIEVING SCALABLE PERFORMANCES FOR LARGE SCALE GAME COMPONENTS WITH CBTS 2024](https://advances.realtimerendering.com/s2024/content/Intel/large_scale_cbt_slides_siggraph_advances_2024.pdf)
 
+## Neural Network Scheme
+
+- [Physics Informed Neural Network Ocean Wave Predictions and Elevation](https://www.youtube.com/watch?v=MthiCojk3cA)
+- [OceanGAN: A Deep Learning Alternative to Physics-Based Ocean Rendering](https://history.siggraph.org/learning/oceangan-a-deep-learning-alternative-to-physics-based-ocean-rendering-by-ratto-szeto-slocum-and-del-bene/)
+- [Particle-based simulations via neural networks](https://patents.google.com/patent/US20240370610A1/en)
+
 ## Questions
 
 怎么表示浮动的效果，比如说船在水上起伏？
