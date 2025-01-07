@@ -1,5 +1,6 @@
 ---
-title: Note_Games001_13
+title: Games001 13.Solution of Linear Systems（线性系统求解）
+mathjax: true
 category:
  - Mathematics
 sortValue: 130003
