@@ -1,5 +1,6 @@
 ---
 title: Conjugate Gradient Method（共轭梯度法）
+date: 2025-01-08 00:00:00
 mathjax: true
 category:
  - Mathematics
