@@ -116,7 +116,7 @@ $$e_{k+1} \leftarrow (I - M^{-1}A)e_k = M^{-1}N e_k$$
 ![Alt text](image-20.png)
 
 - 里边的特征值越小，收敛越快
-- 关于特征值分解可以参考：https://zhuanlan.zhihu.com/p/314464267
+- 关于特征值分解可以参考：[一文解释 矩阵特征分解](https://zhuanlan.zhihu.com/p/314464267)
 
 ![Alt text](image-21.png)
 
