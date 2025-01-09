@@ -177,6 +177,8 @@ $$e_{k+1} \leftarrow (I - M^{-1}A)e_k = M^{-1}N e_k$$
 
 ![alt text](image-32.png)
 
+关于GPU实现的共轭梯度法，可以参考：[Parallel Algorithm of Conjugate Gradient Solver using OpenGL Compute Shader](https://koreascience.kr/article/JAKO202103440878912.pdf)
+
 ### CG 算法的效率
 
 ![alt text](image-33.png)
