@@ -35,6 +35,8 @@ sortValue: 10000
 - [Uncharted, GDC 2012](https://gdcvault.com/play/1015517/Water-Technology-of)
 - [Ubisoft, 2012](https://www.fxguide.com/fxfeatured/assassins-creed-iii-the-tech-behind-or-beneath-the-action/)
 - [Killzone 3, 2011](https://www.sidefx.com/community/guerrilla-games-killzone-3/)
+- [Siggraph Asia 2011](https://developer.download.nvidia.cn/GTC/SIGGRAPH_Asia_2011/PDF/WaterSim_Chentanez.pdf)
+- [Eurographics 2010](https://matthias-research.github.io/pages/publications/hfFluid.pdf)
 - [Portal2, Siggraph 2010](https://advances.realtimerendering.com/s2010/index.html)
 - [Insomniac, 2009](https://www.gamedevs.org/uploads/insomniac-water.pdf)
 - [AGEIA, GDC 2008](https://gdcvault.com/play/203/Fast-Water-Simulation-for-Games)
@@ -89,6 +91,8 @@ sortValue: 10000
   - [A deep dive into my process of creating this animated stylized ocean in UE](https://www.youtube.com/watch?v=UWGwq-_w08c)
 - 各种水的实现：[Ceto: Ocean system for Unity](https://github.com/Scrawk/Ceto)
 - WaveParticles 开源实现：[Wave-Particles-with-Interactive-Vortices](https://github.com/ACskyline/Wave-Particles-with-Interactive-Vortices)
+- Nvidia：[Ocean simulation and rendering
+  in War Thunder](https://developer.download.nvidia.cn/assets/gameworks/downloads/regular/events/cgdc15/CGDC2015_ocean_simulation_en.pdf)
 
 ## Courses
 
@@ -110,6 +114,7 @@ sortValue: 10000
 ## Researcher
 
 - [Stefan Jeschke](https://scholar.google.com/citations?hl=zh-CN&user=e_7oynAAAAAJ&view_op=list_works&sortby=pubdate)
+- [Chris Wojtan](https://pub.ista.ac.at/~wojtan/)
 
 ## Papers
 
@@ -132,6 +137,7 @@ sortValue: 10000
 - [FAST FLUID SIMULATION WITH SPARSE VOLUMES ON THE GPU 2018](https://ramakarl.com/flip-sim/)
 - [Real-time Breaking Waves for Shallow Water Simulations](https://matthias-research.github.io/pages/publications/breakingWaves.pdf)
 - [ACHIEVING SCALABLE PERFORMANCES FOR LARGE SCALE GAME COMPONENTS WITH CBTS 2024](https://advances.realtimerendering.com/s2024/content/Intel/large_scale_cbt_slides_siggraph_advances_2024.pdf)
+- [Real-time Height-field Simulation of Sand and Water Mixtures 2023](https://kuiwuchn.github.io/RTWaterAndSand.pdf)
 
 ## Neural Network Scheme
 

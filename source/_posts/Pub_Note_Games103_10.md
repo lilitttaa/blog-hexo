@@ -82,7 +82,7 @@ Shallow Water Equation 是一个比较有效率的方法。
 
 ![alt text](image-8.png)
 
-- 所谓 final difference 就是在很小的区间做差值来近似求导
+- 所谓 finite differencing 就是在很小的区间做差值来近似求导
 - 从泰勒展开来看，实际上就是只考虑到了一阶导数，忽略了后面的所有项
 - 选择前面的时间减现在的叫做 forward difference，选择后面的叫做 backward difference，这两种方法都是一阶的。
 
