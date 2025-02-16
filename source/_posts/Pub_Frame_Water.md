@@ -78,6 +78,7 @@ sortValue: 10000
 - [近岸海浪效果（一）](https://zhuanlan.zhihu.com/p/63722738)
 - [Ocean Simulation with FFT and WebGPU](https://barthpaleologue.github.io/Blog/posts/ocean-simulation-webgpu/)
 - [Coding Adventure: Rendering Fluids](https://www.youtube.com/watch?v=kOkfC5fLfgE)
+- [【UE5 模拟交互篇】（六）二维平面流体交互-下篇](https://zhuanlan.zhihu.com/p/4505041453)
 - UE 插件：
   - [Waterline PRO](https://www.fab.com/listings/0c1fc983-db84-4df3-b623-03db76d552c6)
   - [Fluid Flux2](https://www.fab.com/zh-cn/listings/196c70cd-1283-4249-bf6b-c3019d1cbe11)
@@ -90,6 +91,7 @@ sortValue: 10000
   - [Tutorial: Ocean Shader with Gerstner Waves](https://80.lv/articles/tutorial-ocean-shader-with-gerstner-waves)
   - [A deep dive into my process of creating this animated stylized ocean in UE](https://www.youtube.com/watch?v=UWGwq-_w08c)
 - 各种水的实现：[Ceto: Ocean system for Unity](https://github.com/Scrawk/Ceto)
+- [波动方程与浅水方程](https://zhuanlan.zhihu.com/p/23947310903)
 - WaveParticles 开源实现：[Wave-Particles-with-Interactive-Vortices](https://github.com/ACskyline/Wave-Particles-with-Interactive-Vortices)
 - Nvidia：[Ocean simulation and rendering
   in War Thunder](https://developer.download.nvidia.cn/assets/gameworks/downloads/regular/events/cgdc15/CGDC2015_ocean_simulation_en.pdf)
@@ -138,6 +140,10 @@ sortValue: 10000
 - [Real-time Breaking Waves for Shallow Water Simulations](https://matthias-research.github.io/pages/publications/breakingWaves.pdf)
 - [ACHIEVING SCALABLE PERFORMANCES FOR LARGE SCALE GAME COMPONENTS WITH CBTS 2024](https://advances.realtimerendering.com/s2024/content/Intel/large_scale_cbt_slides_siggraph_advances_2024.pdf)
 - [Real-time Height-field Simulation of Sand and Water Mixtures 2023](https://kuiwuchn.github.io/RTWaterAndSand.pdf)
+
+## Book
+
+- Fluid Simulation for Computer Graphics - Bridson, Robert
 
 ## Neural Network Scheme
 
