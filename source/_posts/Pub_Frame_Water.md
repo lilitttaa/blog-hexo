@@ -122,6 +122,7 @@ sortValue: 10000
 
 - [A survey of ocean simulation and rendering techniques in computer graphics 2011](https://arxiv.org/pdf/1109.6494)
 - [Physics-based fluid simulation in computer graphics: Survey, research trends, and challenges 2024](https://link.springer.com/article/10.1007/s41095-023-0368-y)
+- [Recent Advances on Machine Learning for Computational Fluid Dynamics: A Survey 2024](https://arxiv.org/abs/2408.12171)
 - [Simulating Ocean Water 2004](https://people.computing.clemson.edu/~jtessen/reports/papers_files/coursenotes2004.pdf)
 - [Wave particles 2007](http://www.cemyuksel.com/research/waveparticles/)
 - [Water surface wavelets 2018](https://dl.acm.org/doi/abs/10.1145/3197517.3201336)
